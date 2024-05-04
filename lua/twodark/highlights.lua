@@ -19,10 +19,14 @@ local colors = {
     -- testing
     LOREM = {fg = c.lorem},
     IPSM = {fg = c.ipsm},
-    TB = {fg = c.test_blue},
     TR = {fg = c.test_red},
-    TP = {fg = c.test_purple},
+    TO = {fg = c.test_orange},
+    TY = {fg = c.test_yellow},
+    TG = {fg = c.test_green},
     TT = {fg = c.test_teal},
+    TB = {fg = c.test_blue},
+    TP = {fg = c.test_purple},
+    TW = {fg = c.test_white},
     -- old colors
     Fg = {fg = c.fg},
     LightGrey = {fg = c.light_grey},
@@ -122,7 +126,7 @@ hl.syntax = {
     Keyword = {fg = c.test_purple, fmt = cfg.code_style.keywords},
     Define = colors.LOREM,
     Typedef = colors.LOREM,
-    Exception = colors.IPSM,
+    Exception = colors.LOREM,
     Conditional = {fg = c.lua_boolean, fmt = cfg.code_style.keywords},
     Repeat = {fg = c.lua_boolean, fmt = cfg.code_style.keywords},
     Statement = {fg = c.lua_statement},  -- lua "return"
@@ -144,12 +148,12 @@ hl.syntax = {
 if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
     hl.treesitter = {
         -- nvim-treesitter@0.9.2 and after
-        ["@annotation"] = colors.Fg,
-        ["@attribute"] = colors.Cyan,
-        ["@attribute.typescript"] = colors.Blue,
-        ["@boolean"] = colors.Orange,
-        ["@character"] = colors.Orange,
-        ["@comment"] = {fg = c.grey, fmt = cfg.code_style.comments},
+        ["@annotation"] = colors.TR,
+        ["@attribute"] = colors.TO,
+        ["@attribute.typescript"] = colors.TY,
+        ["@boolean"] = colors.TG,
+        ["@character"] = colors.TT,
+        ["@comment"] = {fg = c.comments, fmt = cfg.code_style.comments},
         ["@comment.todo"] = {fg = c.red, fmt = cfg.code_style.comments},
         ["@comment.todo.unchecked"] = {fg = c.red, fmt = cfg.code_style.comments},
         ["@comment.todo.checked"] = {fg = c.green, fmt = cfg.code_style.comments},

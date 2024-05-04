@@ -1,12 +1,16 @@
 return {
 	warmer = {
 
-        lorem = "#C99076",
+        lorem = "#FFFFFF",
         ipsm = "#FFFFFF",
-        test_blue = "#111AFF",
         test_red = "#FF0000",
-        test_purple = "#EC11FF",
+        test_orange = "#FF6B00",
+        test_yellow = "#FFF400",
+        test_green = "#24FF00",
         test_teal = "#11FFC6",
+        test_blue = "#111AFF",
+        test_purple = "#EC11FF",
+        test_white = "#FFFFFF",
 
         ---------
         -- lua --
@@ -18,6 +22,12 @@ return {
         lua_statement = "#CB7676", -- "return"
         lua_numbers = "#4C9A91", -- "300"
         lua_operators = "#DBD7CA", -- "="
+
+        ----------------
+        -- python ------
+        ----------------
+
+        comments = "#666666",
 
         ---------
 		black = "#000000",
