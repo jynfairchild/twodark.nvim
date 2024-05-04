@@ -51,7 +51,7 @@ return {
         keword = "#FF0000",
         label = "#FF0000",
         markup = "#FF0000",
-        module = "#CB7676",  -- nothing?
+        module = "#FF0000",  -- unknown
         none = "#",
         number = "#",
         number_float = "#",
@@ -67,10 +67,10 @@ return {
         warning = "#C48E4F",
         danger = "#B12E2E",
         type = "#5DA994",  -- Path, class names
-        type_builtin = "#111AFF", -- KeyError, type(str, bool)
+        type_builtin = "#B8A965", -- KeyError, type(str, bool)
         variable = "#DBD7CA",  -- params
         variable_builtin = "#C99076",  -- self.
-        variable_member = "#C99076",
+        variable_member = "#C99076",  -- unknown
         variable_parameter = "#DBD7CA",  -- builtin params
 
         ---------

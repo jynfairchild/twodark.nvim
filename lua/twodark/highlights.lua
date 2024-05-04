@@ -218,7 +218,7 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
         ["@punctuation.bracket"] = {fg = c.brackets},  -- ([{}])
 
         -- strings
-        ["@string"] = {fg = c.string, fmt = cfg.code_style.strings},
+        ["@string"] = {fg = c.string, fmt = cfg.code_style.strings},  -- ''
         ["@string.regexp"] = {fg = c.string_regex, fmt = cfg.code_style.strings},
         ["@string.escape"] = {fg = c.string_escape, fmt = cfg.code_style.strings},
         ["@string.special.symbol"] = {fg = c.string_special_symbol},
@@ -231,12 +231,18 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
         ["@note"] = {fg = c.note},
         ["@warning"] = {fg = c.warning},
         ["@danger"] = {fg = c.danger},
-        ["@type"] = {fg = c.type},
-        ["@type.builtin"] = {fg = c.type_builtin},
-        ["@variable"] = {fg = c.variable, fmt = cfg.code_style.variables},
-        ["@variable.builtin"] = {fg = c.variable_builtin, fmt = cfg.code_style.variables},
+
+        -- Type
+        ["@type"] = {fg = c.type},  -- Path, class names
+        ["@type.builtin"] = {fg = c.type_builtin},  -- KeyError, type(str, bool)
+
+        -- Variable
+        ["@variable"] = {fg = c.variable, fmt = cfg.code_style.variables},  -- params
+        ["@variable.builtin"] = {fg = c.variable_builtin, fmt = cfg.code_style.variables},  -- self.
         ["@variable.member"] = {fg = c.variable},
-        ["@variable.parameter"] = {fg = c.variable_parameter},
+        ["@variable.parameter"] = {fg = c.variable_parameter},  -- builtin params (self,)
+
+        -- Markup
         ["@markup.heading.1.markdown"] = {fg = c.red, fmt = "bold"},
         ["@markup.heading.2.markdown"] = {fg = c.purple, fmt = "bold"},
         ["@markup.heading.3.markdown"] = {fg = c.orange, fmt = "bold"},
