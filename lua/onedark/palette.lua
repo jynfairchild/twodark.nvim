@@ -1,4 +1,5 @@
 return {
+
 	dark = {
 		black = "#181a1f",
 		bg0 = "#282c34",
