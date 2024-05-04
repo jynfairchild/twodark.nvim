@@ -163,31 +163,37 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
         ["@comment.todo.checked"] = {fg = c.comment, fmt = cfg.code_style.comments},
 
         -- Constants
-        ["@constant"] = {fg = c.constant, fmt = cfg.code_style.constants},
+        ["@constant"] = {fg = c.constant, fmt = cfg.code_style.constants},  -- None
         ["@constant.builtin"] = {fg = c.constant, fmt = cfg.code_style.constants},
         ["@constant.macro"] = {fg = c.constant, fmt = cfg.code_style.constants},
 
         -- Constructor
-        ["@constructor"] = {fg = c.constructor, fmt = "bold"},
+        ["@constructor"] = {fg = c.constructor, fmt = "bold"},  -- __init__, class calls User()
         ["@diff.add"] = {fg = c.diff_add},
         ["@diff.delete"] = {fg = c.diff_delete},
         ["@error"] = colors.Fg,
-        ["@function"] = {fg = c.func, fmt = cfg.code_style.functions},
-        ["@function.builtin"] = {fg = c.cyan, fmt = cfg.code_style.functions},
-        ["@function.macro"] = {fg = c.cyan, fmt = cfg.code_style.functions},
-        ["@function.method"] = {fg = c.blue, fmt = cfg.code_style.functions},
-        ["@keyword"] = {fg = c.purple, fmt = cfg.code_style.keywords},
-        ["@keyword.conditional"] = {fg = c.purple, fmt = cfg.code_style.keywords},
-        ["@keyword.directive"] = colors.Purple,
-        ["@keyword.exception"] = colors.Purple,
-        ["@keyword.function"] = {fg = c.purple, fmt = cfg.code_style.functions},
-        ["@keyword.import"] = colors.Purple,
-        ["@keyword.operator"] =  {fg = c.purple, fmt = cfg.code_style.keywords},
-        ["@keyword.repeat"] = {fg = c.purple, fmt = cfg.code_style.keywords},
-        ["@label"] = colors.Red,
-        ["@markup.emphasis"] = {fg = c.fg, fmt = 'italic'},
-        ["@markup.environment"] = colors.Fg,
-        ["@markup.environment.name"] = colors.Fg,
+
+        -- Functions
+        ["@function"] = {fg = c.func, fmt = cfg.code_style.functions},  -- Function():
+        ["@function.builtin"] = {fg = c.func, fmt = cfg.code_style.functions},
+        ["@function.macro"] = {fg = c.func, fmt = cfg.code_style.functions},
+        ["@function.method"] = {fg = c.func, fmt = cfg.code_style.functions},
+
+        -- Keywords
+        ["@keyword"] = {fg = c.keyword, fmt = cfg.code_style.keywords},
+        ["@keyword.conditional"] = {fg = c.keyword, fmt = cfg.code_style.keywords},
+        ["@keyword.directive"] = colors.keyword,
+        ["@keyword.exception"] = colors.keyword,
+        ["@keyword.function"] = {fg = c.keyword, fmt = cfg.code_style.functions},
+        ["@keyword.import"] = colors.keyword,
+        ["@keyword.operator"] =  {fg = c.keyword, fmt = cfg.code_style.keywords},
+        ["@keyword.repeat"] = {fg = c.keyword, fmt = cfg.code_style.keywords},
+
+        -- Label
+        ["@label"] = {fg = c.label},
+        ["@markup.emphasis"] = {fg = c.markup, fmt = 'italic'},
+        ["@markup.environment"] = {fg = c.markup},
+        ["@markup.environment.name"] = {fg = c.markup},
         ["@markup.heading"] = {fg = c.orange, fmt = 'bold'},
         ["@markup.link"] = colors.Blue,
         ["@markup.link.url"] = {fg = c.cyan, fmt = 'underline'},
