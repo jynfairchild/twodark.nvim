@@ -19,10 +19,10 @@ return {
         lua_operators = "#DBD7CA", -- "="
 
         ---------
-		black = "#DBD7CA",
-		bg0 = "#DBD7CA",
-		bg1 = "#DBD7CA",
-		bg2 = "#DBD7CA",
+		black = "#262828",
+		bg0 = "#262828",
+		bg1 = "#262828",
+		bg2 = "#262828",
 		bg3 = "#000000",
 		bg_d = "#000000",
 		bg_blue = "#000000",
