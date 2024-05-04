@@ -13,6 +13,7 @@ return {
         ---------
 
         lua_brackets = "#262828", -- "{ }"
+        lua_string = "#262828", -- "string"
         lua_boolean = "#4D9375",
         lua_statement = "#CB7676", -- "return"
         lua_numbers = "#4C9A91", -- "300"
