@@ -1,6 +1,6 @@
 local M = {}
 
-M.styles_list = { 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer', 'light' }
+M.styles_list = { 'warmer' }
 
 ---Change twodark option (vim.g.twodark_config.option)
 ---It can't be changed directly by modifying that field due to a Neovim lua bug with global variables (twodark_config is a global variable)
@@ -43,7 +43,7 @@ end
 
 local default_config = {
     -- Main options --
-    style = 'dark',    -- choose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
+    style = 'warmer',
     toggle_style_key = nil,
     toggle_style_list = M.styles_list,
     transparent = false,     -- don't set background
