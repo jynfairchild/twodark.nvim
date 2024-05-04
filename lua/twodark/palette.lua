@@ -1,32 +1,51 @@
 return {
 	warmer = {
 
-		black = "#191a1c",
-		bg0 = "#2c2d30",
-		bg1 = "#35373b",
-		bg2 = "#3e4045",
-		bg3 = "#404247",
-		bg_d = "#242628",
-		bg_blue = "#79b7eb",
-		bg_yellow = "#e6cfa1",
-		fg = "#b1b4b9",
-		purple = "#c27fd7",
-		green = "#99bc80",
-		orange = "#c99a6e",
-		blue = "#68aee8",
-		yellow = "#dfbe81",
-		cyan = "#5fafb9",
-		red = "#e16d77",
-		grey = "#646568",
-		light_grey = "#8b8d91",
-		dark_cyan = "#316a71",
-		dark_red = "#914141",
-		dark_yellow = "#8c6724",
-		dark_purple = "#854897",
-		diff_add = "#32352f",
-		diff_delete = "#342f2f",
-		diff_change = "#203444",
-		diff_text = "#32526c",
+        lorem = "#C99076",
+        ipsm = "#FFFFFF",
+        test_blue = "#111AFF",
+        test_red = "#FF0000",
+        test_purple = "#EC11FF",
+        test_teal = "#11FFC6",
+
+        ---------
+        -- lua --
+        ---------
+
+        lua_brackets = "#262828", -- "{ }"
+        lua_string = "#262828", -- "string"
+        lua_boolean = "#4D9375",
+        lua_statement = "#CB7676", -- "return"
+        lua_numbers = "#4C9A91", -- "300"
+        lua_operators = "#DBD7CA", -- "="
+
+        ---------
+		black = "#101012",
+		bg0 = "#232326",
+		bg1 = "#2c2d31",
+		bg2 = "#262828",
+		bg3 = "#262828",
+		bg_d = "#262828",
+		bg_blue = "#262828",
+		bg_yellow = "#262828",
+		fg = "#262828",
+		purple = "#262828",
+		green = "#262828",
+		orange = "#262828",
+		blue = "#262828",
+		yellow = "#262828",
+		cyan = "#262828",
+		red = "#262828",
+		grey = "#262828",
+		light_grey = "#262828",
+		dark_cyan = "#262828",
+		dark_red = "#262828",
+		dark_yellow = "#262828",
+		dark_purple = "#262828",
+		diff_add = "#262828",
+		diff_delete = "#262828",
+		diff_change = "#262828",
+		diff_text = "#262828",
 	},
 }
 

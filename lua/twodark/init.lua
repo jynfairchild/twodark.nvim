@@ -1,6 +1,6 @@
 local M = {}
 
-M.styles_list = { 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer', 'light' }
+M.styles_list = { 'warmer' }
 
 ---Change twodark option (vim.g.twodark_config.option)
 ---It can't be changed directly by modifying that field due to a Neovim lua bug with global variables (twodark_config is a global variable)
@@ -46,7 +46,7 @@ local default_config = {
     style = 'warmer',
     toggle_style_key = nil,
     toggle_style_list = M.styles_list,
-    transparent = true,     -- don't set background
+    transparent = false,     -- don't set background
     term_colors = true,      -- if true enable the terminal
     ending_tildes = false,    -- show the end-of-buffer tildes
     cmp_itemkind_reverse = false,    -- reverse item kind highlights in cmp menu
