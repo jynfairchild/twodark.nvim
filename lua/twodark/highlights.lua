@@ -113,7 +113,7 @@ hl.syntax = {
     Structure = {fg = c.lua_brackets},  -- lua "{ }, 300"
     StorageClass = {fg = c.lua_boolean},
     Identifier = {fg = c.LOREM, fmt = cfg.code_style.variables},
-    Constant = colors.TR,
+    Constant = {fg = c.lua_boolean}, -- lua true
     PreProc = colors.LOREM,
     PreCondit = colors.LOREM,
     Include = colors.LOREM,
@@ -123,7 +123,7 @@ hl.syntax = {
     Exception = colors.LOREM,
     Conditional = {fg = c.lua_boolean, fmt = cfg.code_style.keywords},
     Repeat = {fg = c.lua_boolean, fmt = cfg.code_style.keywords},
-    Statement = colors.TB,
+    Statement = {fg = c.lua_brackets},  -- lua "return"
     Macro = colors.TB,
     Error = colors.TR,
     Label = colors.TP,
