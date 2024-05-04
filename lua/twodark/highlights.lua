@@ -34,6 +34,8 @@ local colors = {
     Green = {fg = c.green},
     Blue = {fg = c.blue},
     Purple = {fg = c.purple}
+    -- colors
+
 }
 
 hl.common = {
