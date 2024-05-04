@@ -66,8 +66,8 @@ return {
         note = "#CCCCCC",
         warning = "#C48E4F",
         danger = "#B12E2E",
-        type = "#FF0000",
-        type_builtin = "#111AFF",
+        type = "#5DA994",  -- Path, class names
+        type_builtin = "#111AFF", -- KeyError, type(str, bool)
         variable = "#DBD7CA",  -- params
         variable_builtin = "#C99076",  -- self.
         variable_member = "#C99076",
