@@ -33,15 +33,15 @@ return {
         -- python ------
         ----------------
 
-        annotation = "#FF0000",
+        annotation = "#FF0000",  -- unknown
         attribute = "#80A665",  -- @staticmethod
         boolean = "#BD6322",  -- True False
-        brackets = "#",
-        character = "#0047FF",
-        comment = "#666666",  -- # comments
+        brackets = "#666666",  -- [{}]
+        character = "#FF0000",  -- unknown
+        comment = "#666666",  -- #comment
         constant = "#",
         constructor = "#",
-        delimiters = "#",
+        delimiters = "#666666", -- . , ; :
         diff_add = "#000000",
         diff_delete = "#000000",
         error = "#",
@@ -56,10 +56,11 @@ return {
         number_float = "#",
         operator = "#",
         property = "#",
-        string = "#",
-        string_regex = "#",
-        string_escape = "#",
-        string_special_symbol = "#",
+        string = "#6893BF",
+        string_regex = "#6893BF",
+
+        string_escape = "#FF0000",
+        string_special_symbol = "#FFFFFF",
         tag = "#",
         text = "#",
         note = "#",
