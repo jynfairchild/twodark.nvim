@@ -68,7 +68,7 @@ return {
         danger = "#B12E2E",
         type = "#",
         type_builtin = "#",
-        variable = "#FF6B00",
+        variable = "#C7BB92",
         variable_builtin = "#",
         variable_member = "#",
         variable_parameter = "#111AFF",
