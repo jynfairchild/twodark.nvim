@@ -104,7 +104,7 @@ hl.syntax = {
     Float = colors.LOREM,
     Boolean = colors.LOREM,
     Type = colors.LOREM,
-    Structure = c.lua_brackets_and_true_statemets, -- lua "{ }, true, 300"
+    Structure = {fg = c.lua_brackets_and_true_statemets},  -- lua "{ }, true, 300"
     StorageClass = colors.IPSM,
     Identifier = {fg = c.LOREM, fmt = cfg.code_style.variables},
     Constant = colors.LOREM,
