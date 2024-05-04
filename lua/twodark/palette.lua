@@ -9,7 +9,6 @@ return {
 
         lua_brackets = "#666666",
         lua_boolean = "#4D9375",
-        
 
         ---------
 		black = "#000000",
