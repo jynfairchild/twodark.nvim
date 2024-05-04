@@ -66,11 +66,11 @@ return {
         note = "#CCCCCC",
         warning = "#C48E4F",
         danger = "#B12E2E",
-        type = "#",
-        type_builtin = "#",
-        variable = "#C7BB92",  -- params
+        type = "#FF0000",
+        type_builtin = "#111AFF",
+        variable = "#DBD7CA",  -- params
         variable_builtin = "#C99076",  -- self.
-        variable_member = "#",
+        variable_member = "#C99076",
         variable_parameter = "#DBD7CA",  -- builtin params
 
         ---------
