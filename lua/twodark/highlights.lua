@@ -153,10 +153,10 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
         ["@attribute.typescript"] = {fg = c.attribute},
         ["@boolean"] = {fg = c.boolean},  -- True False
         ["@character"] = {fg = c.character},
-        ["@comment"] = {fg = c.comments, fmt = cfg.code_style.comments},  -- #comment
-        ["@comment.todo"] = {fg = c.red, fmt = cfg.code_style.comments},
-        ["@comment.todo.unchecked"] = {fg = c.red, fmt = cfg.code_style.comments},
-        ["@comment.todo.checked"] = {fg = c.green, fmt = cfg.code_style.comments},
+        ["@comment"] = {fg = c.comment, fmt = cfg.code_style.comments},  -- #comment
+        ["@comment.todo"] = {fg = c.comment, fmt = cfg.code_style.comments},
+        ["@comment.todo.unchecked"] = {fg = c.comment, fmt = cfg.code_style.comments},
+        ["@comment.todo.checked"] = {fg = c.comment, fmt = cfg.code_style.comments},
         ["@constant"] = {fg = c.orange, fmt = cfg.code_style.constants},
         ["@constant.builtin"] = {fg = c.orange, fmt = cfg.code_style.constants},
         ["@constant.macro"] = {fg = c.orange, fmt = cfg.code_style.constants},
