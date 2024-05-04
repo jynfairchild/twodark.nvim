@@ -38,6 +38,7 @@ return {
         attribute = "#80A665",  -- @staticmethod
         boolean = "#BD6322",  -- True False
         brackets = "#666666",  -- ([{}])
+        brackets_in_strings = "#D66262",  -- f'{}'
         character = "#FF0000",  -- unknown
         comment = "#666666",  -- #comment
         conditional = "#",
@@ -67,7 +68,7 @@ return {
         string = "#CCCCCC",  -- ' '
         string_regex = "#CCCCCC",
         string_escape = "#8EC6FF",  -- """/ 
-        string_special_symbol = "#8EC6FF",
+        string_special_symbol = "#D66262",
         tag = "#CCCCCC",
         text = "#CCCCCC",
         warning = "#C48E4F",

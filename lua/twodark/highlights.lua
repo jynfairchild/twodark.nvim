@@ -266,7 +266,7 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
         ["@namespace"] = colors.TB,
         ["@parameter"] = colors.TP,
         ["@preproc"] = colors.TW,
-        ["@punctuation.special"] = colors.TR,
+        ["@punctuation.special"] = {fg = c.brackets_in_strings},
         ["@repeat"] = {fg = c.light_grey, fmt = cfg.code_style.keywords},
         ["@string.regex"] = {fg = c.string_regex, fmt = cfg.code_style.strings},
         ["@text.strong"] = {fg = c.test_orange, fmt = 'bold'},
