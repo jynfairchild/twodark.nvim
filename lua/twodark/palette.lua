@@ -39,7 +39,7 @@ return {
         brackets = "#666666",  -- [{}]
         character = "#FF0000",  -- unknown
         comment = "#666666",  -- #comment
-        constant = "#",
+        constant = "#FF0000",
         constructor = "#",
         delimiters = "#666666", -- . , ; :
         diff_add = "#000000",
@@ -56,11 +56,10 @@ return {
         number_float = "#",
         operator = "#",
         property = "#",
-        string = "#6893BF",
+        string = "#6893BF",  -- ' '
         string_regex = "#6893BF",
-
-        string_escape = "#FF0000",
-        string_special_symbol = "#FFFFFF",
+        string_escape = "#8EC6FF",  -- """/ 
+        string_special_symbol = "#8EC6FF",
         tag = "#",
         text = "#",
         note = "#",

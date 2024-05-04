@@ -151,15 +151,23 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
         ["@annotation"] = {fg = c.annotation},
         ["@attribute"] = {fg = c.attribute},  -- @staticmethod
         ["@attribute.typescript"] = {fg = c.attribute},
+
+        -- True False Statements
         ["@boolean"] = {fg = c.boolean},  -- True False
+
+        -- Base Text
         ["@character"] = {fg = c.character},
         ["@comment"] = {fg = c.comment, fmt = cfg.code_style.comments},  -- #comment
         ["@comment.todo"] = {fg = c.comment, fmt = cfg.code_style.comments},
         ["@comment.todo.unchecked"] = {fg = c.comment, fmt = cfg.code_style.comments},
         ["@comment.todo.checked"] = {fg = c.comment, fmt = cfg.code_style.comments},
-        ["@constant"] = {fg = c.orange, fmt = cfg.code_style.constants},
-        ["@constant.builtin"] = {fg = c.orange, fmt = cfg.code_style.constants},
-        ["@constant.macro"] = {fg = c.orange, fmt = cfg.code_style.constants},
+
+        -- Constants
+        ["@constant"] = {fg = c.constant, fmt = cfg.code_style.constants},
+        ["@constant.builtin"] = {fg = c.constant, fmt = cfg.code_style.constants},
+        ["@constant.macro"] = {fg = c.constant, fmt = cfg.code_style.constants},
+
+        -- Constructor
         ["@constructor"] = {fg = c.yellow, fmt = "bold"},
         ["@diff.add"] = colors.Green,
         ["@diff.delete"] = colors.Red,
@@ -196,12 +204,17 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
         ["@operator"] = colors.Fg,
         ["@parameter.reference"] = colors.Fg,
         ["@property"] = colors.Cyan,
-        ["@punctuation.delimiter"] = {fg = c.delimiters},
-        ["@punctuation.bracket"] = {fg = c.brackets},
+
+        -- punctuation
+        ["@punctuation.delimiter"] = {fg = c.delimiters},  -- , . ; :
+        ["@punctuation.bracket"] = {fg = c.brackets},  -- ([{}])
+
+        -- strings
         ["@string"] = {fg = c.string, fmt = cfg.code_style.strings},
         ["@string.regexp"] = {fg = c.string_regex, fmt = cfg.code_style.strings},
         ["@string.escape"] = {fg = c.string_escape, fmt = cfg.code_style.strings},
         ["@string.special.symbol"] = {fg = c.string_special_symbol},
+
         ["@tag"] = colors.Purple,
         ["@tag.attribute"] = colors.Yellow,
         ["@tag.delimiter"] = colors.Purple,
