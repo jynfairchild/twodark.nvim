@@ -1,7 +1,7 @@
 return {
 	warmer = {
         lorem = "#C99076",
-        IPSM = "#FFFFFF",
+        ipsm = "#FFFFFF",
         ----
 		black = "#000000",
 		bg0 = "#000000",

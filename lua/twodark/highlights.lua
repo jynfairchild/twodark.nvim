@@ -17,6 +17,7 @@ end
 
 local colors = {
     LOREM = {fg = c.lorem},
+    IPSM = {fg = c.ipsm},
     Fg = {fg = c.fg},
     LightGrey = {fg = c.light_grey},
     Grey = {fg = c.grey},
@@ -103,8 +104,8 @@ hl.syntax = {
     Float = colors.LOREM,
     Boolean = colors.LOREM,
     Type = colors.LOREM,
-    Structure = colors.LOREM,
-    StorageClass = colors.LOREM,
+    Structure = colors.LOREM, -- lua " "
+    StorageClass = colors.IPSM,
     Identifier = {fg = c.LOREM, fmt = cfg.code_style.variables},
     Constant = colors.LOREM,
     PreProc = colors.LOREM,
