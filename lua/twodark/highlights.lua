@@ -1,5 +1,5 @@
 local c = require('twodark.colors')
-local cfg = vim.g.onedark_config
+local cfg = vim.g.twodark_config
 local util = require("twodark.util")
 
 local M = {}
@@ -836,7 +836,7 @@ function M.setup()
         return prefix .. "=" .. color_name
     end
 
-    for group_name, group_settings in pairs(vim.g.onedark_config.highlights) do
+    for group_name, group_settings in pairs(vim.g.twodark_config.highlights) do
         vim.api.nvim_command(string.format("highlight %s %s %s %s %s", group_name,
             replace_color("guifg", group_settings.fg),
             replace_color("guibg", group_settings.bg),

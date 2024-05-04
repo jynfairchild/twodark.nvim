@@ -1,6 +1,6 @@
 local M = {}
 
-M.styles_list = { 'warmer' }
+M.styles_list = { 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer', 'light' }
 
 ---Change twodark option (vim.g.twodark_config.option)
 ---It can't be changed directly by modifying that field due to a Neovim lua bug with global variables (twodark_config is a global variable)
