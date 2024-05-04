@@ -16,14 +16,14 @@ local function vim_highlights(highlights)
 end
 
 local colors = {
+    -- testing
     LOREM = {fg = c.lorem},
     IPSM = {fg = c.ipsm},
     TB = {fg = c.test_blue},
     TR = {fg = c.test_red},
     TP = {fg = c.test_purple},
     TT = {fg = c.test_teal},
-
-
+    -- old colors
     Fg = {fg = c.fg},
     LightGrey = {fg = c.light_grey},
     Grey = {fg = c.grey},
@@ -35,6 +35,7 @@ local colors = {
     Blue = {fg = c.blue},
     Purple = {fg = c.purple}
 }
+
 hl.common = {
     Normal = {fg = c.fg, bg = cfg.transparent and c.none or c.bg0},
     Terminal = {fg = c.fg, bg = cfg.transparent and c.none or c.bg0},
