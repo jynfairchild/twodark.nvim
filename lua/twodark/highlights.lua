@@ -123,14 +123,14 @@ hl.syntax = {
     Exception = colors.LOREM,
     Conditional = {fg = c.lua_boolean, fmt = cfg.code_style.keywords},
     Repeat = {fg = c.lua_boolean, fmt = cfg.code_style.keywords},
-    Statement = {fg = c.lua_brackets},  -- lua "return"
+    Statement = {fg = c.lua_statement},  -- lua "return"
     Macro = {fg = c.grey},
     Error = {fg = c.grey},
     Label = {fg = c.grey},
     Special = {fg = c.grey},
     SpecialChar = {fg = c.grey},
     Function = {fg = c.blue, fmt = cfg.code_style.functions},
-    Operator = colors.TB,
+    Operator = {fg = c.lua_operators},
     Title = colors.TR,
     Tag = colors.TP,
     Delimiter = colors.TT,

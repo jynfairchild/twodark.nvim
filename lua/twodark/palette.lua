@@ -16,6 +16,7 @@ return {
         lua_boolean = "#4D9375",
         lua_statement = "#CB7676", -- "return"
         lua_numbers = "#4C9A91", -- "300"
+        lua_operators = "#DBD7CA", -- "="
 
         ---------
 		black = "#000000",
