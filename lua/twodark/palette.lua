@@ -43,6 +43,7 @@ return {
         conditional = "#",
         constant = "#4D9375",  -- None
         constructor = "#B8A965",  -- __init__, class calls User()
+        danger = "#B12E2E",
         delimiters = "#666666", -- . , ; :
         diff_add = "#000000",
         diff_delete = "#000000",
@@ -57,6 +58,7 @@ return {
         label = "#FF0000",
         markup = "#FF0000",
         module = "#FF0000",  -- unknown
+        note = "#CCCCCC",
         none = "#",
         number = "#",
         number_float = "#",
@@ -68,9 +70,7 @@ return {
         string_special_symbol = "#8EC6FF",
         tag = "#CCCCCC",
         text = "#CCCCCC",
-        note = "#CCCCCC",
         warning = "#C48E4F",
-        danger = "#B12E2E",
         type = "#5DA994",  -- Path, class names
         type_builtin = "#B8A965", -- KeyError, type(str, bool)
         variable = "#DBD7CA",  -- params
