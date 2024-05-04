@@ -107,7 +107,7 @@ hl.common = {
 }
 
 hl.syntax = {
-    String = {fg = c.lua_strin, fmt = cfg.code_style.strings},  -- "string"
+    String = {fg = c.lua_string, fmt = cfg.code_style.strings},  -- "string"
     Character = {fg = c.lua_numbers},
     Number = {fg = c.lua_numbers},
     Float = {fg = c.lua_numbers},
