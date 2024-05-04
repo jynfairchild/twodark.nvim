@@ -1,6 +1,6 @@
 return {
 	warmer = {
-        LOREM = "#C99076",
+        lorem = "#C99076",
         IPSM = "#FFFFFF",
         ----
 		black = "#000000",

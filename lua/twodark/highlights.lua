@@ -16,6 +16,7 @@ local function vim_highlights(highlights)
 end
 
 local colors = {
+    LOREM = {fg = c.lorem},
     Fg = {fg = c.fg},
     LightGrey = {fg = c.light_grey},
     Grey = {fg = c.grey},
