@@ -105,15 +105,15 @@ hl.common = {
 
 hl.syntax = {
     String = {fg = c.LOREM, fmt = cfg.code_style.strings},
-    Character = colors.TB,
-    Number = colors.LOREM,
-    Float = colors.LOREM,
+    Character = {fg = c.lua_numbers},
+    Number = {fg = c.lua_numbers},
+    Float = {fg = c.lua_numbers},
     Boolean = {fg = c.lua_boolean},
     Type = {fg = c.lua_boolean},
     Structure = {fg = c.lua_brackets},  -- lua "{ }, 300"
     StorageClass = {fg = c.lua_boolean},
     Identifier = {fg = c.LOREM, fmt = cfg.code_style.variables},
-    Constant = {fg = c.lua_boolean}, -- lua true
+    Constant = {fg = c.lua_boolean}, -- lua "true, false"
     PreProc = colors.LOREM,
     PreCondit = colors.LOREM,
     Include = colors.LOREM,
@@ -124,19 +124,19 @@ hl.syntax = {
     Conditional = {fg = c.lua_boolean, fmt = cfg.code_style.keywords},
     Repeat = {fg = c.lua_boolean, fmt = cfg.code_style.keywords},
     Statement = {fg = c.lua_brackets},  -- lua "return"
-    Macro = colors.TB,
-    Error = colors.TR,
-    Label = colors.TP,
-    Special = colors.TT,
-    SpecialChar = colors.TP,
+    Macro = {fg = c.grey},
+    Error = {fg = c.grey},
+    Label = {fg = c.grey},
+    Special = {fg = c.grey},
+    SpecialChar = {fg = c.grey},
     Function = {fg = c.blue, fmt = cfg.code_style.functions},
-    Operator = colors.Purple,
-    Title = colors.Cyan,
-    Tag = colors.Green,
-    Delimiter = colors.LightGrey,
+    Operator = colors.TB,
+    Title = colors.TR,
+    Tag = colors.TP,
+    Delimiter = colors.TT,
     Comment = {fg = c.grey, fmt = cfg.code_style.comments},
     SpecialComment = {fg = c.grey, fmt = cfg.code_style.comments},
-    Todo = {fg = c.red, fmt = cfg.code_style.comments}
+    Todo = {fg = c.grey, fmt = cfg.code_style.comments}
 }
 
 if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then

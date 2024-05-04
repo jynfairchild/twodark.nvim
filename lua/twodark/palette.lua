@@ -15,6 +15,7 @@ return {
         lua_brackets = "#666666", -- "{ }"
         lua_boolean = "#4D9375",
         lua_statement = "#CB7676", -- "return"
+        lua_numbers = "#4C9A91", -- "300"
 
         ---------
 		black = "#000000",
@@ -33,7 +34,7 @@ return {
 		yellow = "#000000",
 		cyan = "#000000",
 		red = "#000000",
-		grey = "#000000",
+		grey = "#666666",
 		light_grey = "#000000",
 		dark_cyan = "#000000",
 		dark_red = "#000000",
