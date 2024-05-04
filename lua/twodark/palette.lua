@@ -68,10 +68,10 @@ return {
         danger = "#B12E2E",
         type = "#",
         type_builtin = "#",
-        variable = "#C7BB92",
-        variable_builtin = "#C99076",
+        variable = "#C7BB92",  -- params
+        variable_builtin = "#C99076",  -- self.
         variable_member = "#",
-        variable_parameter = "#111AFF",
+        variable_parameter = "#DBD7CA",  -- builtin params
 
         ---------
         light_grey = "#CCCCCC",
