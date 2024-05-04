@@ -36,7 +36,7 @@ return {
 
         annotation = "#FF0000",  -- unknown
         attribute = "#80A665",  -- @staticmethod
-        boolean = "#BD6322",  -- True False
+        boolean = "#D66262",  -- True False
         brackets = "#666666",  -- ([{}])
         brackets_in_strings = "#D66262",  -- f'{}'
         character = "#FF0000",  -- unknown
@@ -74,7 +74,7 @@ return {
         warning = "#C48E4F",
         type = "#5DA994",  -- Path, class names
         type_builtin = "#B8A965", -- KeyError, type(str, bool)
-        variable = "#DBD7CA",  -- params
+        variable = "#F5C885",  -- params
         variable_builtin = "#C99076",  -- self.
         variable_member = "#C99076",  -- unknown
         variable_parameter = "#DBD7CA",  -- builtin params
