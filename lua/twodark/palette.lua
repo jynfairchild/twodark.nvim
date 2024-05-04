@@ -39,7 +39,7 @@ return {
         brackets = "#666666",  -- [{}]
         character = "#FF0000",  -- unknown
         comment = "#666666",  -- #comment
-        constant = "#FF0000",
+        constant = "#4D9375",  -- None
         constructor = "#",
         delimiters = "#666666", -- . , ; :
         diff_add = "#000000",
