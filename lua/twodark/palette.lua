@@ -50,12 +50,12 @@ return {
         keword = "#FF0000",
         label = "#FF0000",
         markup = "#FF0000",
-        module = "#CB7676",
+        module = "#CB7676",  -- nothing?
         none = "#",
         number = "#",
         number_float = "#",
         operator = "#",
-        property = "#FF0000",
+        property = "#B8A965", -- lua props?
         string = "#CCCCCC",  -- ' '
         string_regex = "#CCCCCC",
         string_escape = "#8EC6FF",  -- """/ 
