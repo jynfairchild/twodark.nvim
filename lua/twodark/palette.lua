@@ -22,6 +22,7 @@ return {
         lua_statement = "#CB7676", -- "return"
         lua_numbers = "#4C9A91", -- "300"
         lua_operators = "#DBD7CA", -- "="
+        ts_property = "#B8A965", -- treesitter prop effects lua "requires"
 
         --------------------
         -- lua and python --
@@ -36,7 +37,7 @@ return {
         annotation = "#FF0000",  -- unknown
         attribute = "#80A665",  -- @staticmethod
         boolean = "#BD6322",  -- True False
-        brackets = "#666666",  -- [{}]
+        brackets = "#666666",  -- ([{}])
         character = "#FF0000",  -- unknown
         comment = "#666666",  -- #comment
         constant = "#4D9375",  -- None
@@ -55,7 +56,7 @@ return {
         number = "#",
         number_float = "#",
         operator = "#",
-        property = "#B8A965", -- lua props?
+        property = "#B8A965",
         string = "#CCCCCC",  -- ' '
         string_regex = "#CCCCCC",
         string_escape = "#8EC6FF",  -- """/ 

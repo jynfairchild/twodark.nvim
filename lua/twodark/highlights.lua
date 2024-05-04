@@ -211,7 +211,7 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
         ["@number.float"] = colors.Orange,
         ["@operator"] = colors.Fg,
         ["@parameter.reference"] = colors.Fg,
-        ["@property"] = {fg = c.property},
+        ["@property"] = {fg = c.ts_property},
 
         -- punctuation
         ["@punctuation.delimiter"] = {fg = c.delimiters},  -- , . ; :
