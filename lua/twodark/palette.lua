@@ -1,8 +1,15 @@
 return {
 	warmer = {
+        
         lorem = "#C99076",
         ipsm = "#FFFFFF",
-        ----
+        ---------
+        -- lua --
+        ---------
+
+        lua_brackets_and_true_statemets = "#666666",
+
+        ---------
 		black = "#000000",
 		bg0 = "#000000",
 		bg1 = "#000000",
