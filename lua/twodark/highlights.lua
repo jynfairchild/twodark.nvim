@@ -102,9 +102,9 @@ hl.syntax = {
     Character = colors.LOREM,
     Number = colors.LOREM,
     Float = colors.LOREM,
-    Boolean = colors.LOREM,
+    Boolean = {fg = c.lua_boolean},
     Type = colors.LOREM,
-    Structure = {fg = c.lua_brackets_and_true_statemets},  -- lua "{ }, true, 300"
+    Structure = {fg = c.lua_brackets},  -- lua "{ }, 300"
     StorageClass = colors.IPSM,
     Identifier = {fg = c.LOREM, fmt = cfg.code_style.variables},
     Constant = colors.LOREM,
