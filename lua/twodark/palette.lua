@@ -27,9 +27,12 @@ return {
         -- python ------
         ----------------
 
-        comments = "#666666",
+        attribute = "#80A665",  -- @staticmethod
+        boolean = "#BD6322",  -- True False
+        comments = "#666666",  -- # comments
 
         ---------
+        light_grey = "#CCCCCC",
 		black = "#000000",
 		bg0 = "#000000",
 		bg1 = "#000000",
@@ -47,7 +50,6 @@ return {
 		cyan = "#000000",
 		red = "#000000",
 		grey = "#000000",
-		light_grey = "#000000",
 		dark_cyan = "#000000",
 		dark_red = "#000000",
 		dark_yellow = "#000000",

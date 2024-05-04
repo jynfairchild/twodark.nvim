@@ -148,12 +148,12 @@ hl.syntax = {
 if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
     hl.treesitter = {
         -- nvim-treesitter@0.9.2 and after
-        ["@annotation"] = colors.TR,
-        ["@attribute"] = colors.TO,
-        ["@attribute.typescript"] = colors.TY,
-        ["@boolean"] = colors.TG,
-        ["@character"] = colors.TT,
-        ["@comment"] = {fg = c.comments, fmt = cfg.code_style.comments},
+        ["@annotation"] = {fg = c.light_grey},
+        ["@attribute"] = {fg = c.attribute},  -- @staticmethod
+        ["@attribute.typescript"] = {fg = c.attribute},
+        ["@boolean"] = {fg = c.boolean},  -- True False
+        ["@character"] = {fg = c.light_grey},
+        ["@comment"] = {fg = c.comments, fmt = cfg.code_style.comments},  -- #comment
         ["@comment.todo"] = {fg = c.red, fmt = cfg.code_style.comments},
         ["@comment.todo.unchecked"] = {fg = c.red, fmt = cfg.code_style.comments},
         ["@comment.todo.checked"] = {fg = c.green, fmt = cfg.code_style.comments},
