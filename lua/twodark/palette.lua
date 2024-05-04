@@ -47,7 +47,7 @@ return {
         error = "#",
         func = "#80A665",  -- function():
         func_method = "#",
-        keword = "#C99076",
+        keword = "#FF0000",
         label = "#",
         markup = "#FF0000",
         module = "#",
