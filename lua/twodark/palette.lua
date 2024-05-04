@@ -61,8 +61,8 @@ return {
         string_regex = "#CCCCCC",
         string_escape = "#8EC6FF",  -- """/ 
         string_special_symbol = "#8EC6FF",
-        tag = "#",
-        text = "#",
+        tag = "#FF0000",
+        text = "#0047FF",
         note = "#",
         warning = "#",
         danger = "#",
