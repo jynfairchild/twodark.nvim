@@ -105,7 +105,7 @@ hl.common = {
 }
 
 hl.syntax = {
-    String = {fg = c.LOREM, fmt = cfg.code_style.strings},
+    String = {fg = c.lorem, fmt = cfg.code_style.strings},
     Character = {fg = c.lua_numbers},
     Number = {fg = c.lua_numbers},
     Float = {fg = c.lua_numbers},
@@ -113,7 +113,7 @@ hl.syntax = {
     Type = {fg = c.lua_boolean},
     Structure = {fg = c.lua_brackets},  -- lua "{ }, 300"
     StorageClass = {fg = c.lua_boolean},
-    Identifier = {fg = c.LOREM, fmt = cfg.code_style.variables},
+    Identifier = {fg = c.lorem, fmt = cfg.code_style.variables},
     Constant = {fg = c.lua_boolean}, -- lua "true, false"
     PreProc = colors.LOREM,
     PreCondit = colors.LOREM,
