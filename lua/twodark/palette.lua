@@ -40,12 +40,12 @@ return {
         character = "#FF0000",  -- unknown
         comment = "#666666",  -- #comment
         constant = "#4D9375",  -- None
-        constructor = "#0047FF",
+        constructor = "#B8A965",  -- __init__, class calls User()
         delimiters = "#666666", -- . , ; :
         diff_add = "#000000",
         diff_delete = "#000000",
         error = "#",
-        func = "#FF6B00",
+        func = "#80A665",  -- function():
         func_method = "#",
         keword = "#",
         label = "#",
