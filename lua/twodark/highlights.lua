@@ -234,7 +234,7 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
         ["@type"] = {fg = c.type},
         ["@type.builtin"] = {fg = c.type_builtin},
         ["@variable"] = {fg = c.variable, fmt = cfg.code_style.variables},
-        ["@variable.builtin"] = {fg = c.variable, fmt = cfg.code_style.variables},
+        ["@variable.builtin"] = {fg = c.variable_builtin, fmt = cfg.code_style.variables},
         ["@variable.member"] = {fg = c.variable},
         ["@variable.parameter"] = {fg = c.variable_parameter},
         ["@markup.heading.1.markdown"] = {fg = c.red, fmt = "bold"},

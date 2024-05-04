@@ -69,7 +69,7 @@ return {
         type = "#",
         type_builtin = "#",
         variable = "#C7BB92",
-        variable_builtin = "#",
+        variable_builtin = "#C99076",
         variable_member = "#",
         variable_parameter = "#111AFF",
 
