@@ -168,11 +168,11 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
         ["@constant.macro"] = {fg = c.constant, fmt = cfg.code_style.constants},
 
         -- Constructor
-        ["@constructor"] = {fg = c.yellow, fmt = "bold"},
-        ["@diff.add"] = colors.Green,
-        ["@diff.delete"] = colors.Red,
+        ["@constructor"] = {fg = c.constructor, fmt = "bold"},
+        ["@diff.add"] = {fg = c.diff_add},
+        ["@diff.delete"] = {fg = c.diff_delete},
         ["@error"] = colors.Fg,
-        ["@function"] = {fg = c.blue, fmt = cfg.code_style.functions},
+        ["@function"] = {fg = c.func, fmt = cfg.code_style.functions},
         ["@function.builtin"] = {fg = c.cyan, fmt = cfg.code_style.functions},
         ["@function.macro"] = {fg = c.cyan, fmt = cfg.code_style.functions},
         ["@function.method"] = {fg = c.blue, fmt = cfg.code_style.functions},

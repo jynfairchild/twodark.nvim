@@ -40,12 +40,12 @@ return {
         character = "#FF0000",  -- unknown
         comment = "#666666",  -- #comment
         constant = "#4D9375",  -- None
-        constructor = "#",
+        constructor = "#0047FF",
         delimiters = "#666666", -- . , ; :
         diff_add = "#000000",
         diff_delete = "#000000",
         error = "#",
-        func = "#",
+        func = "#FF6B00",
         func_method = "#",
         keword = "#",
         label = "#",
@@ -57,9 +57,9 @@ return {
         operator = "#",
         property = "#",
         string = "#6893BF",  -- ' '
-        string_regex = "#6893BF",
+        string_regex = "#FF0000",
         string_escape = "#8EC6FF",  -- """/ 
-        string_special_symbol = "#8EC6FF",
+        string_special_symbol = "#FF0000",
         tag = "#",
         text = "#",
         note = "#",
