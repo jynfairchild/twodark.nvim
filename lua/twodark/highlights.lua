@@ -105,7 +105,7 @@ hl.common = {
 }
 
 hl.syntax = {
-    String = {fg = c.lorem, fmt = cfg.code_style.strings},
+    String = {fg = c.lua_brackets, fmt = cfg.code_style.strings},
     Character = {fg = c.lua_numbers},
     Number = {fg = c.lua_numbers},
     Float = {fg = c.lua_numbers},
@@ -115,13 +115,7 @@ hl.syntax = {
     StorageClass = {fg = c.lua_boolean},
     Identifier = {fg = c.lorem, fmt = cfg.code_style.variables},
     Constant = {fg = c.lua_boolean}, -- lua "true, false"
-    PreProc = colors.LOREM,
-    PreCondit = colors.LOREM,
-    Include = colors.LOREM,
     Keyword = {fg = c.test_purple, fmt = cfg.code_style.keywords},
-    Define = colors.LOREM,
-    Typedef = colors.LOREM,
-    Exception = colors.LOREM,
     Conditional = {fg = c.lua_boolean, fmt = cfg.code_style.keywords},
     Repeat = {fg = c.lua_boolean, fmt = cfg.code_style.keywords},
     Statement = {fg = c.lua_statement},  -- lua "return"
@@ -132,9 +126,6 @@ hl.syntax = {
     SpecialChar = {fg = c.grey},
     Function = {fg = c.blue, fmt = cfg.code_style.functions},
     Operator = {fg = c.lua_operators},
-    Title = colors.TR,
-    Tag = colors.TP,
-    Delimiter = colors.TT,
     Comment = {fg = c.grey, fmt = cfg.code_style.comments},
     SpecialComment = {fg = c.grey, fmt = cfg.code_style.comments},
     Todo = {fg = c.grey, fmt = cfg.code_style.comments}
