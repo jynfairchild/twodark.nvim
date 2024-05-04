@@ -23,13 +23,54 @@ return {
         lua_numbers = "#4C9A91", -- "300"
         lua_operators = "#DBD7CA", -- "="
 
+        --------------------
+        -- lua and python --
+        --------------------
+
+        hold = "#FFFFFF",
+
         ----------------
         -- python ------
         ----------------
 
+        annotation = "#FF0000",
         attribute = "#80A665",  -- @staticmethod
         boolean = "#BD6322",  -- True False
-        comments = "#666666",  -- # comments
+        brackets = "#",
+        character = "#0047FF",
+        comment = "#666666",  -- # comments
+        constant = "#",
+        constructor = "#",
+        delimiters = "#",
+        diff_add = "#000000",
+        diff_delete = "#000000",
+        error = "#",
+        func = "#",
+        func_method = "#",
+        keword = "#",
+        label = "#",
+        markup = "#",
+        module = "#",
+        none = "#",
+        number = "#",
+        number_float = "#",
+        operator = "#",
+        property = "#",
+        string = "#",
+        string_regex = "#",
+        string_escape = "#",
+        string_special_symbol = "#",
+        tag = "#",
+        text = "#",
+        note = "#",
+        warning = "#",
+        danger = "#",
+        type = "#",
+        type_builtin = "#",
+        variable = "#",
+        variable_builtin = "#",
+        variable_member = "#",
+        variable_parameter = "#",
 
         ---------
         light_grey = "#CCCCCC",
@@ -54,8 +95,6 @@ return {
 		dark_red = "#000000",
 		dark_yellow = "#000000",
 		dark_purple = "#000000",
-		diff_add = "#000000",
-		diff_delete = "#000000",
 		diff_change = "#000000",
 		diff_text = "#000000",
 	},

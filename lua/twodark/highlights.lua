@@ -112,7 +112,7 @@ hl.common = {
 hl.syntax = {
     String = {fg = c.lua_string, fmt = cfg.code_style.strings},  -- "string"
     Character = {fg = c.lua_numbers},
-    Number = {fg = c.lua_numbers},
+    Number = {fg = c.lua_numbers},  -- "nums"
     Float = {fg = c.lua_numbers},
     Boolean = {fg = c.lua_boolean},
     Type = {fg = c.lua_boolean},
@@ -148,11 +148,11 @@ hl.syntax = {
 if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
     hl.treesitter = {
         -- nvim-treesitter@0.9.2 and after
-        ["@annotation"] = {fg = c.light_grey},
+        ["@annotation"] = {fg = c.annotation},
         ["@attribute"] = {fg = c.attribute},  -- @staticmethod
         ["@attribute.typescript"] = {fg = c.attribute},
         ["@boolean"] = {fg = c.boolean},  -- True False
-        ["@character"] = {fg = c.light_grey},
+        ["@character"] = {fg = c.character},
         ["@comment"] = {fg = c.comments, fmt = cfg.code_style.comments},  -- #comment
         ["@comment.todo"] = {fg = c.red, fmt = cfg.code_style.comments},
         ["@comment.todo.unchecked"] = {fg = c.red, fmt = cfg.code_style.comments},
