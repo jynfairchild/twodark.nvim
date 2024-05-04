@@ -18,6 +18,12 @@ end
 local colors = {
     LOREM = {fg = c.lorem},
     IPSM = {fg = c.ipsm},
+    TB = {fg = c.test_blue},
+    TR = {fg = c.test_red},
+    TP = {fg = c.test_purple},
+    TT = {fg = c.test_teal},
+
+
     Fg = {fg = c.fg},
     LightGrey = {fg = c.light_grey},
     Grey = {fg = c.grey},
@@ -118,10 +124,10 @@ hl.syntax = {
     Conditional = {fg = c.lua_boolean, fmt = cfg.code_style.keywords},
     Repeat = {fg = c.lua_boolean, fmt = cfg.code_style.keywords},
     Statement = colors.IPSM,
-    Macro = colors.IPSM,
-    Error = colors.IPSM,
-    Label = colors.IPSM,
-    Special = colors.IPSM,
+    Macro = colors.TB,
+    Error = colors.TR,
+    Label = colors.TP,
+    Special = colors.TT,
     SpecialChar = colors.IPSM,
     Function = {fg = c.blue, fmt = cfg.code_style.functions},
     Operator = colors.Purple,

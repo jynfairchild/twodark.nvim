@@ -3,6 +3,11 @@ return {
 
         lorem = "#C99076",
         ipsm = "#FFFFFF",
+        test_blue = "#111AFF",
+        test_red = "#FF0000",
+        test_purple = "#EC11FF",
+        test_teal = "#11FFC6",
+
         ---------
         -- lua --
         ---------
