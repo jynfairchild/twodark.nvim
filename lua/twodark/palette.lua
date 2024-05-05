@@ -65,6 +65,7 @@ return {
         number_float = "#E8C262",
         operator = "#6D795E",  -- = < > |
         property = "#B8A965",
+        placeholder = "#CCCCCC",  -- using this everywhere I have no idea what it does
         string = "#CCCCCC",  -- ' '
         string_regex = "#CCCCCC",
         string_escape = "#8EC6FF",  -- """/ 
