@@ -68,6 +68,7 @@ return {
         none = "#",
         number = "#E8C262",
         number_float = "#E8C262",
+        nvimtree_selected_bg = "#4D9375",  -- nvim-tree selected background
         operator = "#6D795E",  -- = < > |
         property = "#B8A965",
         placeholder = "#CCCCCC",  -- placeholder
