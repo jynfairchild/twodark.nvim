@@ -170,7 +170,7 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
         ["@constructor"] = {fg = c.constructor, fmt = "bold"},  -- __init__, class calls User()
         ["@diff.add"] = {fg = c.diff_add},
         ["@diff.delete"] = {fg = c.diff_delete},
-        ["@error"] = colors.Fg,
+        ["@error"] = {fg = c.error},
 
         -- Functions
         ["@function"] = {fg = c.func, fmt = cfg.code_style.functions},  -- Function():
@@ -799,7 +799,7 @@ hl.langs.vim = {
     vimMap = colors.Purple,
     vimMapModKey = colors.Orange,
     vimNotation = colors.Red,
-    vimMapLhs = colors.Fg,
+    vimMapLhs = colors.TR,
     vimMapRhs = colors.Blue,
     vimVar = {fg = c.fg, fmt = cfg.code_style.variables},
     vimCommentTitle = {fg = c.light_grey, fmt = cfg.code_style.comments},
