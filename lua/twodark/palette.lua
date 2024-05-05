@@ -59,6 +59,7 @@ return {
         keyword_func = "#DE6767",  -- def
         keyword_import = "#DE6767",  -- import
         label = "#FF0000",
+        line_numbers = "#2B2B29",
         line_separator = "#444444",  -- line_separator between buffers
         markup = "#CCCCCC",
         method = "#FF0000",
@@ -67,7 +68,6 @@ return {
         note = "#CCCCCC",
         none = "#",
         number = "#E8C262",
-        number_line_nvim = "#2B2B29",
         number_float = "#E8C262",
         nvimtree_selected_bg = "#2A4B3D",  -- nvim-tree selected background
         operator = "#6D795E",  -- = < > |
@@ -97,7 +97,7 @@ return {
         light_grey = "#454545",
 		black = "#000000",
 		bg0 = "#FF0000",
-		bg1 = "#000000",
+		bg1 = "#24FF00",
 		bg2 = "#FF0000",
 		bg3 = "#FFFFFF",
 		bg_d = "#FFFFFF",

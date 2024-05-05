@@ -57,8 +57,8 @@ hl.common = {
     CursorLine = {bg = c.nvimtree_selected_bg},  -- nvim-tree selected background
     ColorColumn = {bg = c.placeholder},
     CursorLineNr = {fg = c.placeholder},
-    LineNr = {fg = c.comment},  -- nvim line numbers 
-    Conceal = {fg = c.grey, bg = c.test_white},
+    LineNr = {fg = c.line_numbers},  -- nvim line numbers 
+    Conceal = {fg = c.grey, bg = c.test_red},
     DiffAdd = {fg = c.none, bg = c.diff_add},
     DiffChange = {fg = c.none, bg = c.diff_change},
     DiffDelete = {fg = c.none, bg = c.diff_delete},
