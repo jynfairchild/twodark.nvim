@@ -58,11 +58,12 @@ return {
         keword = "#FF0000",
         label = "#FF0000",
         markup = "#CCCCCC",
+        method = "#CCCCCC",
         module = "#FF0000",  -- unknown
         note = "#CCCCCC",
         none = "#",
-        number = "#4C9A91",
-        number_float = "#4C9A91",
+        number = "#8EC6FF",
+        number_float = "#8EC6FF",
         operator = "#6D795E",  -- = < > |
         property = "#B8A965",
         string = "#CCCCCC",  -- ' '
