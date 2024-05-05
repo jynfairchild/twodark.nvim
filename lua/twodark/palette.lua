@@ -57,7 +57,7 @@ return {
         include = "#",
         keword = "#FF0000",
         label = "#FF0000",
-        markup = "#FF0000",
+        markup = "#CCCCCC",
         module = "#FF0000",  -- unknown
         note = "#CCCCCC",
         none = "#",

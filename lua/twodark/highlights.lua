@@ -314,9 +314,9 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
     end
 else
     hl.treesitter = {
-        TSAnnotation = colors.Fg,
-        TSAttribute = colors.Cyan,
-        TSBoolean = colors.Orange,
+        TSAnnotation = {fg = c.annotation},
+        TSAttribute = {fg = c.attribute},
+        TSBoolean = {fg = c.boolean},
         TSCharacter = colors.Orange,
         TSComment = {fg = c.grey, fmt = cfg.code_style.comments},
         TSConditional = {fg = c.purple, fmt = cfg.code_style.keywords},
