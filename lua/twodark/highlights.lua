@@ -93,12 +93,14 @@ hl.common = {
     StatusLineTerm = {fg = c.fg, bg = c.bg2},
     StatusLineNC = {fg = c.grey, bg = c.none},
     StatusLineTermNC = {fg = c.grey, bg = c.test_red},
-    TabLine = {fg = c.fg, bg = cfg.transparent and c.none or c.toolbar_background},  -- background of non-selected toolbar buffers
+
+    -- Tab backgrounds, this defaults to {update this} if set to transparent
+    TabLine = {fg = c.comment, bg = cfg.transparent and c.none or c.toolbar_background},  -- background of non-selected toolbar buffers
     TabLineFill = {fg = c.grey, bg = cfg.transparent and c.none or c.toolbar_background},  -- toolbar_background for empty space
     TabLineSel =  {fg = c.bg0, bg = c.test_green},
     WinSeparator = {fg = c.line_separator},  -- line_separator between buffers
     Visual = {bg = c.bg3},
-    VisualNOS = {fg = c.none, bg = c.bg2, fmt = "underline"},
+    VisualNOS = {fg = c.none, bg = c.bg2, fmt = "none"},
     QuickFixLine = {fg = c.blue, fmt = "underline"},
     Debug = {fg = c.yellow},
     debugPC = {fg = c.bg0, bg = c.green},
