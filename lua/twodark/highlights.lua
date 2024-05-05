@@ -375,9 +375,9 @@ else
     }
 end
 
-local diagnostics_error_color = cfg.diagnostics.darker and c.dark_red or c.red
+local diagnostics_error_color = cfg.diagnostics.darker and c.error or c.red
 local diagnostics_hint_color = cfg.diagnostics.darker and c.dark_purple or c.purple
-local diagnostics_warn_color = cfg.diagnostics.darker and c.dark_yellow or c.light_grey
+local diagnostics_warn_color = cfg.diagnostics.darker and c.warning or c.light_grey
 local diagnostics_info_color = cfg.diagnostics.darker and c.dark_cyan or c.cyan
 hl.plugins.lsp = {
     LspCxxHlGroupEnumConstant = colors.Orange,
