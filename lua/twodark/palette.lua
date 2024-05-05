@@ -41,7 +41,7 @@ return {
         brackets_in_strings = "#D66262",  -- f'{}'
         character = "#FF0000",  -- unknown
         comment = "#666666",  -- #comment
-        conditional = "#",
+        conditional = "#FF0000",
         constant = "#4D9375",  -- None
         constructor = "#B8A965",  -- __init__, class calls User()
         danger = "#B12E2E",
