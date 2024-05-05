@@ -55,8 +55,8 @@ return {
         func_method = "#FF0000",
         include = "#FF0000",
         indent_breakline = "#272222",
-        keyword = "#568B74",
-        keyword_func = "#69BA97",
+        keyword = "#568B74",  -- if elif else
+        keyword_func = "#DE6767",  -- def
         keyword_import = "#DE6767",  -- import
         label = "#FF0000",
         line_separator = "#444444",  -- line_separator between buffers
@@ -67,6 +67,7 @@ return {
         note = "#CCCCCC",
         none = "#",
         number = "#E8C262",
+        number_line_nvim = "#2B2B29",
         number_float = "#E8C262",
         nvimtree_selected_bg = "#2A4B3D",  -- nvim-tree selected background
         operator = "#6D795E",  -- = < > |
