@@ -34,12 +34,12 @@ return {
         -- python ------
         ----------------
 
-        annotation = "#FF0000",  -- unknown
+        annotation = "#FFFFFF",  -- unknown
         attribute = "#80A665",  -- @staticmethod
         boolean = "#D66262",  -- True False
         brackets = "#666666",  -- ([{}])
         brackets_in_strings = "#D66262",  -- f'{}'
-        character = "#FF0000",  -- unknown
+        character = "#FFFFFF",  -- unknown
         comment = "#666666",  -- #comment
         conditional = "#FF0000",
         constant = "#4D9375",  -- None
@@ -51,16 +51,16 @@ return {
         diff_add = "#000000",
         diff_delete = "#000000",
         error = "#D66262",
-        exception = "#FF0000",
-        field = "#FF0000",
+        exception = "#FFFFFF",
+        field = "#FFFFFF",
         func = "#80A665",  -- function():
-        func_method = "#FF0000",
-        include = "#FF0000",
+        func_method = "#FFFFFF",
+        include = "#FFFFFF",
         indent_breakline = "#272222",
         keyword = "#568B74",  -- if elif else
         keyword_func = "#DE6767",  -- def
         keyword_import = "#DE6767",  -- import
-        label = "#FF0000",
+        label = "#FFFFFF",
         line_numbers = "#444444",
         line_separator = "#2B2B29",  -- line_separator between buffers
         markup = "#CCCCCC",
