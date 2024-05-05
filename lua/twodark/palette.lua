@@ -55,7 +55,7 @@ return {
         func_method = "#FF0000",
         include = "#FF0000",
         indent_breakline = "#272222",
-        keword = "#FF0000",
+        keword = "#D66262",
         label = "#FF0000",
         markup = "#CCCCCC",
         method = "#FF0000",
