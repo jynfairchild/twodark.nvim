@@ -377,7 +377,7 @@ end
 
 local diagnostics_error_color = cfg.diagnostics.darker and c.dark_red or c.red
 local diagnostics_hint_color = cfg.diagnostics.darker and c.dark_purple or c.purple
-local diagnostics_warn_color = cfg.diagnostics.darker and c.dark_yellow or c.yellow
+local diagnostics_warn_color = cfg.diagnostics.darker and c.dark_yellow or c.light_grey
 local diagnostics_info_color = cfg.diagnostics.darker and c.dark_cyan or c.cyan
 hl.plugins.lsp = {
     LspCxxHlGroupEnumConstant = colors.Orange,
@@ -391,13 +391,13 @@ hl.plugins.lsp = {
     DiagnosticInfo = {fg = c.comment},
     DiagnosticWarn = {fg = c.comment},
 
-    DiagnosticVirtualTextError = { bg = cfg.diagnostics.background and util.darken(diagnostics_error_color, 0.1, c.light_grey) or c.none,
+    DiagnosticVirtualTextError = { bg = cfg.transparent and c.none or c.warning,
                                    fg = diagnostics_error_color },
-    DiagnosticVirtualTextWarn = { bg = cfg.transparent and c.none or c.bg0,
+    DiagnosticVirtualTextWarn = { bg = cfg.transparent and c.none or c.warning,
                                   fg = diagnostics_warn_color },
-    DiagnosticVirtualTextInfo = { bg = cfg.diagnostics.background and util.darken(diagnostics_info_color, 0.1, c.light_grey) or c.none,
+    DiagnosticVirtualTextInfo = { bg = cfg.transparent and c.none or c.warning,
                                   fg = diagnostics_info_color },
-    DiagnosticVirtualTextHint = { bg = cfg.diagnostics.background and util.darken(diagnostics_hint_color, 0.1, c.light_grey) or c.none,
+    DiagnosticVirtualTextHint = { bg = cfg.transparent and c.none or c.warning,
                                   fg = diagnostics_hint_color },
 
     DiagnosticUnderlineError = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.red},
