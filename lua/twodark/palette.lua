@@ -48,7 +48,7 @@ return {
         delimiters = "#666666", -- . , ; :
         diff_add = "#000000",
         diff_delete = "#000000",
-        error = "#FF0000",
+        error = "#D66262",
         exception = "#FF0000",
         field = "#FF0000",
         func = "#80A665",  -- function():

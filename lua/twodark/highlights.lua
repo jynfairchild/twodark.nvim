@@ -41,7 +41,7 @@ local colors = {
 }
 
 hl.common = {
-    Normal = {fg = c.fg, bg = cfg.transparent and c.none or c.bg0},
+    Normal = {fg = c.warning, bg = cfg.transparent and c.none or c.bg0},
     Terminal = {fg = c.fg, bg = cfg.transparent and c.none or c.bg0},
     EndOfBuffer = {fg = cfg.ending_tildes and c.bg2 or c.bg0, bg = cfg.transparent and c.none or c.bg0},
     FoldColumn = {fg = c.fg, bg = cfg.transparent and c.none or c.bg1},  -- indent_blankline
@@ -53,10 +53,10 @@ hl.common = {
     iCursor = {fmt = "reverse"},
     lCursor = {fmt = "reverse"},
     CursorIM = {fmt = "reverse"},
-    CursorColumn = {bg = c.bg1},
-    CursorLine = {bg = c.bg1},
-    ColorColumn = {bg = c.bg1},
-    CursorLineNr = {fg = c.fg},
+    CursorColumn = {bg = c.test_red},
+    CursorLine = {bg = c.test_blue},
+    ColorColumn = {bg = c.test_green},
+    CursorLineNr = {fg = c.test_orange},
     LineNr = {fg = c.grey},
     Conceal = {fg = c.grey, bg = c.bg1},
     DiffAdd = {fg = c.none, bg = c.diff_add},
