@@ -88,7 +88,7 @@ return {
 		black = "#000000",
 		bg0 = "#FF0000",
 		bg1 = "#000000",
-		bg2 = "#000000",
+		bg2 = "#FF0000",
 		bg3 = "#FFFFFF",
 		bg_d = "#FFFFFF",
 		bg_blue = "#000000",
