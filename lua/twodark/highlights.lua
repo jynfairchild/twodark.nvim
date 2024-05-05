@@ -634,9 +634,9 @@ hl.plugins.indent_blankline = {
     IndentBlanklineIndent4 = colors.LightGrey,
     IndentBlanklineIndent5 = colors.Purple,
     IndentBlanklineIndent6 = colors.Red,
-    IndentBlanklineChar = { fg = c.bg1, fmt = "nocombine" },
-    IndentBlanklineContextChar = { fg = c.grey, fmt = "nocombine" },
-    IndentBlanklineContextStart = { sp = c.grey, fmt = "underline" },
+    IndentBlanklineChar = { fg = c.light_grey, fmt = "nocombine" },
+    IndentBlanklineContextChar = { fg = c.light_grey, fmt = "nocombine" },
+    IndentBlanklineContextStart = { sp = c.light_grey, fmt = "underline" },
     IndentBlanklineContextSpaceChar = { fmt = "nocombine" },
 
     -- Ibl v3
@@ -799,7 +799,7 @@ hl.langs.vim = {
     vimMap = colors.Purple,
     vimMapModKey = colors.Orange,
     vimNotation = colors.Red,
-    vimMapLhs = colors.TR,
+    vimMapLhs = colors.Red,
     vimMapRhs = colors.Blue,
     vimVar = {fg = c.fg, fmt = cfg.code_style.variables},
     vimCommentTitle = {fg = c.light_grey, fmt = cfg.code_style.comments},
