@@ -103,7 +103,7 @@ hl.common = {
     Debug = {fg = c.yellow},
     debugPC = {fg = c.bg0, bg = c.green},
     debugBreakpoint = {fg = c.bg0, bg = c.red},
-    ToolbarButton = {fg = c.bg0, bg = c.bg_blue},
+    ToolbarButton = {fg = c.black, bg = c.bg_blue},
     FloatBorder = {fg = c.grey, bg = c.bg1},
     NormalFloat = {fg = c.fg, bg = c.bg1},
 }
@@ -391,13 +391,13 @@ hl.plugins.lsp = {
     DiagnosticInfo = {fg = c.cyan},
     DiagnosticWarn = {fg = c.yellow},
 
-    DiagnosticVirtualTextError = { bg = cfg.diagnostics.background and util.darken(diagnostics_error_color, 0.1, c.bg0) or c.none,
+    DiagnosticVirtualTextError = { bg = cfg.diagnostics.background and util.darken(diagnostics_error_color, 0.1, c.none) or c.none,
                                    fg = diagnostics_error_color },
-    DiagnosticVirtualTextWarn = { bg = cfg.diagnostics.background and util.darken(diagnostics_warn_color, 0.1, c.bg0) or c.none,
+    DiagnosticVirtualTextWarn = { bg = cfg.diagnostics.background and util.darken(diagnostics_warn_color, 0.1, c.none) or c.none,
                                   fg = diagnostics_warn_color },
-    DiagnosticVirtualTextInfo = { bg = cfg.diagnostics.background and util.darken(diagnostics_info_color, 0.1, c.bg0) or c.none,
+    DiagnosticVirtualTextInfo = { bg = cfg.diagnostics.background and util.darken(diagnostics_info_color, 0.1, c.none) or c.none,
                                   fg = diagnostics_info_color },
-    DiagnosticVirtualTextHint = { bg = cfg.diagnostics.background and util.darken(diagnostics_hint_color, 0.1, c.bg0) or c.none,
+    DiagnosticVirtualTextHint = { bg = cfg.diagnostics.background and util.darken(diagnostics_hint_color, 0.1, c.none) or c.none,
                                   fg = diagnostics_hint_color },
 
     DiagnosticUnderlineError = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.red},
