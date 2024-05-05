@@ -43,11 +43,11 @@ local colors = {
 hl.common = {
     Normal = {fg = c.keyword, bg = cfg.transparent and c.none or c.bg0},
     Terminal = {fg = c.keyword, bg = cfg.transparent and c.none or c.bg0},
-    EndOfBuffer = {fg = cfg.ending_tildes and c.bg2 or c.bg0, bg = cfg.transparent and c.none or c.bg0},
-    FoldColumn = {fg = c.fg, bg = cfg.transparent and c.none or c.bg1},  -- indent_blankline
-    Folded = {fg = c.fg, bg = cfg.transparent and c.none or c.bg1},
-    SignColumn = {fg = c.fg, bg = cfg.transparent and c.none or c.bg0},
-    ToolbarLine = {fg = c.fg, bg = cfg.transparent and c.none or c.b0},
+    EndOfBuffer = {fg = cfg.ending_tildes and c.bg2 or c.bg0, bg = cfg.transparent and c.none or c.test_red},
+    FoldColumn = {fg = c.fg, bg = cfg.transparent and c.none or c.test_orange},  -- indent_blankline
+    Folded = {fg = c.fg, bg = cfg.transparent and c.none or c.test_yellow},
+    SignColumn = {fg = c.fg, bg = cfg.transparent and c.none or c.test_green},
+    ToolbarLine = {fg = c.fg, bg = cfg.transparent and c.none or c.test_teal},
     Cursor = {fmt = "reverse"},
     vCursor = {fmt = "reverse"},
     iCursor = {fmt = "reverse"},
@@ -434,8 +434,8 @@ hl.plugins.ale = {
 
 hl.plugins.barbar = {
     BufferCurrent = { fmt = "bold" },
-    BufferCurrentMod = { fg = c.orange, fmt = "bold,italic" },
-    BufferCurrentSign = { fg = c.purple },
+    BufferCurrentMod = { fg = c.light_grey, fmt = "bold,italic" },
+    BufferCurrentSign = { fg = c.light_grey },
     BufferInactiveMod = { fg = c.test_red, bg = c.black, fmt = "italic" },
     BufferVisible = { fg = c.light_grey, bg = c.black },  -- non selected buffer
     BufferVisibleMod = { fg = c.test_yellow, bg = c.black, fmt = "italic" },
