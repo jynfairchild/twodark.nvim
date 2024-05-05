@@ -38,7 +38,6 @@ local colors = {
     Green = {fg = c.green},
     Blue = {fg = c.blue},
     Purple = {fg = c.purple}
-
 }
 
 hl.common = {
@@ -361,14 +360,14 @@ else
         TSStrike = {fg = c.text, fmt = 'strikethrough'},
         TSTitle = {fg = c.text, fmt = 'bold'},
         TSLiteral = {fg = c.text},
-        TSURI = {fg = c.test_red, fmt = 'underline'},
-        TSMath = colors.TO,
-        TSTextReference = colors.TY,
-        TSEnvironment = colors.TG,
-        TSEnvironmentName = colors.TT,
-        TSNote = colors.TB,
-        TSWarning = colors.TP,
-        TSDanger = colors.TW,
+        TSURI = {fg = c.boolean, fmt = 'underline'},
+        TSMath = {fg = c.number},
+        TSTextReference = {fg = c.number},
+        TSEnvironment = {fg = c.boolean},
+        TSEnvironmentName = {fg = c.placeholder},
+        TSNote = {fg = c.note},
+        TSWarning = {fg = c.warning},
+        TSDanger = {fg = c.danger},
         TSType = {fg = c.type},
         TSTypeBuiltin = {fg = c.type_builtin},
         TSVariable = {fg = c.variable, fmt = cfg.code_style.variables},
