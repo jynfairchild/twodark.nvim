@@ -57,7 +57,7 @@ hl.common = {
     CursorLine = {bg = c.nvimtree_selected_bg},  -- nvim-tree selected background
     ColorColumn = {bg = c.placeholder},
     CursorLineNr = {fg = c.placeholder},
-    LineNr = {fg = c.test_orange},
+    LineNr = {fg = c.comment},  -- nvim line numbers 
     Conceal = {fg = c.grey, bg = c.test_white},
     DiffAdd = {fg = c.none, bg = c.diff_add},
     DiffChange = {fg = c.none, bg = c.diff_change},
@@ -73,7 +73,7 @@ hl.common = {
     MoreMsg = {fg = c.blue, fmt = "bold"},
     CurSearch = {fg = c.bg0, bg = c.orange},
     IncSearch = {fg = c.bg0, bg = c.orange},
-    Search = {fg = c.bg0, bg = c.bg_yellow},
+    Search = {fg = c.search_text, bg = c.search_background},
     Substitute = {fg = c.bg0, bg = c.green},
     MatchParen = {fg = c.none, bg = c.grey},
     NonText = {fg = c.grey},
@@ -96,7 +96,7 @@ hl.common = {
     TabLine = {fg = c.fg, bg = c.bg1},
     TabLineFill = {fg = c.grey, bg = c.bg1},
     TabLineSel =  {fg = c.bg0, bg = c.fg},
-    WinSeparator = {fg = c.test_purple},
+    WinSeparator = {fg = c.line_separator},  -- line_separator between buffers
     Visual = {bg = c.bg3},
     VisualNOS = {fg = c.none, bg = c.bg2, fmt = "underline"},
     QuickFixLine = {fg = c.blue, fmt = "underline"},
