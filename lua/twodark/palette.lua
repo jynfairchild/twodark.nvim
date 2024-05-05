@@ -76,6 +76,7 @@ return {
         tag = "#CCCCCC",
         text = "#CCCCCC",
         warning = "#C48E4F",
+        terminal_text = "#",
         type = "#5DA994",  -- Path, class names
         type_builtin = "#B8A965", -- KeyError, type(str, bool)
         variable = "#A0ACA0",  -- params

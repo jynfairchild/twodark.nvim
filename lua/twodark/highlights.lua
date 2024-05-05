@@ -42,7 +42,7 @@ local colors = {
 
 hl.common = {
     Normal = {fg = c.keyword, bg = cfg.transparent and c.none or c.bg0},
-    Terminal = {fg = c.keyword, bg = cfg.transparent and c.none or c.bg0},
+    Terminal = {fg = c.terminal_text, bg = cfg.transparent and c.none or c.bg0},
     EndOfBuffer = {fg = cfg.ending_tildes and c.bg2 or c.bg0, bg = cfg.transparent and c.none or c.bg0},
     FoldColumn = {fg = c.fg, bg = cfg.transparent and c.none or c.bg1},  -- indent_blankline
     Folded = {fg = c.fg, bg = cfg.transparent and c.none or c.bg1},
@@ -79,8 +79,8 @@ hl.common = {
     NonText = {fg = c.grey},
     Whitespace = {fg = c.grey},
     SpecialKey = {fg = c.grey},
-    Pmenu = {fg = c.fg, bg = c.bg1},
-    PmenuSbar = {fg = c.none, bg = c.bg1},
+    Pmenu = {fg = c.fg, bg = c.test_red},
+    PmenuSbar = {fg = c.none, bg = c.test_orange},
     PmenuSel = {fg = c.bg0, bg = c.bg_blue},
     WildMenu = {fg = c.bg0, bg = c.blue},
     PmenuThumb = {fg = c.none, bg = c.grey},
@@ -91,7 +91,7 @@ hl.common = {
     SpellRare = {fg = c.none, fmt = "undercurl", sp = c.purple},
     StatusLine = {fg = c.fg, bg = c.bg2},
     StatusLineTerm = {fg = c.fg, bg = c.bg2},
-    StatusLineNC = {fg = c.grey, bg = c.bg1},
+    StatusLineNC = {fg = c.grey, bg = c.test_yellow},
     StatusLineTermNC = {fg = c.grey, bg = c.bg1},
     TabLine = {fg = c.fg, bg = c.bg1},
     TabLineFill = {fg = c.grey, bg = c.bg1},
