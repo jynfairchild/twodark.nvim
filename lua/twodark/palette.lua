@@ -1,7 +1,7 @@
 return {
 	warmer = {
 
-        lorem = "#FFFFFF",
+        lorem = "#FF0000",
         ipsm = "#FFFFFF",
         test_red = "#FF0000",
         test_orange = "#FF6B00",
@@ -78,6 +78,7 @@ return {
         warning = "#C48E4F",
         terminal_text = "#",
         terminal_background = "#1E1B1B",
+        toolbar_bg = "#0F0F0F",
         type = "#5DA994",  -- Path, class names
         type_builtin = "#B8A965", -- KeyError, type(str, bool)
         variable = "#A0ACA0",  -- params
