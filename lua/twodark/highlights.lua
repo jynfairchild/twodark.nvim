@@ -97,12 +97,12 @@ hl.common = {
     -- Tab backgrounds, this defaults to {update this} if set to transparent
     TabLine = {fg = c.comment, bg = cfg.transparent and c.none or c.toolbar_background},  -- background of non-selected toolbar buffers
     TabLineFill = {fg = c.grey, bg = cfg.transparent and c.none or c.toolbar_background},  -- toolbar_background for empty space
-    TabLineSel =  {fg = c.bg0, bg = c.test_green},
+    TabLineSel =  {fg = c.bg0, bg = c.placeholder},
     WinSeparator = {fg = c.line_separator},  -- line_separator between buffers
-    Visual = {bg = c.bg3},
-    VisualNOS = {fg = c.none, bg = c.bg2, fmt = "none"},
-    QuickFixLine = {fg = c.blue, fmt = "underline"},
-    Debug = {fg = c.yellow},
+    Visual = {bg = c.test_orange},
+    VisualNOS = {fg = c.none, bg = c.test_purple, fmt = "none"},
+    QuickFixLine = {fg = c.test_teal, fmt = "none"},
+    Debug = {fg = c.test_white},
     debugPC = {fg = c.bg0, bg = c.green},
     debugBreakpoint = {fg = c.bg0, bg = c.red},
     ToolbarButton = {fg = c.black, bg = c.bg_blue},
