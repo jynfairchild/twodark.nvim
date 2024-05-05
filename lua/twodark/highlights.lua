@@ -91,7 +91,7 @@ hl.common = {
     SpellRare = {fg = c.none, fmt = "undercurl", sp = c.purple},
     StatusLine = {fg = c.fg, bg = c.bg2},
     StatusLineTerm = {fg = c.fg, bg = c.bg2},
-    StatusLineNC = {fg = c.grey, bg = c.test_yellow},
+    StatusLineNC = {fg = c.grey, bg = c.none},
     StatusLineTermNC = {fg = c.grey, bg = c.bg1},
     TabLine = {fg = c.fg, bg = c.bg1},
     TabLineFill = {fg = c.grey, bg = c.bg1},
