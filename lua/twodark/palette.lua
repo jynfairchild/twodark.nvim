@@ -77,6 +77,7 @@ return {
         text = "#CCCCCC",
         warning = "#C48E4F",
         terminal_text = "#",
+        terminal_background = "#1E1B1B",
         type = "#5DA994",  -- Path, class names
         type_builtin = "#B8A965", -- KeyError, type(str, bool)
         variable = "#A0ACA0",  -- params

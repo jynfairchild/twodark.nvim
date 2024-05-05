@@ -42,7 +42,7 @@ local colors = {
 
 hl.common = {
     Normal = {fg = c.keyword, bg = cfg.transparent and c.none or c.bg0},
-    Terminal = {fg = c.terminal_text, bg = cfg.transparent and c.none or c.bg0},
+    Terminal = {fg = c.terminal_text, c.terminal_background},
     EndOfBuffer = {fg = cfg.ending_tildes and c.bg2 or c.bg0, bg = cfg.transparent and c.none or c.bg0},
     FoldColumn = {fg = c.fg, bg = cfg.transparent and c.none or c.bg1},  -- indent_blankline
     Folded = {fg = c.fg, bg = cfg.transparent and c.none or c.bg1},
@@ -122,7 +122,7 @@ hl.syntax = {
     PreProc = colors.LOREM,
     PreCondit = colors.LOREM,
     Include = colors.LOREM,
-    Keyword = {fg = c.test_purple, fmt = cfg.code_style.keywords},
+    Keyword = {fg = c.keyword, fmt = cfg.code_style.keywords},
     Define = colors.LOREM,
     Typedef = colors.LOREM,
     Exception = colors.LOREM,
@@ -436,8 +436,8 @@ hl.plugins.barbar = {
     BufferCurrent = { fmt = "bold" },
     BufferCurrentMod = { fg = c.light_grey, fmt = "bold,italic" },
     BufferCurrentSign = { fg = c.light_grey },
-    BufferInactiveMod = { fg = c.test_red, bg = c.black, fmt = "italic" },
-    BufferVisible = { fg = c.light_grey, bg = c.black },  -- non selected buffer
+    BufferInactiveMod = { fg = c.test_red, bg = cfg.transparent and c.none or c.light_grey, fmt = "italic" },
+    BufferVisible = { fg = c.light_grey, bg = cfg.transparent and c.none or c.light_grey },  -- non selected buffer
     BufferVisibleMod = { fg = c.test_yellow, bg = c.black, fmt = "italic" },
     BufferVisibleIndex = { fg = c.test_green, bg = c.black },
     BufferVisibleSign = { fg = c.test_teal, bg = c.black },
