@@ -82,12 +82,12 @@ return {
 
         ---------
         light_grey = "#CCCCCC",
-		black = "#000000",
-		bg0 = "#000000",
-		bg1 = "#000000",
-		bg2 = "#000000",
-		bg3 = "#000000",
-		bg_d = "#000000",
+		black = "#FF0000",
+		bg0 = "#FF0000",
+		bg1 = "#FF0000",
+		bg2 = "#FFFFFF",
+		bg3 = "#FFFFFF",
+		bg_d = "#FFFFFF",
 		bg_blue = "#000000",
 		bg_yellow = "#000000",
 		fg = "#111AFF",
