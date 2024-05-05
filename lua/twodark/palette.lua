@@ -50,10 +50,10 @@ return {
         diff_delete = "#000000",
         error = "#FF0000",
         exception = "#FF0000",
-        field = "#FF0000",
+        field = "#",
         func = "#80A665",  -- function():
-        func_method = "#FF0000",
-        include = "#FF0000",
+        func_method = "#",
+        include = "#",
         keword = "#FF0000",
         label = "#FF0000",
         markup = "#CCCCCC",
@@ -61,7 +61,7 @@ return {
         module = "#FF0000",  -- unknown
         namespace = "#CCCCCC",
         note = "#CCCCCC",
-        none = "#FF0000",
+        none = "#",
         number = "#E8C262",
         number_float = "#E8C262",
         operator = "#6D795E",  -- = < > |
