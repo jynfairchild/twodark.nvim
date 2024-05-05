@@ -52,8 +52,8 @@ return {
         exception = "#FF0000",
         field = "#FF0000",
         func = "#80A665",  -- function():
-        func_method = "#",
-        include = "#",
+        func_method = "#FF0000",
+        include = "#FF0000",
         keword = "#FF0000",
         label = "#FF0000",
         markup = "#CCCCCC",
