@@ -50,7 +50,7 @@ return {
         diff_delete = "#000000",
         error = "#FF0000",
         exception = "#FF0000",
-        field = "#",
+        field = "#FF0000",
         func = "#80A665",  -- function():
         func_method = "#",
         include = "#",
