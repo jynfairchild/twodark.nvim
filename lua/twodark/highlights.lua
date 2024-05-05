@@ -209,7 +209,7 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
         ["@none"] = {fg = c.none},
         ["@number"] = {fg = c.number},
         ["@number.float"] = {fg = c.number_float},
-        ["@operator"] = colors.TR,
+        ["@operator"] = {fg = c.operator},  -- = > < |
         ["@parameter.reference"] = colors.TR,
         ["@property"] = {fg = c.ts_property},
 

@@ -63,7 +63,7 @@ return {
         none = "#",
         number = "#4C9A91",
         number_float = "#4C9A91",
-        operator = "#",
+        operator = "#6D795E",  -- = < > |
         property = "#B8A965",
         string = "#CCCCCC",  -- ' '
         string_regex = "#CCCCCC",
