@@ -62,8 +62,8 @@ return {
         module = "#FF0000",  -- unknown
         note = "#CCCCCC",
         none = "#",
-        number = "#8EC6FF",
-        number_float = "#8EC6FF",
+        number = "#E94D4D",
+        number_float = "#E94D4D",
         operator = "#6D795E",  -- = < > |
         property = "#B8A965",
         string = "#CCCCCC",  -- ' '
