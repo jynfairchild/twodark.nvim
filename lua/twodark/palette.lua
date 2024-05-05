@@ -81,7 +81,8 @@ return {
         string_escape = "#8EC6FF",  -- """/ 
         string_special_symbol = "#D66262",
         tag = "#CCCCCC",
-        text = "#CCCCCC",
+        text_primary = "#666666",
+        text_secondary = "#CCCCCC",
         warning = "#C48E4F",
         whichkey_background = "#2A4B3D",
         terminal_text = "#",

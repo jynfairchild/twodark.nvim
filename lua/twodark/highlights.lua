@@ -95,7 +95,7 @@ hl.common = {
     StatusLineTermNC = {fg = c.grey, bg = c.test_red},
 
     -- Tab backgrounds, this defaults to {update this} if set to transparent
-    TabLine = {fg = c.comment, bg = cfg.transparent and c.none or c.toolbar_background},  -- background of non-selected toolbar buffers
+    TabLine = {fg = c.text_secondary, bg = cfg.transparent and c.none or c.toolbar_background},  -- background of non-selected toolbar buffers
     TabLineFill = {fg = c.grey, bg = cfg.transparent and c.none or c.toolbar_background},  -- toolbar_background for empty space
     TabLineSel =  {fg = c.bg0, bg = c.placeholder},
     WinSeparator = {fg = c.line_separator},  -- line_separator between buffers
@@ -138,12 +138,12 @@ hl.syntax = {
     SpecialChar = {fg = c.grey},
     Function = {fg = c.blue, fmt = cfg.code_style.functions},
     Operator = {fg = c.lua_operators},
-    Title = colors.TR,
-    Tag = colors.TP,
-    Delimiter = colors.TT,
-    Comment = {fg = c.grey, fmt = cfg.code_style.comments},
-    SpecialComment = {fg = c.grey, fmt = cfg.code_style.comments},
-    Todo = {fg = c.grey, fmt = cfg.code_style.comments}
+    Title = {fg = c.text_primary},
+    Tag = {fg = c.tag},
+    Delimiter = {fg = c.delimiters},
+    Comment = {fg = c.comment, fmt = cfg.code_style.comments},
+    SpecialComment = {fg = c.string_special_symbol, fmt = cfg.code_style.comments},
+    Todo = {fg = c.comment, fmt = cfg.code_style.comments}
 }
 
 if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
@@ -228,7 +228,7 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
         ["@tag"] = {fg = c.tag},
         ["@tag.attribute"] = {fg = c.tag},
         ["@tag.delimiter"] = {fg = c.tag},
-        ["@text"] = {fg = c.text},
+        ["@text"] = {fg = c.text_primary},
         ["@note"] = {fg = c.note},
         ["@warning"] = {fg = c.warning},
         ["@danger"] = {fg = c.danger},
@@ -264,28 +264,28 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
         ["@float"] = {fg = c.float},
         ["@include"] = {fg = c.include},
         ["@method"] = {fg = c.method, fmt = cfg.code_style.functions},
-        ["@namespace"] = {fg = c.text},
-        ["@parameter"] = {fg = c.text},
-        ["@preproc"] = {fg = c.text},
+        ["@namespace"] = {fg = c.text_primary},
+        ["@parameter"] = {fg = c.text_primary},
+        ["@preproc"] = {fg = c.text_primary},
         ["@punctuation.special"] = {fg = c.brackets_in_strings},
-        ["@repeat"] = {fg = c.text, fmt = cfg.code_style.keywords},
+        ["@repeat"] = {fg = c.text_primary, fmt = cfg.code_style.keywords},
         ["@string.regex"] = {fg = c.string_regex, fmt = cfg.code_style.strings},
-        ["@text.strong"] = {fg = c.text, fmt = 'bold'},
-        ["@text.emphasis"] = {fg = c.text, fmt = 'italic'},
-        ["@text.underline"] = {fg = c.text, fmt = 'underline'},
-        ["@text.strike"] = {fg = c.text, fmt = 'strikethrough'},
-        ["@text.title"] = {fg = c.text, fmt = 'bold'},
-        ["@text.literal"] = {fg = c.text},
-        ["@text.uri"] = {fg = c.text, fmt = 'underline'},
-        ["@text.todo"] = {fg = c.text, fmt = cfg.code_style.comments},
-        ["@text.todo.unchecked"] = {fg = c.text, fmt = cfg.code_style.comments},
-        ["@text.todo.checked"] = {fg = c.text, fmt = cfg.code_style.comments},
-        ["@text.math"] = {fg = c.text},
-        ["@text.reference"] = {fg = c.text},
-        ["@text.environment"] = {fg = c.text},
-        ["@text.environment.name"] = {fg = c.text},
-        ["@text.diff.add"] = {fg = c.text},
-        ["@text.diff.delete"] = {fg = c.text},
+        ["@text.strong"] = {fg = c.text_primary, fmt = 'bold'},
+        ["@text.emphasis"] = {fg = c.text_primary, fmt = 'italic'},
+        ["@text.underline"] = {fg = c.text_primary, fmt = 'underline'},
+        ["@text.strike"] = {fg = c.text_primary, fmt = 'strikethrough'},
+        ["@text.title"] = {fg = c.text_primary, fmt = 'bold'},
+        ["@text.literal"] = {fg = c.text_primary},
+        ["@text.uri"] = {fg = c.text_primary, fmt = 'underline'},
+        ["@text.todo"] = {fg = c.text_primary, fmt = cfg.code_style.comments},
+        ["@text.todo.unchecked"] = {fg = c.text_primary, fmt = cfg.code_style.comments},
+        ["@text.todo.checked"] = {fg = c.text_primary, fmt = cfg.code_style.comments},
+        ["@text.math"] = {fg = c.text_primary},
+        ["@text.reference"] = {fg = c.text_primary},
+        ["@text.environment"] = {fg = c.text_primary},
+        ["@text.environment.name"] = {fg = c.text_primary},
+        ["@text.diff.add"] = {fg = c.text_primary},
+        ["@text.diff.delete"] = {fg = c.text_primary},
     }
     if vim.api.nvim_call_function("has", { "nvim-0.9" }) == 1 then
         hl.lsp = {
@@ -388,10 +388,10 @@ hl.plugins.lsp = {
     LspCxxHlSkippedRegion = colors.Grey,
     LspCxxHlSkippedRegionBeginEnd = colors.Red,
 
-    DiagnosticError = {fg = c.comment},
-    DiagnosticHint = {fg = c.comment},
-    DiagnosticInfo = {fg = c.comment},
-    DiagnosticWarn = {fg = c.comment},
+    DiagnosticError = {fg = c.text_secondary},
+    DiagnosticHint = {fg = c.text_secondary},
+    DiagnosticInfo = {fg = c.text_secondary},
+    DiagnosticWarn = {fg = c.text_secondary},
 
     DiagnosticVirtualTextError = { bg = cfg.transparent and c.none or c.warning,
                                    fg = diagnostics_error_color },
@@ -407,9 +407,9 @@ hl.plugins.lsp = {
     DiagnosticUnderlineInfo = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.blue},
     DiagnosticUnderlineWarn = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.yellow},
 
-    LspReferenceText = { bg = c.bg2 },
-    LspReferenceWrite = { bg = c.bg2 },
-    LspReferenceRead = { bg = c.bg2 },
+    LspReferenceText = { bg = c.test_red },
+    LspReferenceWrite = { bg = c.test_red },
+    LspReferenceRead = { bg = c.test_red },
 
     LspCodeLens = { fg = c.grey, fmt = cfg.code_style.comments },
     LspCodeLensSeparator = { fg = c.grey },
@@ -560,8 +560,8 @@ hl.plugins.neotest = {
 hl.plugins.nvim_tree = {
     NvimTreeNormal = { fg = c.string, bg = cfg.transparent and c.none or c.bg_d },
     NvimTreeVertSplit = { fg = c.line_separator, bg = cfg.transparent and c.none or c.bg_d },
-    NvimTreeEndOfBuffer = { fg = cfg.ending_tildes and c.bg2 or c.bg_d, bg = cfg.transparent and c.none or c.bg_d },
-    NvimTreeRootFolder = { fg = c.orange, fmt = "bold" },
+    NvimTreeEndOfBuffer = { fg = cfg.ending_tildes and c.bg2 or c.none, bg = cfg.transparent and c.none or c.bg_d },
+    NvimTreeRootFolder = { fg = c.text_secondary, fmt = "bold" },
     NvimTreeGitDirty = colors.Yellow,
     NvimTreeGitNew = colors.Green,
     NvimTreeGitDeleted = colors.Red,
