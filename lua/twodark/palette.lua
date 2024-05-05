@@ -83,6 +83,7 @@ return {
         tag = "#CCCCCC",
         text = "#CCCCCC",
         warning = "#C48E4F",
+        whichkey_background = "#2A4B3D",
         terminal_text = "#",
         terminal_background = "#1E1B1B",  -- this doesnt effect the inline terminal, only the out of vim termminal
         toolbar_bg = "#0F0F0F",

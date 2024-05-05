@@ -93,8 +93,8 @@ hl.common = {
     StatusLineTerm = {fg = c.fg, bg = c.bg2},
     StatusLineNC = {fg = c.grey, bg = c.none},
     StatusLineTermNC = {fg = c.grey, bg = c.test_red},
-    TabLine = {fg = c.fg, bg = c.test_orange},
-    TabLineFill = {fg = c.grey, bg = c.test_yellow},
+    TabLine = {fg = c.fg, bg = cfg.transparent and c.none or c.toolbar_background},  -- background of non-selected toolbar buffers
+    TabLineFill = {fg = c.grey, bg = cfg.transparent and c.none or c.toolbar_background},  -- toolbar_background for empty space
     TabLineSel =  {fg = c.bg0, bg = c.test_green},
     WinSeparator = {fg = c.line_separator},  -- line_separator between buffers
     Visual = {bg = c.bg3},
@@ -105,7 +105,7 @@ hl.common = {
     debugBreakpoint = {fg = c.bg0, bg = c.red},
     ToolbarButton = {fg = c.black, bg = c.bg_blue},
     FloatBorder = {fg = c.grey, bg = c.test_blue},
-    NormalFloat = {fg = c.fg, bg = c.test_purple},
+    NormalFloat = {fg = c.fg, bg = c.whichkey_background},
 }
 
 hl.syntax = {
