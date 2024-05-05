@@ -436,12 +436,12 @@ hl.plugins.barbar = {
     BufferCurrent = { fmt = "bold" },
     BufferCurrentMod = { fg = c.orange, fmt = "bold,italic" },
     BufferCurrentSign = { fg = c.purple },
-    BufferInactiveMod = { fg = c.test_red, bg = c.none, fmt = "italic" },
-    BufferVisible = { fg = c.test_orange, bg = c.none },
-    BufferVisibleMod = { fg = c.test_yellow, bg = c.none, fmt = "italic" },
-    BufferVisibleIndex = { fg = c.test_green, bg = c.none },
-    BufferVisibleSign = { fg = c.test_teal, bg = c.none },
-    BufferVisibleTarget = { fg = c.test_blue, bg = c.none },
+    BufferInactiveMod = { fg = c.test_red, bg = c.black, fmt = "italic" },
+    BufferVisible = { fg = c.light_grey, bg = c.black },  -- non selected buffer
+    BufferVisibleMod = { fg = c.test_yellow, bg = c.black, fmt = "italic" },
+    BufferVisibleIndex = { fg = c.test_green, bg = c.black },
+    BufferVisibleSign = { fg = c.test_teal, bg = c.black },
+    BufferVisibleTarget = { fg = c.light_grey, bg = c.black },  -- next non selected buffer
 }
 
 hl.plugins.cmp = {
