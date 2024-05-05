@@ -436,12 +436,12 @@ hl.plugins.barbar = {
     BufferCurrent = { fmt = "bold" },
     BufferCurrentMod = { fg = c.orange, fmt = "bold,italic" },
     BufferCurrentSign = { fg = c.purple },
-    BufferInactiveMod = { fg = c.light_grey, bg = c.none, fmt = "italic" },
-    BufferVisible = { fg = c.light_grey, bg = c.TO },
-    BufferVisibleMod = { fg = c.yellow, bg = c.TY, fmt = "italic" },
-    BufferVisibleIndex = { fg = c.light_grey, bg = c.TG },
-    BufferVisibleSign = { fg = c.light_grey, bg = c.light_grey },
-    BufferVisibleTarget = { fg = c.light_grey, bg = c.TT },
+    BufferInactiveMod = { fg = c.light_grey, bg = c.test_red, fmt = "italic" },
+    BufferVisible = { fg = c.light_grey, bg = c.test_orange },
+    BufferVisibleMod = { fg = c.yellow, bg = c.test_yellow, fmt = "italic" },
+    BufferVisibleIndex = { fg = c.light_grey, bg = c.test_green },
+    BufferVisibleSign = { fg = c.light_grey, bg = c.test_white },
+    BufferVisibleTarget = { fg = c.light_grey, bg = c.test_purple },
 }
 
 hl.plugins.cmp = {
