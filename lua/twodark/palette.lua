@@ -68,7 +68,7 @@ return {
         none = "#",
         number = "#E8C262",
         number_float = "#E8C262",
-        nvimtree_selected_bg = "#4D9375",  -- nvim-tree selected background
+        nvimtree_selected_bg = "#2A4B3D",  -- nvim-tree selected background
         operator = "#6D795E",  -- = < > |
         property = "#B8A965",
         placeholder = "#CCCCCC",  -- placeholder
@@ -80,7 +80,7 @@ return {
         text = "#CCCCCC",
         warning = "#C48E4F",
         terminal_text = "#",
-        terminal_background = "#1E1B1B",
+        terminal_background = "#1E1B1B",  -- this doesnt effect the inline terminal, only the out of vim termminal
         toolbar_bg = "#0F0F0F",
         type = "#5DA994",  -- Path, class names
         type_builtin = "#B8A965", -- KeyError, type(str, bool)
