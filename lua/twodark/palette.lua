@@ -81,7 +81,7 @@ return {
         variable_parameter = "#DBD7CA",  -- builtin params
 
         ---------
-        light_grey = "#CCCCCC",
+        light_grey = "#454545",
 		black = "#000000",
 		bg0 = "#FF0000",
 		bg1 = "#FFFFFF",
