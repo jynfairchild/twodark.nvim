@@ -74,7 +74,7 @@ return {
         warning = "#C48E4F",
         type = "#5DA994",  -- Path, class names
         type_builtin = "#B8A965", -- KeyError, type(str, bool)
-        variable = "#7FA37F",  -- params
+        variable = "#A0ACA0",  -- params
         variable_builtin = "#C99076",  -- self.
         variable_member = "#C99076",  -- unknown
         variable_parameter = "#DBD7CA",  -- builtin params
