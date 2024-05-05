@@ -54,6 +54,7 @@ return {
         func = "#80A665",  -- function():
         func_method = "#FF0000",
         include = "#FF0000",
+        indent_breakline = "#272222",
         keword = "#FF0000",
         label = "#FF0000",
         markup = "#CCCCCC",
