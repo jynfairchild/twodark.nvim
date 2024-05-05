@@ -181,10 +181,10 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
         -- Keywords
         ["@keyword"] = {fg = c.keyword, fmt = cfg.code_style.keywords},
         ["@keyword.conditional"] = {fg = c.keyword, fmt = cfg.code_style.keywords},
-        ["@keyword.directive"] = colors.keyword,
-        ["@keyword.exception"] = colors.keyword,
+        ["@keyword.directive"] = {fg = c.keyword},
+        ["@keyword.exception"] = {fg = c.keyword},
         ["@keyword.function"] = {fg = c.keyword_func, fmt = cfg.code_style.functions},
-        ["@keyword.import"] = colors.keyword,
+        ["@keyword.import"] = {fg = c.keyword_import},
         ["@keyword.operator"] =  {fg = c.keyword, fmt = cfg.code_style.keywords},
         ["@keyword.repeat"] = {fg = c.keyword, fmt = cfg.code_style.keywords},
 
@@ -556,8 +556,8 @@ hl.plugins.neotest = {
 }
 
 hl.plugins.nvim_tree = {
-    NvimTreeNormal = { fg = c.fg, bg = cfg.transparent and c.none or c.bg_d },
-    NvimTreeVertSplit = { fg = c.bg_d, bg = cfg.transparent and c.none or c.bg_d },
+    NvimTreeNormal = { fg = c.string, bg = cfg.transparent and c.none or c.bg_d },
+    NvimTreeVertSplit = { fg = c.line_separator, bg = cfg.transparent and c.none or c.bg_d },
     NvimTreeEndOfBuffer = { fg = cfg.ending_tildes and c.bg2 or c.bg_d, bg = cfg.transparent and c.none or c.bg_d },
     NvimTreeRootFolder = { fg = c.orange, fmt = "bold" },
     NvimTreeGitDirty = colors.Yellow,

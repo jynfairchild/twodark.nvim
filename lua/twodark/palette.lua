@@ -57,7 +57,9 @@ return {
         indent_breakline = "#272222",
         keyword = "#568B74",
         keyword_func = "#69BA97",
+        keyword_import = "#DE6767",  -- import
         label = "#FF0000",
+        line_separator = "#444444",  -- line_separator between buffers
         markup = "#CCCCCC",
         method = "#FF0000",
         module = "#FF0000",  -- unknown
