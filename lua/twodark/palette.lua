@@ -59,8 +59,8 @@ return {
         keyword_func = "#DE6767",  -- def
         keyword_import = "#DE6767",  -- import
         label = "#FF0000",
-        line_numbers = "#2B2B29",
-        line_separator = "#444444",  -- line_separator between buffers
+        line_numbers = "#444444",
+        line_separator = "#2B2B29",  -- line_separator between buffers
         markup = "#CCCCCC",
         method = "#FF0000",
         module = "#FF0000",  -- unknown

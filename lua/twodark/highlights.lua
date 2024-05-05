@@ -92,10 +92,10 @@ hl.common = {
     StatusLine = {fg = c.fg, bg = c.bg2},
     StatusLineTerm = {fg = c.fg, bg = c.bg2},
     StatusLineNC = {fg = c.grey, bg = c.none},
-    StatusLineTermNC = {fg = c.grey, bg = c.bg1},
-    TabLine = {fg = c.fg, bg = c.bg1},
-    TabLineFill = {fg = c.grey, bg = c.bg1},
-    TabLineSel =  {fg = c.bg0, bg = c.fg},
+    StatusLineTermNC = {fg = c.grey, bg = c.test_red},
+    TabLine = {fg = c.fg, bg = c.test_orange},
+    TabLineFill = {fg = c.grey, bg = c.test_yellow},
+    TabLineSel =  {fg = c.bg0, bg = c.test_green},
     WinSeparator = {fg = c.line_separator},  -- line_separator between buffers
     Visual = {bg = c.bg3},
     VisualNOS = {fg = c.none, bg = c.bg2, fmt = "underline"},
@@ -104,8 +104,8 @@ hl.common = {
     debugPC = {fg = c.bg0, bg = c.green},
     debugBreakpoint = {fg = c.bg0, bg = c.red},
     ToolbarButton = {fg = c.black, bg = c.bg_blue},
-    FloatBorder = {fg = c.grey, bg = c.bg1},
-    NormalFloat = {fg = c.fg, bg = c.bg1},
+    FloatBorder = {fg = c.grey, bg = c.test_blue},
+    NormalFloat = {fg = c.fg, bg = c.test_purple},
 }
 
 hl.syntax = {
