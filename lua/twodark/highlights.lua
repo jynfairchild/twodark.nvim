@@ -206,11 +206,11 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
 
         -- Module
         ["@module"] = {fg = c.module},
-        ["@none"] = colors.Fg,
-        ["@number"] = colors.Orange,
-        ["@number.float"] = colors.Orange,
-        ["@operator"] = colors.Fg,
-        ["@parameter.reference"] = colors.Fg,
+        ["@none"] = {fg = c.none},
+        ["@number"] = {fg = c.number},
+        ["@number.float"] = {fg = c.number_float},
+        ["@operator"] = colors.TR,
+        ["@parameter.reference"] = colors.TR,
         ["@property"] = {fg = c.ts_property},
 
         -- punctuation
