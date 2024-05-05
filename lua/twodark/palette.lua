@@ -61,7 +61,6 @@ return {
         module = "#FF0000",  -- unknown
         namespace = "#CCCCCC",
         note = "#CCCCCC",
-        none = "#7D7D7D",
         number = "#E8C262",
         number_float = "#E8C262",
         operator = "#6D795E",  -- = < > |
