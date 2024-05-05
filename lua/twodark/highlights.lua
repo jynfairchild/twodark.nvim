@@ -80,7 +80,7 @@ hl.common = {
     Whitespace = {fg = c.grey},
     SpecialKey = {fg = c.grey},
     Pmenu = {fg = c.fg, bg = c.test_red},
-    PmenuSbar = {fg = c.none, bg = c.test_orange},
+    PmenuSbar = {fg = c.none, bg = c.cursor_selection_highlight},
     PmenuSel = {fg = c.bg0, bg = c.bg_blue},
     WildMenu = {fg = c.bg0, bg = c.blue},
     PmenuThumb = {fg = c.none, bg = c.grey},
@@ -99,15 +99,15 @@ hl.common = {
     TabLineFill = {fg = c.grey, bg = cfg.transparent and c.none or c.toolbar_background},  -- toolbar_background for empty space
     TabLineSel =  {fg = c.bg0, bg = c.placeholder},
     WinSeparator = {fg = c.line_separator},  -- line_separator between buffers
-    Visual = {bg = c.test_orange},
-    VisualNOS = {fg = c.none, bg = c.test_purple, fmt = "none"},
+    Visual = {fg = c.test_red, bg = c.cursor_selection_highlight},
+    VisualNOS = {fg = c.test_orange, bg = c.test_purple, fmt = "none"},
     QuickFixLine = {fg = c.test_teal, fmt = "none"},
     Debug = {fg = c.test_white},
     debugPC = {fg = c.bg0, bg = c.green},
     debugBreakpoint = {fg = c.bg0, bg = c.red},
     ToolbarButton = {fg = c.black, bg = c.bg_blue},
     FloatBorder = {fg = c.grey, bg = c.test_blue},
-    NormalFloat = {fg = c.fg, bg = c.whichkey_background},  -- <leader> background
+    NormalFloat = {fg = c.text_primary, bg = c.whichkey_background},  -- <leader> background
 }
 
 hl.syntax = {
@@ -196,11 +196,11 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
         ["@markup.environment"] = {fg = c.markup},
         ["@markup.environment.name"] = {fg = c.markup},
         ["@markup.heading"] = {fg = c.markup, fmt = 'bold'},
-        ["@markup.link"] = colors.markup,
+        ["@markup.link"] = {fg = c.markup},
         ["@markup.link.url"] = {fg = c.markup, fmt = 'underline'},
-        ["@markup.list"] = colors.markup,
-        ["@markup.math"] = colors.markup,
-        ["@markup.raw"] = colors.markup,
+        ["@markup.list"] = {fg = c.markup},
+        ["@markup.math"] = {fg = c.markup},
+        ["@markup.raw"] = {fg = c.markup},
         ["@markup.strike"] = {fg = c.markup, fmt = 'strikethrough'},
         ["@markup.strong"] = {fg = c.markup, fmt = 'bold'},
         ["@markup.underline"] = {fg = c.markup, fmt = 'underline'},
@@ -211,7 +211,7 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
         ["@number"] = {fg = c.number},
         ["@number.float"] = {fg = c.number_float},
         ["@operator"] = {fg = c.operator},  -- = > < |
-        ["@parameter.reference"] = colors.TR,
+        ["@parameter.reference"] = colors.TO,
         ["@property"] = {fg = c.ts_property},
 
         -- punctuation

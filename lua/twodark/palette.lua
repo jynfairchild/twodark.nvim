@@ -44,6 +44,8 @@ return {
         conditional = "#FF0000",
         constant = "#4D9375",  -- None
         constructor = "#B8A965",  -- __init__, class calls User()
+        cursor_selection_highlight = "#314F42",  -- selected highlight often seen in visual mode
+        cursor_selection_character = "#",
         danger = "#B12E2E",
         delimiters = "#666666", -- . , ; :
         diff_add = "#000000",
@@ -98,9 +100,9 @@ return {
         ---------
         light_grey = "#454545",
 		black = "#000000",
-		bg0 = "#FF0000",
+		bg0 = "#FF0000", -- tildes somewhere
 		bg1 = "#24FF00",
-		bg2 = "#24FF00",
+		bg2 = "#24FF00", -- toolbar_bg
 		bg3 = "#FFFFFF",
 		bg_d = "#FFFFFF",
 		bg_blue = "#000000",
