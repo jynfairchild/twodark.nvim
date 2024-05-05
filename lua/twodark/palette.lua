@@ -51,7 +51,6 @@ return {
         error = "#",
         exception = "#",
         field = "#",
-        float = "#",
         func = "#80A665",  -- function():
         func_method = "#",
         include = "#",
@@ -62,8 +61,8 @@ return {
         module = "#FF0000",  -- unknown
         note = "#CCCCCC",
         none = "#",
-        number = "#E94D4D",
-        number_float = "#E94D4D",
+        number = "#E8C262",
+        number_float = "#E8C262",
         operator = "#6D795E",  -- = < > |
         property = "#B8A965",
         string = "#CCCCCC",  -- ' '
