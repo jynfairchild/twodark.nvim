@@ -48,19 +48,20 @@ return {
         delimiters = "#666666", -- . , ; :
         diff_add = "#000000",
         diff_delete = "#000000",
-        error = "#",
-        exception = "#",
-        field = "#",
+        error = "#FF0000",
+        exception = "#FF0000",
+        field = "#FF0000",
         func = "#80A665",  -- function():
-        func_method = "#",
-        include = "#",
+        func_method = "#FF0000",
+        include = "#FF0000",
         keword = "#FF0000",
         label = "#FF0000",
         markup = "#CCCCCC",
-        method = "#CCCCCC",
+        method = "#FF0000",
         module = "#FF0000",  -- unknown
+        namespace = "#CCCCCC",
         note = "#CCCCCC",
-        none = "#",
+        none = "#FF0000",
         number = "#E8C262",
         number_float = "#E8C262",
         operator = "#6D795E",  -- = < > |
