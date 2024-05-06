@@ -558,14 +558,14 @@ hl.plugins.neotest = {
 }
 
 hl.plugins.nvim_tree = {
-    NvimTreeNormal = { fg = c.string, bg = cfg.transparent and c.none or c.bg_d },
+    NvimTreeNormal = { fg = c.text_primary, bg = cfg.transparent and c.none or c.bg_d },
     NvimTreeVertSplit = { fg = c.line_separator, bg = cfg.transparent and c.none or c.bg_d },
-    NvimTreeEndOfBuffer = { fg = cfg.ending_tildes and c.bg2 or c.none, bg = cfg.transparent and c.none or c.bg_d },
-    NvimTreeRootFolder = { fg = c.text_secondary, fmt = "bold" },
+    NvimTreeEndOfBuffer = { fg = cfg.ending_tildes and c.type_builtin or c.none, bg = cfg.transparent and c.none or c.bg_d },  -- * git changes
+    NvimTreeRootFolder = { fg = c.text_secondary, fmt = "bold" },  -- root folder
     NvimTreeGitDirty = {fg = c.text_secondary},
     NvimTreeGitNew = {fg = c.text_secondary},
     NvimTreeGitDeleted = {fg = c.text_secondary},
-    NvimTreeSpecialFile = { fg = c.yellow, fmt = "underline" },
+    NvimTreeSpecialFile = { fg = c.text_primary, fmt = "underline" }, -- readme file
     NvimTreeIndentMarker = {fg = c.text_secondary},
     NvimTreeImageFile = { fg = c.dark_purple },
     NvimTreeSymlink = {fg = c.text_secondary},
