@@ -75,13 +75,13 @@ hl.common = {
     IncSearch = {fg = c.placeholder, bg = c.orange},
     Search = {fg = c.search_text, bg = c.search_background},
     Substitute = {fg = c.test_orange, bg = c.test_yellow},
-    MatchParen = {fg = c.none, bg = c.test_purple},
+    MatchParen = {fg = c.character, bg = c.func},
     NonText = {fg = c.test_green},
     Whitespace = {fg = c.test_teal},
     SpecialKey = {fg = c.grey},
     Pmenu = {fg = c.test_orange, bg = c.complete_menu_background},  -- bg = complete menu scroll bar
     PmenuSbar = {fg = c.none, bg = c.complete_menu_text},
-    PmenuSel = {fg = c.test_white, bg = c.bg_blue},
+    PmenuSel = {fg = c.complete_menu_predict, bg = c.complete_menu_selection_background},  -- complete menu tab through options
     WildMenu = {fg = c.test_blue, bg = c.blue},
     PmenuThumb = {fg = c.none, bg = c.grey},
     Question = {fg = c.yellow},
