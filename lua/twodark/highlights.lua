@@ -141,7 +141,7 @@ hl.syntax = {
     Title = {fg = c.text_primary},
     Tag = {fg = c.tag},
     Delimiter = {fg = c.delimiters},
-    Comment = {fg = c.light_grey, fmt = cfg.code_style.comments},
+    Comment = {fg = c.comment, fmt = cfg.code_style.comments},
     SpecialComment = {fg = c.string_special_symbol, fmt = cfg.code_style.comments},
     Todo = {fg = c.comment, fmt = cfg.code_style.comments}
 }
