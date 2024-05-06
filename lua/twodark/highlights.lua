@@ -112,7 +112,7 @@ hl.common = {
 
 hl.syntax = {
     String = {fg = c.string, fmt = cfg.code_style.strings},  -- "string"
-    Character = {fg = c.numbers},  -- lua
+    Character = {fg = c.text_secondary},  -- lua
     Number = {fg = c.number},  -- "nums"
     Float = {fg = c.number_float},
     Boolean = {fg = c.boolean},
