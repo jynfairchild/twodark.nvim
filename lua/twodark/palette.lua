@@ -44,8 +44,10 @@ return {
         conditional = "#FF0000",
         constant = "#4D9375",  -- None
         constructor = "#B8A965",  -- __init__, class calls User()
-        cursor_selection_highlight = "#314F42",  -- selected highlight often seen in visual mode
-        cursor_selection_character = "#9CDDC1",  -- selected highlight text
+        cursor_background = "#314F42",
+        cursor_outline = "#9CDDC1",
+        cursor_text = "#9CDDC1",
+        cursor_visual_selection = "#314F42",  -- selected highlight often seen in visual mode
         danger = "#B12E2E",
         delimiters = "#666666", -- . , ; :
         diff_add = "#000000",
