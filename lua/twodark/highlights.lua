@@ -41,6 +41,8 @@ local colors = {
 }
 
 hl.common = {
+
+    -- primary text & backgrounds
     Normal = {fg = c.keyword, bg = cfg.transparent and c.none or c.bg0},
     Terminal = {fg = c.terminal_text, bg = cfg.transparent and c.none or c.terminal_background},
     EndOfBuffer = {fg = cfg.ending_tildes and c.bg2 or c.none, bg = cfg.transparent and c.none or c.bg0},
@@ -48,16 +50,24 @@ hl.common = {
     Folded = {fg = c.test_yellow, bg = cfg.transparent and c.none or c.bg1},
     SignColumn = {fg = c.test_green, bg = cfg.transparent and c.none or c.bg0},
     ToolbarLine = {fg = c.line_separator, bg = cfg.transparent and c.none or c.b0},  -- more line separator in the toolbar
+
+    -- cursor text colors (reverse of bg)
     Cursor = {fmt = "reverse"},
     vCursor = {fmt = "reverse"},
     iCursor = {fmt = "reverse"},
     lCursor = {fmt = "reverse"},
     CursorIM = {fmt = "reverse"},
+
+    -- more cursor colors
     CursorColumn = {bg = c.placeholder},
     CursorLine = {fg = c.complete_menu_predict, bg = c.nvimtree_selected_bg},  -- nvim-tree selected background
     ColorColumn = {bg = c.placeholder},
     CursorLineNr = {fg = c.placeholder},
+
+    -- lines numbers
     LineNr = {fg = c.line_numbers},  -- nvim line numbers 
+
+    -- Diff
     Conceal = {fg = c.grey, bg = c.test_red},
     DiffAdd = {fg = c.none, bg = c.diff_add},
     DiffChange = {fg = c.none, bg = c.diff_change},
@@ -67,28 +77,40 @@ hl.common = {
     DiffRemoved = colors.TO,
     DiffFile = colors.TY,
     DiffIndexLine = colors.TG,
+
+    -- Dir + errors
     Directory = {fg = c.keyword},  -- currently open folder in nvimtree
     ErrorMsg = {fg = c.test_blue, fmt = "bold"},
     WarningMsg = {fg = c.test_purple, fmt = "bold"},
     MoreMsg = {fg = c.test_white, fmt = "bold"},
+
+    -- search match sub
     CurSearch = {fg = c.placeholder, bg = c.orange},
     IncSearch = {fg = c.placeholder, bg = c.orange},
     Search = {fg = c.search_text, bg = c.search_background},
     Substitute = {fg = c.test_orange, bg = c.test_yellow},
     MatchParen = {fg = c.character, bg = c.func},  -- cursor blocks when on {}s
+
+    -- text modify
     NonText = {fg = c.line_separator},  -- line between tabs
     Whitespace = {fg = c.text_primary},  -- cursor highlight color
-    SpecialKey = {fg = c.grey},
+    SpecialKey = {fg = c.test_white},
+
+    -- complete menus
     Pmenu = {fg = c.test_orange, bg = c.complete_menu_background},  -- bg = complete menu scroll bar
+    PmenuThumb = {fg = c.none, bg = c.grey},
     PmenuSbar = {fg = c.none, bg = c.complete_menu_text},
     PmenuSel = {fg = c.complete_menu_predict, bg = c.complete_menu_selection_background},  -- complete menu tab through options
     WildMenu = {fg = c.test_purple, bg = c.blue},
-    PmenuThumb = {fg = c.none, bg = c.grey},
+
+    -- no idea
     Question = {fg = c.yellow},
     SpellBad = {fg = c.none, fmt = "undercurl", sp = c.red},
     SpellCap = {fg = c.none, fmt = "undercurl", sp = c.yellow},
     SpellLocal = {fg = c.none, fmt = "undercurl", sp = c.blue},
     SpellRare = {fg = c.none, fmt = "undercurl", sp = c.purple},
+
+    -- toolbar colors
     StatusLine = {fg = c.test_yellow, bg = cfg.transparent and c.none or c.status_line_background},  -- toolbar background behind TabLine
     StatusLineTerm = {fg = c.test_green, bg = c.test_red},
     StatusLineNC = {fg = c.grey, bg = cfg.transparent and c.none or c.status_line_background},
@@ -98,13 +120,19 @@ hl.common = {
     TabLine = {fg = c.text_secondary, bg = cfg.transparent and c.none or c.toolbar_background},  -- background of non-selected toolbar buffers
     TabLineFill = {fg = c.grey, bg = cfg.transparent and c.none or c.toolbar_background},  -- toolbar_background for empty space
     TabLineSel =  {fg = c.bg0, bg = c.placeholder},
+
+    -- line separator and cursor background
     WinSeparator = {fg = c.line_separator},  -- line_separator between buffers
     Visual = {bg = c.cursor_background},  -- cursor selected background
     VisualNOS = {fg = c.test_orange, bg = c.test_purple, fmt = "underline"},
     QuickFixLine = {fg = c.test_teal, fmt = "none"},
+
+    -- debug
     Debug = {fg = c.test_white},
     debugPC = {fg = c.complete_menu_predict, bg = c.complete_menu_selection_background},
     debugBreakpoint = {fg = c.test_red, bg = c.red},
+
+    -- toolbar and bg
     ToolbarButton = {fg = c.black, bg = c.bg_blue},
     FloatBorder = {fg = c.grey, bg = c.test_purple},
     NormalFloat = {fg = c.text_primary, bg = c.whichkey_background},  -- <leader> background
@@ -221,7 +249,7 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
         -- strings
         ["@string"] = {fg = c.string, fmt = cfg.code_style.strings},  -- ''
         ["@string.regexp"] = {fg = c.string_regex, fmt = cfg.code_style.strings},
-        ["@string.escape"] = {fg = c.string_escape, fmt = cfg.code_style.strings},
+        ["@string.escape"] = {fg = c.test_orange, fmt = cfg.code_style.strings},
         ["@string.special.symbol"] = {fg = c.string_special_symbol},
 
         -- tag
@@ -351,7 +379,7 @@ else
         TSRepeat = {fg = c.placeholder, fmt = cfg.code_style.keywords},
         TSString = {fg = c.string, fmt = cfg.code_style.strings},
         TSStringRegex = {fg = c.string_regex, fmt = cfg.code_style.strings},
-        TSStringEscape = {fg = c.string_escape, fmt = cfg.code_style.strings},
+        TSStringEscape = {fg = c.test_orange, fmt = cfg.code_style.strings},
         TSSymbol = {fg = c.operator},
         TSTag = {fg = c.tag},
         TSTagDelimiter = {fg = c.delimiters},
