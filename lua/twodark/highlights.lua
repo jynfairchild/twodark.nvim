@@ -80,7 +80,7 @@ hl.common = {
     Whitespace = {fg = c.grey},
     SpecialKey = {fg = c.grey},
     Pmenu = {fg = c.test_green, bg = c.placeholder},
-    PmenuSbar = {fg = c.none, bg = c.cursor_selection_highlight},
+    PmenuSbar = {fg = c.none, bg = c.cursor_background},
     PmenuSel = {fg = c.test_teal, bg = c.cursor_outline},
     WildMenu = {fg = c.test_yellow, bg = c.blue},
     PmenuThumb = {fg = c.none, bg = c.grey},
