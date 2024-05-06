@@ -120,7 +120,7 @@ hl.syntax = {
     Structure = {fg = c.brackets},  -- lua "{ }, 300"
     StorageClass = {fg = c.boolean},
     Identifier = {fg = c.lorem, fmt = cfg.code_style.variables},
-    Constant = {fg = c.boolean}, -- lua "true, false"
+    Constant = {fg = c.text_secondary}, -- lua "true, false"
     PreProc = {fg = c.test_green},
     PreCondit = {fg = c.test_green},
     Include = {fg = c.test_green},
