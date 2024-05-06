@@ -54,7 +54,7 @@ hl.common = {
     lCursor = {fmt = "reverse"},
     CursorIM = {fmt = "reverse"},
     CursorColumn = {bg = c.placeholder},
-    CursorLine = {bg = c.nvimtree_selected_bg},  -- nvim-tree selected background
+    CursorLine = {fg = c.complete_menu_predict, bg = c.nvimtree_selected_bg},  -- nvim-tree selected background
     ColorColumn = {bg = c.placeholder},
     CursorLineNr = {fg = c.placeholder},
     LineNr = {fg = c.line_numbers},  -- nvim line numbers 
