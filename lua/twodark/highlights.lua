@@ -63,14 +63,14 @@ hl.common = {
     DiffChange = {fg = c.none, bg = c.diff_change},
     DiffDelete = {fg = c.none, bg = c.diff_delete},
     DiffText = {fg = c.none, bg= c.diff_text},
-    DiffAdded = colors.Green,
-    DiffRemoved = colors.Red,
-    DiffFile = colors.Cyan,
-    DiffIndexLine = colors.Grey,
-    Directory = {fg = c.blue},
-    ErrorMsg = {fg = c.red, fmt = "bold"},
-    WarningMsg = {fg = c.yellow, fmt = "bold"},
-    MoreMsg = {fg = c.blue, fmt = "bold"},
+    DiffAdded = colors.TR,
+    DiffRemoved = colors.TO,
+    DiffFile = colors.TY,
+    DiffIndexLine = colors.TG,
+    Directory = {fg = c.test_teal},
+    ErrorMsg = {fg = c.test_blue, fmt = "bold"},
+    WarningMsg = {fg = c.test_purple, fmt = "bold"},
+    MoreMsg = {fg = c.test_white, fmt = "bold"},
     CurSearch = {fg = c.bg0, bg = c.orange},
     IncSearch = {fg = c.bg0, bg = c.orange},
     Search = {fg = c.search_text, bg = c.search_background},
@@ -99,8 +99,8 @@ hl.common = {
     TabLineFill = {fg = c.grey, bg = cfg.transparent and c.none or c.toolbar_background},  -- toolbar_background for empty space
     TabLineSel =  {fg = c.bg0, bg = c.placeholder},
     WinSeparator = {fg = c.line_separator},  -- line_separator between buffers
-    Visual = {fg = c.text, bg = c.cursor_background},  -- the real cursor?
-    VisualNOS = {fg = c.test_orange, bg = c.test_purple, fmt = "none"},
+    Visual = {bg = c.cursor_background},  -- cursor selected background
+    VisualNOS = {fg = c.test_orange, bg = c.test_purple, fmt = "underline"},
     QuickFixLine = {fg = c.test_teal, fmt = "none"},
     Debug = {fg = c.test_white},
     debugPC = {fg = c.bg0, bg = c.green},
