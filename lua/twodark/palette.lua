@@ -22,7 +22,7 @@ return {
         lua_statement = "#CB7676", -- "return"
         lua_numbers = "#4C9A91", -- "300"
         lua_operators = "#DBD7CA", -- "="
-        ts_property = "#B8A965", -- treesitter prop effects lua "requires"
+        lua_property = "#758575", -- treesitter prop effects lua "requires"
 
         --------------------
         -- lua and python --

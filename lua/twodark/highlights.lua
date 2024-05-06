@@ -212,7 +212,7 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
         ["@number.float"] = {fg = c.number_float},
         ["@operator"] = {fg = c.operator},  -- = > < |
         ["@parameter.reference"] = colors.TO,
-        ["@property"] = {fg = c.text_secondary},
+        ["@property"] = {fg = c.lua_property},  -- lua properties, doesnt seem to effect python
 
         -- punctuation
         ["@punctuation.delimiter"] = {fg = c.delimiters},  -- , . ; :
