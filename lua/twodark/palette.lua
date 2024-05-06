@@ -52,6 +52,7 @@ return {
         delimiters = "#666666", -- . , ; :
         diff_add = "#000000",
         diff_delete = "#000000",
+        directory_open_director = "#DE6767",  -- open directory in nvim tree
         error = "#D66262",
         exception = "#FFFFFF",
         field = "#FFFFFF",
