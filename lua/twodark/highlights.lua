@@ -89,12 +89,12 @@ hl.common = {
     SpellCap = {fg = c.none, fmt = "undercurl", sp = c.yellow},
     SpellLocal = {fg = c.none, fmt = "undercurl", sp = c.blue},
     SpellRare = {fg = c.none, fmt = "undercurl", sp = c.purple},
-    StatusLine = {fg = c.fg, bg = cfg.transparent and c.none or c.whichkey_background},
-    StatusLineTerm = {fg = c.fg, bg = c.bg2},
-    StatusLineNC = {fg = c.grey, bg = c.none},
-    StatusLineTermNC = {fg = c.grey, bg = c.test_red},
+    StatusLine = {fg = c.fg, bg = cfg.transparent and c.none or c.whichkey_background},  -- toolbar background behind TabLine
+    StatusLineTerm = {fg = c.fg, bg = c.test_red},
+    StatusLineNC = {fg = c.grey, bg = c.test_orange},
+    StatusLineTermNC = {fg = c.grey, bg = c.test_yellow},
 
-    -- Tab backgrounds, this defaults to {update this} if set to transparent
+    -- Tab backgrounds, this defaults to StatusLine if set to transparent
     TabLine = {fg = c.text_secondary, bg = cfg.transparent and c.none or c.toolbar_background},  -- background of non-selected toolbar buffers
     TabLineFill = {fg = c.grey, bg = cfg.transparent and c.none or c.toolbar_background},  -- toolbar_background for empty space
     TabLineSel =  {fg = c.bg0, bg = c.placeholder},
