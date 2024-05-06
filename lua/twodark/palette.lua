@@ -111,7 +111,7 @@ return {
         light_grey = "#454545",
 		black = "#000000",
 		bg0 = "#FF0000", -- tildes somewhere
-		bg1 = "#24FF00",
+		bg1 = "#8F1FFF",
 		bg2 = "#24FF00", -- toolbar_bg
 		bg3 = "#FFFFFF",
 		bg_d = "#FFFFFF",

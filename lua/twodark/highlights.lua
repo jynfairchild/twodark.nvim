@@ -565,7 +565,7 @@ hl.plugins.nvim_tree = {
     NvimTreeGitDirty = {fg = c.text_secondary},
     NvimTreeGitNew = {fg = c.text_secondary},
     NvimTreeGitDeleted = {fg = c.text_secondary},
-    NvimTreeSpecialFile = {fg = c.text_primary, fmt = "underline"}, -- readme file
+    NvimTreeSpecialFile = {fg = c.text_secondary, fmt = "underline"}, -- readme file
     NvimTreeIndentMarker = {fg = c.text_secondary},
     NvimTreeImageFile = {fg = c.text_secondary},
     NvimTreeSymlink = {fg = c.text_secondary},
