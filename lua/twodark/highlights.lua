@@ -89,9 +89,9 @@ hl.common = {
     SpellCap = {fg = c.none, fmt = "undercurl", sp = c.yellow},
     SpellLocal = {fg = c.none, fmt = "undercurl", sp = c.blue},
     SpellRare = {fg = c.none, fmt = "undercurl", sp = c.purple},
-    StatusLine = {fg = c.fg, bg = cfg.transparent and c.none or c.whichkey_background},  -- toolbar background behind TabLine
+    StatusLine = {fg = c.fg, bg = cfg.transparent and c.none or c.status_line_background},  -- toolbar background behind TabLine
     StatusLineTerm = {fg = c.fg, bg = c.test_red},
-    StatusLineNC = {fg = c.grey, bg = c.test_orange},
+    StatusLineNC = {fg = c.grey, bg = cfg.transparent and c.none or c.status_line_background},
     StatusLineTermNC = {fg = c.grey, bg = c.test_yellow},
 
     -- Tab backgrounds, this defaults to StatusLine if set to transparent
