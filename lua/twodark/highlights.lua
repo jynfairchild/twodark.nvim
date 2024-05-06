@@ -447,7 +447,7 @@ hl.plugins.barbar = {
 }
 
 hl.plugins.cmp = {
-    CmpItemAbbr = colors.Fg,
+    CmpItemAbbr = {fg = c.complete_menu_predict},  -- complete menu prediction
     CmpItemAbbrDeprecated = { fg = c.light_grey, fmt = "strikethrough" },
     CmpItemAbbrMatch = colors.Cyan,
     CmpItemAbbrMatchFuzzy = { fg = c.cyan, fmt = "underline" },
