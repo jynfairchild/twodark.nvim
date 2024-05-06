@@ -128,8 +128,8 @@ hl.syntax = {
     Define = {fg = c.keyword_func},
     Typedef = {fg = c.type},
     Exception = {fg = c.exception},
-    Conditional = {fg = c.boolean, fmt = cfg.code_style.keywords},  -- lua
-    Repeat = {fg = c.boolean, fmt = cfg.code_style.keywords},  -- lua
+    Conditional = {fg = c.test_purple, fmt = cfg.code_style.keywords},  -- lua
+    Repeat = {fg = c.test_yellow, fmt = cfg.code_style.keywords},  -- lua
     Statement = {fg = c.lua_statement},  -- lua "return"
     Macro = {fg = c.placeholder},
     Error = {fg = c.placeholder},
