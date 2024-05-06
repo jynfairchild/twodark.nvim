@@ -80,7 +80,7 @@ hl.common = {
     Whitespace = {fg = c.grey},
     SpecialKey = {fg = c.grey},
     Pmenu = {fg = c.fg, bg = c.test_red},
-    PmenuSbar = {fg = c.none, bg = c.cursor_background},
+    PmenuSbar = {fg = c.none, bg = c.test_orange},
     PmenuSel = {fg = c.bg0, bg = c.bg_blue},
     WildMenu = {fg = c.bg0, bg = c.blue},
     PmenuThumb = {fg = c.none, bg = c.grey},
@@ -99,7 +99,7 @@ hl.common = {
     TabLineFill = {fg = c.grey, bg = cfg.transparent and c.none or c.toolbar_background},  -- toolbar_background for empty space
     TabLineSel =  {fg = c.bg0, bg = c.placeholder},
     WinSeparator = {fg = c.line_separator},  -- line_separator between buffers
-    Visual = {fg = c.test_red, bg = c.cursor_selection_highlight},
+    Visual = {fg = c.text, bg = c.cursor_background},  -- the real cursor?
     VisualNOS = {fg = c.test_orange, bg = c.test_purple, fmt = "none"},
     QuickFixLine = {fg = c.test_teal, fmt = "none"},
     Debug = {fg = c.test_white},
