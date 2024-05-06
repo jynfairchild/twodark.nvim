@@ -67,7 +67,7 @@ hl.common = {
     DiffRemoved = colors.TO,
     DiffFile = colors.TY,
     DiffIndexLine = colors.TG,
-    Directory = {fg = c.keyword_func},  -- currently open folder in nvimtree
+    Directory = {fg = c.keyword},  -- currently open folder in nvimtree
     ErrorMsg = {fg = c.test_blue, fmt = "bold"},
     WarningMsg = {fg = c.test_purple, fmt = "bold"},
     MoreMsg = {fg = c.test_white, fmt = "bold"},
@@ -79,7 +79,7 @@ hl.common = {
     NonText = {fg = c.grey},
     Whitespace = {fg = c.grey},
     SpecialKey = {fg = c.grey},
-    Pmenu = {fg = c.fg, bg = c.test_red},
+    Pmenu = {fg = c.test_orange, bg = c.test_red},
     PmenuSbar = {fg = c.none, bg = c.test_orange},
     PmenuSel = {fg = c.bg0, bg = c.bg_blue},
     WildMenu = {fg = c.bg0, bg = c.blue},
@@ -89,8 +89,8 @@ hl.common = {
     SpellCap = {fg = c.none, fmt = "undercurl", sp = c.yellow},
     SpellLocal = {fg = c.none, fmt = "undercurl", sp = c.blue},
     SpellRare = {fg = c.none, fmt = "undercurl", sp = c.purple},
-    StatusLine = {fg = c.fg, bg = cfg.transparent and c.none or c.status_line_background},  -- toolbar background behind TabLine
-    StatusLineTerm = {fg = c.fg, bg = c.test_red},
+    StatusLine = {fg = c.test_yellow, bg = cfg.transparent and c.none or c.status_line_background},  -- toolbar background behind TabLine
+    StatusLineTerm = {fg = c.test_green, bg = c.test_red},
     StatusLineNC = {fg = c.grey, bg = cfg.transparent and c.none or c.status_line_background},
     StatusLineTermNC = {fg = c.grey, bg = c.test_yellow},
 
@@ -103,41 +103,41 @@ hl.common = {
     VisualNOS = {fg = c.test_orange, bg = c.test_purple, fmt = "underline"},
     QuickFixLine = {fg = c.test_teal, fmt = "none"},
     Debug = {fg = c.test_white},
-    debugPC = {fg = c.bg0, bg = c.green},
-    debugBreakpoint = {fg = c.bg0, bg = c.red},
+    debugPC = {fg = c.test_red, bg = c.green},
+    debugBreakpoint = {fg = c.test_red, bg = c.red},
     ToolbarButton = {fg = c.black, bg = c.bg_blue},
     FloatBorder = {fg = c.grey, bg = c.test_blue},
     NormalFloat = {fg = c.text_primary, bg = c.whichkey_background},  -- <leader> background
 }
 
 hl.syntax = {
-    String = {fg = c.lua_string, fmt = cfg.code_style.strings},  -- "string"
-    Character = {fg = c.lua_numbers},
-    Number = {fg = c.lua_numbers},  -- "nums"
-    Float = {fg = c.lua_numbers},
-    Boolean = {fg = c.lua_boolean},
-    Type = {fg = c.lua_boolean},
-    Structure = {fg = c.lua_brackets},  -- lua "{ }, 300"
-    StorageClass = {fg = c.lua_boolean},
+    String = {fg = c.string, fmt = cfg.code_style.strings},  -- "string"
+    Character = {fg = c.numbers},  -- lua
+    Number = {fg = c.number},  -- "nums"
+    Float = {fg = c.number_float},
+    Boolean = {fg = c.boolean},
+    Type = {fg = c.type},
+    Structure = {fg = c.brackets},  -- lua "{ }, 300"
+    StorageClass = {fg = c.boolean},
     Identifier = {fg = c.lorem, fmt = cfg.code_style.variables},
-    Constant = {fg = c.lua_boolean}, -- lua "true, false"
-    PreProc = colors.LOREM,
-    PreCondit = colors.LOREM,
-    Include = colors.LOREM,
+    Constant = {fg = c.boolean}, -- lua "true, false"
+    PreProc = {fg = c.test_blue},
+    PreCondit = {fg = c.test_blue},
+    Include = {fg = c.test_blue},
     Keyword = {fg = c.keyword, fmt = cfg.code_style.keywords},
-    Define = colors.LOREM,
-    Typedef = colors.LOREM,
-    Exception = colors.LOREM,
-    Conditional = {fg = c.lua_boolean, fmt = cfg.code_style.keywords},
-    Repeat = {fg = c.lua_boolean, fmt = cfg.code_style.keywords},
+    Define = {fg = c.keyword_func},
+    Typedef = {fg = c.type},
+    Exception = {fg = c.exception},
+    Conditional = {fg = c.boolean, fmt = cfg.code_style.keywords},  -- lua
+    Repeat = {fg = c.boolean, fmt = cfg.code_style.keywords},  -- lua
     Statement = {fg = c.lua_statement},  -- lua "return"
-    Macro = {fg = c.grey},
-    Error = {fg = c.grey},
-    Label = {fg = c.grey},
-    Special = {fg = c.grey},
-    SpecialChar = {fg = c.grey},
-    Function = {fg = c.blue, fmt = cfg.code_style.functions},
-    Operator = {fg = c.lua_operators},
+    Macro = {fg = c.placeholder},
+    Error = {fg = c.placeholder},
+    Label = {fg = c.placeholder},
+    Special = {fg = c.string_special_symbol},
+    SpecialChar = {fg = c.placeholder},
+    Function = {fg = c.keyword_func, fmt = cfg.code_style.functions},
+    Operator = {fg = c.operator},  -- this effects lua = < > |
     Title = {fg = c.text_primary},
     Tag = {fg = c.tag},
     Delimiter = {fg = c.delimiters},
