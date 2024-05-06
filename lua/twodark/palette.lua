@@ -22,7 +22,7 @@ return {
         lua_statement = "#CB7676", -- "return"
         lua_numbers = "#4C9A91", -- "300"
         lua_operators = "#B8A965", -- "="
-        lua_property = "#737372", -- treesitter prop effects lua "requires"
+        lua_property = "#698A75", -- treesitter prop effects lua "requires"
         lua_conditionals = "#4D9375",  -- if else then
         lua_repeat = "#4D9375", -- for in
 
