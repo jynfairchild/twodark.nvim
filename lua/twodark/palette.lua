@@ -1,7 +1,6 @@
 return {
 	warmer = {
 
-        lorem = "#FF0000",
         ipsm = "#FFFFFF",
         test_red = "#FF0000",
         test_orange = "#FF6B00",
@@ -44,7 +43,7 @@ return {
         brackets_in_strings = "#D66262",  -- f'{}'
         character = "#FFFFFF",  -- unknown
         comment = "#666666",  -- #comment
-        conditional = "#FF0000",
+        conditional = "#FFFFFF",
         complete_menu_background = "#314F42",  -- complete menu background
         complete_menu_predict = "#9FEDCC",  -- complete menu text predict
         complete_menu_selection_background = "#4F7E6A",
@@ -74,8 +73,8 @@ return {
         line_numbers = "#444444",
         line_separator = "#2B2B29",  -- line_separator between buffers
         markup = "#CCCCCC",
-        method = "#FF0000",
-        module = "#FF0000",  -- unknown
+        method = "FFFFFF",
+        module = "#FFFFFF",  -- unknown
         namespace = "#CCCCCC",
         note = "#CCCCCC",
         none = "#",
@@ -87,7 +86,7 @@ return {
         placeholder = "#CCCCCC",  -- placeholder
         search_text = "#9CDDC1",
         search_background = "#4D9375",
-        selected_text_with_cursor = "#FF0000",
+        selected_text_with_cursor = "#FFFFFF",
         status_line_background = "#212121",
         string = "#CCCCCC",  -- ' '
         string_regex = "#CCCCCC",
