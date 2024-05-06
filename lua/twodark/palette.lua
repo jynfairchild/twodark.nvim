@@ -21,8 +21,8 @@ return {
         lua_boolean = "#4D9375",
         lua_statement = "#CB7676", -- "return"
         lua_numbers = "#4C9A91", -- "300"
-        lua_operators = "#DBD7CA", -- "="
-        lua_property = "#758575", -- treesitter prop effects lua "requires"
+        lua_operators = "#B8A965", -- "="
+        lua_property = "#DBD7CA", -- treesitter prop effects lua "requires"
         lua_conditionals = "#4D9375",  -- if else then
         lua_repeat = "#4D9375", -- for in
 
