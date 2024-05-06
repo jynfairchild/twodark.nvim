@@ -558,16 +558,16 @@ hl.plugins.neotest = {
 }
 
 hl.plugins.nvim_tree = {
-    NvimTreeNormal = { fg = c.text_primary, bg = cfg.transparent and c.none or c.bg_d },
-    NvimTreeVertSplit = { fg = c.line_separator, bg = cfg.transparent and c.none or c.bg_d },
-    NvimTreeEndOfBuffer = { fg = cfg.ending_tildes and c.type_builtin or c.none, bg = cfg.transparent and c.none or c.bg_d },  -- * git changes
-    NvimTreeRootFolder = { fg = c.text_secondary, fmt = "bold" },  -- root folder
+    NvimTreeNormal = {fg = c.text_primary, bg = cfg.transparent and c.none or c.bg_d},
+    NvimTreeVertSplit = {fg = c.line_separator, bg = cfg.transparent and c.none or c.bg_d},
+    NvimTreeEndOfBuffer = {fg = cfg.ending_tildes and c.type_builtin or c.none, bg = cfg.transparent and c.none or c.bg_d},  -- * git changes
+    NvimTreeRootFolder = {fg = c.text_secondary, fmt = "bold"},  -- root folder
     NvimTreeGitDirty = {fg = c.text_secondary},
     NvimTreeGitNew = {fg = c.text_secondary},
     NvimTreeGitDeleted = {fg = c.text_secondary},
-    NvimTreeSpecialFile = { fg = c.text_primary, fmt = "underline" }, -- readme file
+    NvimTreeSpecialFile = {fg = c.text_primary, fmt = "underline"}, -- readme file
     NvimTreeIndentMarker = {fg = c.text_secondary},
-    NvimTreeImageFile = { fg = c.dark_purple },
+    NvimTreeImageFile = {fg = c.text_secondary},
     NvimTreeSymlink = {fg = c.text_secondary},
     NvimTreeFolderName = {fg = c.text_secondary},
 }
