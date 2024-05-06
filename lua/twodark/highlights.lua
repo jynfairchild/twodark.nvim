@@ -43,7 +43,7 @@ local colors = {
 hl.common = {
     Normal = {fg = c.keyword, bg = cfg.transparent and c.none or c.bg0},
     Terminal = {fg = c.terminal_text, bg = cfg.transparent and c.none or c.terminal_background},
-    EndOfBuffer = {fg = cfg.ending_tildes and c.bg2 or c.bg0, bg = cfg.transparent and c.none or c.bg0},
+    EndOfBuffer = {fg = cfg.ending_tildes and c.bg2 or c.none, bg = cfg.transparent and c.none or c.bg0},
     FoldColumn = {fg = c.test_red, bg = cfg.transparent and c.none or c.bg1},
     Folded = {fg = c.test_yellow, bg = cfg.transparent and c.none or c.bg1},
     SignColumn = {fg = c.test_green, bg = cfg.transparent and c.none or c.bg0},
@@ -79,7 +79,7 @@ hl.common = {
     NonText = {fg = c.grey},
     Whitespace = {fg = c.grey},
     SpecialKey = {fg = c.grey},
-    Pmenu = {fg = c.test_orange, bg = c.complete_menu_background},
+    Pmenu = {fg = c.test_orange, bg = c.complete_menu_background},  -- bg = complete menu scroll bar
     PmenuSbar = {fg = c.none, bg = c.complete_menu_text},
     PmenuSel = {fg = c.bg0, bg = c.bg_blue},
     WildMenu = {fg = c.bg0, bg = c.blue},
@@ -106,7 +106,7 @@ hl.common = {
     debugPC = {fg = c.complete_menu_predict, bg = c.complete_menu_selection_background},
     debugBreakpoint = {fg = c.test_red, bg = c.red},
     ToolbarButton = {fg = c.black, bg = c.bg_blue},
-    FloatBorder = {fg = c.grey, bg = c.test_blue},
+    FloatBorder = {fg = c.grey, bg = c.test_purple},
     NormalFloat = {fg = c.text_primary, bg = c.whichkey_background},  -- <leader> background
 }
 
@@ -407,9 +407,9 @@ hl.plugins.lsp = {
     DiagnosticUnderlineInfo = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.blue},
     DiagnosticUnderlineWarn = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.yellow},
 
-    LspReferenceText = { bg = c.test_red },
-    LspReferenceWrite = { bg = c.test_red },
-    LspReferenceRead = { bg = c.test_red },
+    LspReferenceText = { bg = c.test_yellow },
+    LspReferenceWrite = { bg = c.test_yellow },
+    LspReferenceRead = { bg = c.test_yellow },
 
     LspCodeLens = { fg = c.grey, fmt = cfg.code_style.comments },
     LspCodeLensSeparator = { fg = c.grey },
