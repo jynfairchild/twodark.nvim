@@ -442,7 +442,7 @@ hl.plugins.barbar = {
     BufferVisible = { fg = c.light_grey, bg = cfg.transparent and c.none or c.light_grey },  -- non selected buffer
     BufferVisibleMod = { fg = c.test_yellow, bg = c.black, fmt = "italic" },
     BufferVisibleIndex = { fg = c.test_green, bg = c.black },
-    BufferVisibleSign = { fg = c.test_teal, bg = c.black },
+    BufferVisibleSign = { fg = c.line_separator, bg = c.black },
     BufferVisibleTarget = { fg = c.light_grey, bg = c.black },  -- next non selected buffer
 }
 
