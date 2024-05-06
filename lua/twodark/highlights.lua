@@ -54,9 +54,9 @@ hl.common = {
     lCursor = {fmt = "reverse"},
     CursorIM = {fmt = "reverse"},
     CursorColumn = {bg = c.placeholder},
-    CursorLine = {fg = c.complete_menu_predict, bg = c.nvimtree_selected_bg},  -- nvim-tree selected background
+    CursorLine = {bg = c.nvimtree_selected_bg},  -- nvim-tree selected background
     ColorColumn = {bg = c.placeholder},
-    CursorLineNr = {fg = c.text_secondary},
+    CursorLineNr = {fg = c.placeholder},
     LineNr = {fg = c.line_numbers},  -- nvim line numbers 
     Conceal = {fg = c.grey, bg = c.test_red},
     DiffAdd = {fg = c.none, bg = c.diff_add},
@@ -78,7 +78,7 @@ hl.common = {
     MatchParen = {fg = c.character, bg = c.func},  -- cursor blocks when on {}s
     NonText = {fg = c.line_separator},  -- line between tabs
     Whitespace = {fg = c.text_primary},  -- cursor highlight color
-    SpecialKey = {fg = c.test_orange},
+    SpecialKey = {fg = c.grey},
     Pmenu = {fg = c.test_orange, bg = c.complete_menu_background},  -- bg = complete menu scroll bar
     PmenuSbar = {fg = c.none, bg = c.complete_menu_text},
     PmenuSel = {fg = c.complete_menu_predict, bg = c.complete_menu_selection_background},  -- complete menu tab through options
@@ -99,7 +99,7 @@ hl.common = {
     TabLineFill = {fg = c.grey, bg = cfg.transparent and c.none or c.toolbar_background},  -- toolbar_background for empty space
     TabLineSel =  {fg = c.bg0, bg = c.placeholder},
     WinSeparator = {fg = c.line_separator},  -- line_separator between buffers
-    Visual = {fg = c.test_red, bg = c.cursor_background},  -- cursor selected background
+    Visual = {bg = c.cursor_background},  -- cursor selected background
     VisualNOS = {fg = c.test_orange, bg = c.test_purple, fmt = "underline"},
     QuickFixLine = {fg = c.test_teal, fmt = "none"},
     Debug = {fg = c.test_white},
