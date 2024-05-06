@@ -48,7 +48,7 @@ hl.common = {
     Folded = {fg = c.test_yellow, bg = cfg.transparent and c.none or c.bg1},
     SignColumn = {fg = c.test_green, bg = cfg.transparent and c.none or c.bg0},
     ToolbarLine = {fg = c.line_separator, bg = cfg.transparent and c.none or c.b0},  -- more line separator in the toolbar
-    Cursor = {bg = c.annotation, fmt = "reverse"},
+    Cursor = {fmt = "reverse"},
     vCursor = {fmt = "reverse"},
     iCursor = {fmt = "reverse"},
     lCursor = {fmt = "reverse"},
