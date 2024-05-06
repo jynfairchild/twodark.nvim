@@ -103,7 +103,7 @@ hl.common = {
     VisualNOS = {fg = c.test_orange, bg = c.test_purple, fmt = "underline"},
     QuickFixLine = {fg = c.test_teal, fmt = "none"},
     Debug = {fg = c.test_white},
-    debugPC = {fg = c.complete_menu_predict, bg = c.},
+    debugPC = {fg = c.complete_menu_predict, bg = c.complete_menu_selection_background},
     debugBreakpoint = {fg = c.test_red, bg = c.red},
     ToolbarButton = {fg = c.black, bg = c.bg_blue},
     FloatBorder = {fg = c.grey, bg = c.test_blue},
