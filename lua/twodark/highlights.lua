@@ -46,7 +46,7 @@ hl.common = {
     EndOfBuffer = {fg = cfg.ending_tildes and c.bg2 or c.none, bg = cfg.transparent and c.none or c.bg0},
     FoldColumn = {fg = c.test_red, bg = cfg.transparent and c.none or c.bg1},
     Folded = {fg = c.test_yellow, bg = cfg.transparent and c.none or c.bg1},
-    SignColumn = {fg = c.test_green, bg = cfg.transparent and c.none or c.bg0},
+    SignColumn = {fg = cfg.transparent and c.none, bg = cfg.transparent and c.none or c.bg0},
     ToolbarLine = {fg = c.test_teal, bg = cfg.transparent and c.none or c.b0},
     Cursor = {fmt = "reverse"},
     vCursor = {fmt = "reverse"},
