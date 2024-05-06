@@ -249,7 +249,7 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
         -- strings
         ["@string"] = {fg = c.string, fmt = cfg.code_style.strings},  -- ''
         ["@string.regexp"] = {fg = c.string_regex, fmt = cfg.code_style.strings},
-        ["@string.escape"] = {fg = c.test_orange, fmt = cfg.code_style.strings},
+        ["@string.escape"] = {fg = c.string_escape, fmt = cfg.code_style.strings},
         ["@string.special.symbol"] = {fg = c.string_special_symbol},
 
         -- tag
@@ -379,7 +379,7 @@ else
         TSRepeat = {fg = c.placeholder, fmt = cfg.code_style.keywords},
         TSString = {fg = c.string, fmt = cfg.code_style.strings},
         TSStringRegex = {fg = c.string_regex, fmt = cfg.code_style.strings},
-        TSStringEscape = {fg = c.test_orange, fmt = cfg.code_style.strings},
+        TSStringEscape = {fg = c.string_escape, fmt = cfg.code_style.strings},
         TSSymbol = {fg = c.operator},
         TSTag = {fg = c.tag},
         TSTagDelimiter = {fg = c.delimiters},
