@@ -47,7 +47,7 @@ hl.common = {
     FoldColumn = {fg = c.test_red, bg = cfg.transparent and c.none or c.bg1},
     Folded = {fg = c.test_yellow, bg = cfg.transparent and c.none or c.bg1},
     SignColumn = {fg = c.test_green, bg = cfg.transparent and c.none or c.bg0},
-    ToolbarLine = {fg = c.test_teal, bg = cfg.transparent and c.none or c.b0},
+    ToolbarLine = {fg = c.line_separator, bg = cfg.transparent and c.none or c.b0},  -- more line separator in the toolbar
     Cursor = {fmt = "reverse"},
     vCursor = {fmt = "reverse"},
     iCursor = {fmt = "reverse"},
@@ -76,8 +76,8 @@ hl.common = {
     Search = {fg = c.search_text, bg = c.search_background},
     Substitute = {fg = c.test_orange, bg = c.test_yellow},
     MatchParen = {fg = c.character, bg = c.func},  -- cursor blocks when on {}s
-    NonText = {fg = c.test_blue},
-    Whitespace = {fg = c.test_white},
+    NonText = {fg = c.line_separator},  -- line between tabs
+    Whitespace = {fg = c.text_primary},  -- cursor highlight color
     SpecialKey = {fg = c.grey},
     Pmenu = {fg = c.test_orange, bg = c.complete_menu_background},  -- bg = complete menu scroll bar
     PmenuSbar = {fg = c.none, bg = c.complete_menu_text},
@@ -90,7 +90,7 @@ hl.common = {
     SpellLocal = {fg = c.none, fmt = "undercurl", sp = c.blue},
     SpellRare = {fg = c.none, fmt = "undercurl", sp = c.purple},
     StatusLine = {fg = c.test_yellow, bg = cfg.transparent and c.none or c.status_line_background},  -- toolbar background behind TabLine
-    StatusLineTerm = {fg = c.test_orange, bg = c.test_red},
+    StatusLineTerm = {fg = c.test_green, bg = c.test_red},
     StatusLineNC = {fg = c.grey, bg = cfg.transparent and c.none or c.status_line_background},
     StatusLineTermNC = {fg = c.grey, bg = c.test_yellow},
 
