@@ -116,7 +116,7 @@ return {
 		black = "#000000",
 		bg0 = "#FF0000", -- tildes somewhere
 		bg1 = "#8F1FFF",
-		bg2 = "#24FF00", -- toolbar_bg
+		bg2 = "#24FF00", -- find files selection somewhere
 		bg3 = "#FFFFFF",
 		bg_d = "#FFFFFF",
 		bg_blue = "#000000",

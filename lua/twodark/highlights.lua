@@ -491,10 +491,10 @@ hl.plugins.coc = {
 }
 
 hl.plugins.whichkey = {
-    WhichKey = colors.Red,
-    WhichKeyDesc = colors.Blue,
-    WhichKeyGroup = colors.Orange,
-    WhichKeySeparator = colors.Green
+    WhichKey = {fg= c.text_primary},
+    WhichKeyDesc = colors.TR,
+    WhichKeyGroup = colors.TO,
+    WhichKeySeparator = colors.TY
 }
 
 hl.plugins.gitgutter = {
@@ -606,7 +606,7 @@ hl.plugins.telescope = {
     TelescopePreviewBorder = colors.Cyan,
     TelescopeMatching = { fg = c.orange, fmt = "bold" },
     TelescopePromptPrefix = colors.Green,
-    TelescopeSelection =  { bg =c.bg2 },
+    TelescopeSelection =  {bg =c.complete_menu_selection_background}, -- background of tab selection
     TelescopeSelectionCaret = colors.Yellow
 }
 
