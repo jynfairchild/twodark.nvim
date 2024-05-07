@@ -133,7 +133,7 @@ hl.common = {
     debugBreakpoint = {fg = c.test_red, bg = c.red},
 
     -- toolbar and bg
-    ToolbarButton = {fg = c.test_orange, bg = c.test_yellow},
+    ToolbarButton = {fg = c.test_white, bg = c.test_yellow},
     FloatBorder = {fg = c.test_orange, bg = c.test_purple},
     NormalFloat = {fg = c.text_primary, bg = c.whichkey_background},  -- <leader> background
 }
@@ -463,15 +463,15 @@ hl.plugins.ale = {
 }
 
 hl.plugins.barbar = {
-    BufferCurrent = { fmt = "bold" },
-    BufferCurrentMod = { fg = c.light_grey, fmt = "bold,italic" },
-    BufferCurrentSign = { fg = c.light_grey },
-    BufferInactiveMod = { fg = c.test_red, bg = cfg.transparent and c.none or c.light_grey, fmt = "italic" },
-    BufferVisible = { fg = c.light_grey, bg = cfg.transparent and c.none or c.light_grey },  -- non selected buffer
-    BufferVisibleMod = { fg = c.test_yellow, bg = c.black, fmt = "italic" },
-    BufferVisibleIndex = { fg = c.test_green, bg = c.black },
-    BufferVisibleSign = { fg = c.line_separator, bg = c.black },
-    BufferVisibleTarget = { fg = c.light_grey, bg = c.black },  -- next non selected buffer
+    BufferCurrent = {fmt = "bold"},
+    BufferCurrentMod = {fg = c.keyword_import, fmt = "bold,italic"},
+    BufferCurrentSign = {fg = c.text_secondary},
+    BufferInactiveMod = {fg = c.test_red, bg = cfg.transparent and c.none or c.light_grey, fmt = "italic"},
+    BufferVisible = {fg = c.text_secondary, bg = cfg.transparent and c.none or c.light_grey},  -- non selected buffer
+    BufferVisibleMod = {fg = c.test_yellow, bg = c.black, fmt = "italic"},
+    BufferVisibleIndex = {fg = c.test_green, bg = c.black},
+    BufferVisibleSign = {fg = c.line_separator, bg = c.black},
+    BufferVisibleTarget = {fg = c.light_grey, bg = c.black},  -- next non selected buffer
 }
 
 hl.plugins.cmp = {
