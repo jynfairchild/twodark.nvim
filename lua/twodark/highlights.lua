@@ -118,8 +118,8 @@ hl.common = {
 
     -- Tab backgrounds, this defaults to StatusLine if set to transparent
     TabLine = {fg = c.text_secondary, bg = cfg.transparent and c.none or c.toolbar_background},  -- background of non-selected toolbar buffers
-    TabLineFill = {fg = c.grey, bg = cfg.transparent and c.none or c.toolbar_background},  -- toolbar_background for empty space
-    TabLineSel =  {fg = c.bg0, bg = c.placeholder},
+    TabLineFill = {fg = c.none, bg = cfg.transparent and c.none or c.toolbar_background},  -- toolbar_background for empty space
+    TabLineSel =  {fg = c.none, bg = c.test_purple},
 
     -- line separator and cursor background
     WinSeparator = {fg = c.line_separator},  -- line_separator between buffers
