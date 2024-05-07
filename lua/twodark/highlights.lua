@@ -491,10 +491,10 @@ hl.plugins.coc = {
 }
 
 hl.plugins.whichkey = {
-    WhichKey = {fg= c.text_primary},
-    WhichKeyDesc = colors.TR,
-    WhichKeyGroup = colors.TO,
-    WhichKeySeparator = colors.TY
+    WhichKey = {fg= c.keyword_import},
+    WhichKeySeparator = {fg = c.type_builtin},
+    WhichKeyDesc = {fg = c.text_primary},
+    WhichKeyGroup = {fg = c.func},
 }
 
 hl.plugins.gitgutter = {
