@@ -475,9 +475,9 @@ hl.plugins.barbar = {
 }
 
 hl.plugins.cmp = {
-    CmpItemAbbr = {fg = c.complete_menu_predict},  -- 1st complete menu prediction
+    CmpItemAbbr = {fg = c.complete_menu_text},  -- 1st complete menu prediction
     CmpItemAbbrDeprecated = {fg = c.complete_menu_deprecated, fmt = "strikethrough"},  -- 3rd column deprecated
-    CmpItemAbbrMatch = {fg = c.complete_menu_text},  -- 1st column typed out
+    CmpItemAbbrMatch = {fg = c.complete_menu_predict},  -- 1st column typed out
     CmpItemAbbrMatchFuzzy = {fg = c.complete_menu_match_fuzzy, fmt = "underline"},
     CmpItemMenu = {fg = c.text_secondary}, -- [lsp] [buffer]
     CmpItemKind = {fg = c.none, bg = c.complete_menu_selection_background, fmt = cfg.cmp_itemkind_reverse and "reverse"},
