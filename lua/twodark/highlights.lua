@@ -478,7 +478,7 @@ hl.plugins.cmp = {
     CmpItemAbbr = {fg = c.complete_menu_selection_background},  -- complete menu prediction
     CmpItemAbbrDeprecated = {fg = c.complete_menu_deprecated, fmt = "strikethrough"},
     CmpItemAbbrMatch = {fg = c.complete_menu_text},
-    CmpItemAbbrMatchFuzzy = {fg = c.complete_menu_selection_background, fmt = "underline"},
+    CmpItemAbbrMatchFuzzy = {fg = c.complete_menu_predict, fmt = "underline"},
     CmpItemMenu = {fg = c.text_secondary}, -- [lsp] [buffer]
     CmpItemKind = {fg = c.none, bg = c.complete_menu_selection_background, fmt = cfg.cmp_itemkind_reverse and "reverse"},
 }
