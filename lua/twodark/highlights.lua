@@ -48,7 +48,7 @@ hl.common = {
     EndOfBuffer = {fg = cfg.ending_tildes and c.bg2 or c.none, bg = cfg.transparent and c.none or c.bg0},
     FoldColumn = {fg = c.test_red, bg = cfg.transparent and c.none or c.bg1},
     Folded = {fg = c.test_yellow, bg = cfg.transparent and c.none or c.bg1},
-    SignColumn = {fg = c.test_green, bg = cfg.transparent and c.none or c.bg0},
+    SignColumn = {fg = c.test_white, bg = cfg.transparent and c.none or c.bg0},
     ToolbarLine = {fg = c.line_separator, bg = cfg.transparent and c.none or c.b0},  -- more line separator in the toolbar
 
     -- cursor text colors (reverse of bg)
@@ -405,10 +405,10 @@ else
     }
 end
 
-local diagnostics_error_color = cfg.diagnostics.darker and c.error or c.red
-local diagnostics_hint_color = cfg.diagnostics.darker and c.dark_purple or c.purple
-local diagnostics_warn_color = cfg.diagnostics.darker and c.warning or c.light_grey
-local diagnostics_info_color = cfg.diagnostics.darker and c.dark_cyan or c.cyan
+local diagnostics_error_color = cfg.diagnostics.darker and c.error or c.error
+local diagnostics_hint_color = cfg.diagnostics.darker and c.warning or c.warning
+local diagnostics_warn_color = cfg.diagnostics.darker and c.warning or c.warning
+local diagnostics_info_color = cfg.diagnostics.darker and c.text_secondary or c.text_secondary
 hl.plugins.lsp = {
     LspCxxHlGroupEnumConstant = colors.Orange,
     LspCxxHlGroupMemberVariable = colors.Orange,
