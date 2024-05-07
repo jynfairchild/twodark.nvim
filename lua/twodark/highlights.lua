@@ -476,10 +476,10 @@ hl.plugins.barbar = {
 
 hl.plugins.cmp = {
     CmpItemAbbr = {fg = c.complete_menu_predict},  -- complete menu prediction
-    CmpItemAbbrDeprecated = { fg = c.light_grey, fmt = "strikethrough" },
+    CmpItemAbbrDeprecated = { fg = c.complete_menu_deprecated, fmt = "strikethrough" },
     CmpItemAbbrMatch = {fg = c.complete_menu_text},
-    CmpItemAbbrMatchFuzzy = { fg = c.test_red, fmt = "underline" },
-    CmpItemMenu = {fg = c.test_purple},
+    CmpItemAbbrMatchFuzzy = { fg = c.complete_menu_match_fuzzy, fmt = "underline" },
+    CmpItemMenu = {fg = c.text_secondary}, -- [lsp] [buffer]
     CmpItemKind = { fg = c.test_orange, fmt = cfg.cmp_itemkind_reverse and "reverse" },
 }
 
