@@ -49,9 +49,8 @@ return {
         complete_menu_predict = "#9FEDCC",  -- complete menu text predict
         complete_menu_selection_background = "#4F7E6A",
         complete_menu_text = "#7AB39B",  -- complete menu text
-        complete_menu_item = "#202021", -- fuzzy match
         complete_menu_deprecated = "#666666",
-        complete_menu_match_fuzzy = "#454545",
+        complete_menu_match_fuzzy = "#454545",  -- fuzzy match
 
         constant = "#4D9375",  -- None
         constructor = "#B8A965",  -- __init__, class calls User()
@@ -101,7 +100,7 @@ return {
         text_primary = "#CCCCCC",
         text_secondary = "#666666",
         warning = "#C48E4F",
-        whichkey_background = "#2A4B3D",
+        whichkey_background = "#202021",
         terminal_text = "#CCCCCC",
         terminal_background = "#1E1B1B",  -- this doesnt effect the inline terminal, only the out of vim termminal
         toolbar_bg = "#0F0F0F",
