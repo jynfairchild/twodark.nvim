@@ -100,7 +100,7 @@ hl.common = {
     Pmenu = {fg = c.none, bg = c.complete_menu_background},  -- bg = complete menu bg
     PmenuThumb = {fg = c.none, bg = c.text_secondary},  -- compplete menu top scroll bar
     PmenuSbar = {fg = c.none, bg = c.text_primary},  -- complete menu bot scroll bar
-    PmenuSel = {fg = c.text_secondary, bg = c.none},  -- complete menu tab through options
+    PmenuSel = {fg = c.text_secondary, bg = c.complete_menu_selection_background},  -- complete menu tab through options
     WildMenu = {fg = c.test_purple, bg = c.blue},
 
     -- no idea
