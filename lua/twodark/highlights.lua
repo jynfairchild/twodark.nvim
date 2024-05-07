@@ -68,11 +68,11 @@ hl.common = {
     LineNr = {fg = c.line_numbers},  -- nvim line numbers 
 
     -- Diff
-    Conceal = {fg = c.grey, bg = c.test_red},
-    DiffAdd = {fg = c.none, bg = c.diff_add},
-    DiffChange = {fg = c.none, bg = c.diff_change},
-    DiffDelete = {fg = c.none, bg = c.diff_delete},
-    DiffText = {fg = c.none, bg= c.diff_text},
+    Conceal = {fg = c.test_red, bg = c.test_red},
+    DiffAdd = {fg = c.none, bg = c.test_orange},
+    DiffChange = {fg = c.none, bg = c.test_yellow},
+    DiffDelete = {fg = c.none, bg = c.test_green},
+    DiffText = {fg = c.none, bg= c.test_teal},
     DiffAdded = colors.TR,
     DiffRemoved = colors.TO,
     DiffFile = colors.TY,
