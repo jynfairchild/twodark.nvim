@@ -668,9 +668,9 @@ hl.plugins.indent_blankline = {
     IndentBlanklineContextSpaceChar = { fmt = "nocombine" },
 
     -- Ibl v3
-    IblIndent = { fg = c.test_red, fmt = "nocombine" },
-    IblWhitespace = { fg = c.test_orange, fmt = "nocombine" },
-    IblScope = { fg = c.test_yellow, fmt = "nocombine" },
+    IblIndent = { fg = c.dark_grey, fmt = "nocombine" },  -- all lines
+    IblWhitespace = { fg = c.mid_grey, fmt = "nocombine" },  -- underline between current area and text
+    IblScope = { fg = c.mid_grey, fmt = "nocombine" },  -- line of current cursor area
 }
 
 hl.plugins.mini = {
