@@ -133,7 +133,7 @@ hl.common = {
     debugBreakpoint = {fg = c.test_red, bg = c.red},
 
     -- toolbar and bg
-    ToolbarButton = {fg = c.test_white, bg = c.test_yellow},
+    ToolbarButton = {fg = c.test_orange, bg = c.test_yellow},
     FloatBorder = {fg = c.test_orange, bg = c.test_purple},
     NormalFloat = {fg = c.text_primary, bg = c.whichkey_background},  -- <leader> background
 }
