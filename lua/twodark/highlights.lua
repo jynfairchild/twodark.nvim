@@ -88,7 +88,7 @@ hl.common = {
     CurSearch = {fg = c.placeholder, bg = c.orange},
     IncSearch = {fg = c.placeholder, bg = c.orange},
     Search = {fg = c.search_text, bg = c.search_background},
-    Substitute = {fg = c.test_orange, bg = c.test_yellow},
+    Substitute = {fg = c.complete_menu_predict, bg = c.complete_menu_selection_background},
     MatchParen = {fg = c.character, bg = c.func},  -- cursor blocks when on {}s
 
     -- text modify
