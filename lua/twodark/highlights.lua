@@ -112,7 +112,7 @@ hl.common = {
 
     -- toolbar colors
     StatusLine = {fg = c.test_yellow, bg = cfg.transparent and c.none or c.status_line_background},  -- toolbar background behind TabLine
-    StatusLineTerm = {fg = c.test_green, bg = c.test_red},
+    StatusLineTerm = {fg = c.test_red, bg = c.test_red},
     StatusLineNC = {fg = c.test_red, bg = cfg.transparent and c.none or c.status_line_background},
     StatusLineTermNC = {fg = c.test_purple, bg = c.test_yellow},
 
