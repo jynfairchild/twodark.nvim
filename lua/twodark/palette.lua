@@ -49,7 +49,7 @@ return {
         complete_menu_text = "#9FEDCC",  -- complete menu text
         complete_menu_predict = "#7AB39B",  -- complete menu text predict
         complete_menu_selection_background = "#4F7E6A",  -- tab background
-        complete_menu_match_fuzzy = "#9FEDCC",  -- fuzzy match
+        complete_menu_match_fuzzy = "#7AB39B",  -- fuzzy match
         complete_menu_deprecated = "#666666", -- [lsp]
 
         constant = "#4D9375",  -- None
