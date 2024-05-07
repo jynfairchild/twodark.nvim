@@ -491,7 +491,7 @@ hl.plugins.coc = {
 }
 
 hl.plugins.whichkey = {
-    WhichKey = {fg= c.keyword_import},
+    WhichKey = {fg= c.keyword},
     WhichKeySeparator = {fg = c.type_builtin},
     WhichKeyDesc = {fg = c.text_primary},
     WhichKeyGroup = {fg = c.func},
