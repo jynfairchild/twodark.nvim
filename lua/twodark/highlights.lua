@@ -467,7 +467,7 @@ hl.plugins.barbar = {
     BufferCurrentMod = {fg = c.keyword_import, fmt = "bold,italic"},
     BufferCurrentSign = {fg = c.text_secondary},
     BufferInactiveMod = {fg = c.test_red, bg = cfg.transparent and c.none or c.light_grey, fmt = "italic"},
-    BufferVisible = {fg = c.text_secondary, bg = cfg.transparent and c.none or c.light_grey},  -- non selected buffer
+    BufferVisible = {fg = c.text_secondary, bg = cfg.transparent and c.none or c.keyword_import},  -- non selected buffer
     BufferVisibleMod = {fg = c.test_yellow, bg = c.black, fmt = "italic"},
     BufferVisibleIndex = {fg = c.test_green, bg = c.black},
     BufferVisibleSign = {fg = c.line_separator, bg = c.black},
@@ -477,10 +477,10 @@ hl.plugins.barbar = {
 hl.plugins.cmp = {
     CmpItemAbbr = {fg = c.complete_menu_predict},  -- complete menu prediction
     CmpItemAbbrDeprecated = { fg = c.light_grey, fmt = "strikethrough" },
-    CmpItemAbbrMatch = colors.Cyan,
-    CmpItemAbbrMatchFuzzy = { fg = c.cyan, fmt = "underline" },
-    CmpItemMenu = colors.LightGrey,
-    CmpItemKind = { fg = c.purple, fmt = cfg.cmp_itemkind_reverse and "reverse" },
+    CmpItemAbbrMatch = {fg = c.complete_menu_text},
+    CmpItemAbbrMatchFuzzy = { fg = c.test_red, fmt = "underline" },
+    CmpItemMenu = {fg = c.test_purple},
+    CmpItemKind = { fg = c.test_orange, fmt = cfg.cmp_itemkind_reverse and "reverse" },
 }
 
 hl.plugins.coc = {
