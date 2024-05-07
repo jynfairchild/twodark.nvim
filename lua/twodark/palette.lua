@@ -98,8 +98,6 @@ return {
         tag = "#CCCCCC",
         text_primary = "#CCCCCC",
         text_secondary = "#666666",
-        warning = "#C48E4F",
-        whichkey_background = "#202021",
         terminal_text = "#CCCCCC",
         terminal_background = "#1E1B1B",  -- this doesnt effect the inline terminal, only the out of vim termminal
         toolbar_bg = "#0F0F0F",
@@ -109,6 +107,8 @@ return {
         variable_builtin = "#C99076",  -- self.
         variable_member = "#C99076",  -- unknown
         variable_parameter = "#DBD7CA",  -- builtin params
+        warning = "#413C36",
+        whichkey_background = "#202021",
 
         ---------
         white = "#FFFFFF",

@@ -587,7 +587,7 @@ hl.plugins.nvim_tree = {
     NvimTreeNormal = {fg = c.text_primary, bg = cfg.transparent and c.none or c.bg_d},
     NvimTreeVertSplit = {fg = c.line_separator, bg = cfg.transparent and c.none or c.bg_d},
     NvimTreeEndOfBuffer = {fg = cfg.ending_tildes and c.type_builtin or c.none, bg = cfg.transparent and c.none or c.bg_d},  -- * git changes
-    NvimTreeRootFolder = {fg = c.text_secondary, fmt = "bold"},  -- root folder
+    NvimTreeRootFolder = {fg = c.text_secondary},  -- root folder
     NvimTreeGitDirty = {fg = c.text_secondary},
     NvimTreeGitNew = {fg = c.text_secondary},
     NvimTreeGitDeleted = {fg = c.text_secondary},
