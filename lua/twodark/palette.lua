@@ -51,7 +51,7 @@ return {
         complete_menu_text = "#7AB39B",  -- complete menu text
         complete_menu_item = "#202021", -- fuzzy match
         complete_menu_deprecated = "#666666",
-        complete_menu_match_fuzzy = "#202021",
+        complete_menu_match_fuzzy = "#454545",
 
         constant = "#4D9375",  -- None
         constructor = "#B8A965",  -- __init__, class calls User()
