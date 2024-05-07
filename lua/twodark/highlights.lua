@@ -97,11 +97,11 @@ hl.common = {
     SpecialKey = {fg = c.test_white},
 
     -- complete menus
-    Pmenu = {fg = c.test_orange, bg = c.complete_menu_background},  -- bg = complete menu scroll bar
-    PmenuThumb = {fg = c.none, bg = c.grey},
+    Pmenu = {fg = c.none, bg = c.text_secondary},  -- bg = complete menu scroll bar
+    PmenuThumb = {fg = c.none, bg = c.test_purple},
     PmenuSbar = {fg = c.none, bg = c.complete_menu_text},
-    PmenuSel = {fg = c.complete_menu_predict, bg = c.complete_menu_selection_background},  -- complete menu tab through options
-    WildMenu = {fg = c.test_purple, bg = c.blue},
+    PmenuSel = {fg = c.complete_menu_predict, bg = c.text_secondary},  -- complete menu tab through options
+    WildMenu = {fg = c.test_purple, bg = c.test_red},
 
     -- no idea
     Question = {fg = c.yellow},
