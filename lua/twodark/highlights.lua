@@ -668,9 +668,9 @@ hl.plugins.indent_blankline = {
     IndentBlanklineContextSpaceChar = { fmt = "nocombine" },
 
     -- Ibl v3
-    IblIndent = { fg = c.light_grey, fmt = "nocombine" },
-    IblWhitespace = { fg = c.grey, fmt = "nocombine" },
-    IblScope = { fg = c.grey, fmt = "nocombine" },
+    IblIndent = { fg = c.test_red, fmt = "nocombine" },
+    IblWhitespace = { fg = c.test_orange, fmt = "nocombine" },
+    IblScope = { fg = c.test_yellow, fmt = "nocombine" },
 }
 
 hl.plugins.mini = {
