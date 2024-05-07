@@ -598,14 +598,14 @@ hl.plugins.nvim_tree = {
     NvimTreeFolderName = {fg = c.text_secondary},
 }
 hl.plugins.telescope = {
-    TelescopeBorder = {fg = c.light_grey},
-    TelescopePromptBorder = c.text_primary,
-    TelescopeResultsBorder = colors.TR,
-    TelescopePreviewBorder = colors.TO,
-    TelescopeMatching = { fg = c.complete_menu_text, fmt = "bold" },
-    TelescopePromptPrefix = colors.TY,
+    TelescopeBorder = {fg = c.dark_grey}, -- indent_blankline non-selected
+    TelescopePromptBorder = {fg = c.text_primary},
+    TelescopeResultsBorder = {fg = c.light_grey},
+    TelescopePreviewBorder = {fg = c.keyword_func},
+    TelescopeMatching = { fg = c.white, fmt = "bold" },
+    TelescopePromptPrefix = {fg = c.keyword},
     TelescopeSelection =  {bg =c.complete_menu_selection_background}, -- background of tab selection
-    TelescopeSelectionCaret = colors.TG
+    TelescopeSelectionCaret = {fg = c.keyword_func},
 }
 
 hl.plugins.dashboard = {
