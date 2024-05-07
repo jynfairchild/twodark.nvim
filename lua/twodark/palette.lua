@@ -107,7 +107,7 @@ return {
         variable_builtin = "#C99076",  -- self.
         variable_member = "#C99076",  -- unknown
         variable_parameter = "#DBD7CA",  -- builtin params
-        warning = "#413C36",
+        warning = "#363636",
         whichkey_background = "#202021",
 
         ---------
