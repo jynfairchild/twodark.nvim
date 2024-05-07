@@ -88,12 +88,12 @@ hl.common = {
     CurSearch = {fg = c.placeholder, bg = c.orange},
     IncSearch = {fg = c.placeholder, bg = c.orange},
     Search = {fg = c.search_text, bg = c.search_background},
-    Substitute = {fg = c.complete_menu_predict, bg = c.complete_menu_selection_background},
+    Substitute = {fg = c.complete_menu_predict, bg = c.complete_menu_selection_background},  -- <leader>h multi-replace
     MatchParen = {fg = c.character, bg = c.func},  -- cursor blocks when on {}s
 
     -- text modify
     NonText = {fg = c.line_separator},  -- line between tabs
-    Whitespace = {fg = c.text_primary},  -- cursor highlight color
+    Whitespace = {fg = c.test_white},  -- cursor highlight color
     SpecialKey = {fg = c.test_white},
 
     -- complete menus
@@ -113,8 +113,8 @@ hl.common = {
     -- toolbar colors
     StatusLine = {fg = c.test_yellow, bg = cfg.transparent and c.none or c.status_line_background},  -- toolbar background behind TabLine
     StatusLineTerm = {fg = c.test_green, bg = c.test_red},
-    StatusLineNC = {fg = c.grey, bg = cfg.transparent and c.none or c.status_line_background},
-    StatusLineTermNC = {fg = c.grey, bg = c.test_yellow},
+    StatusLineNC = {fg = c.test_red, bg = cfg.transparent and c.none or c.status_line_background},
+    StatusLineTermNC = {fg = c.test_purple, bg = c.test_yellow},
 
     -- Tab backgrounds, this defaults to StatusLine if set to transparent
     TabLine = {fg = c.text_secondary, bg = cfg.transparent and c.none or c.toolbar_background},  -- background of non-selected toolbar buffers
