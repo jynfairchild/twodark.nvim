@@ -17,8 +17,6 @@ end
 
 local colors = {
     -- testing
-    LOREM = {fg = c.lorem},
-    IPSM = {fg = c.ipsm},
     TR = {fg = c.test_red},
     TO = {fg = c.test_orange},
     TY = {fg = c.test_yellow},
@@ -491,10 +489,10 @@ hl.plugins.coc = {
 }
 
 hl.plugins.whichkey = {
-    WhichKey = {fg= c.keyword},
-    WhichKeySeparator = {fg = c.type_builtin},
-    WhichKeyDesc = {fg = c.text_primary},
-    WhichKeyGroup = {fg = c.func},
+    WhichKey = {fg= c.keyword},  -- letter
+    WhichKeySeparator = {fg = c.type_builtin},  -- arrow
+    WhichKeyDesc = {fg = c.text_primary},  -- decription
+    WhichKeyGroup = {fg = c.func},  -- +prefix
 }
 
 hl.plugins.gitgutter = {
@@ -600,14 +598,14 @@ hl.plugins.nvim_tree = {
     NvimTreeFolderName = {fg = c.text_secondary},
 }
 hl.plugins.telescope = {
-    TelescopeBorder = colors.Red,
-    TelescopePromptBorder = colors.Cyan,
-    TelescopeResultsBorder = colors.Cyan,
-    TelescopePreviewBorder = colors.Cyan,
-    TelescopeMatching = { fg = c.orange, fmt = "bold" },
-    TelescopePromptPrefix = colors.Green,
+    TelescopeBorder = {fg = c.light_grey},
+    TelescopePromptBorder = c.text_primary,
+    TelescopeResultsBorder = colors.TR,
+    TelescopePreviewBorder = colors.TO,
+    TelescopeMatching = { fg = c.complete_menu_text, fmt = "bold" },
+    TelescopePromptPrefix = colors.TY,
     TelescopeSelection =  {bg =c.complete_menu_selection_background}, -- background of tab selection
-    TelescopeSelectionCaret = colors.Yellow
+    TelescopeSelectionCaret = colors.TG
 }
 
 hl.plugins.dashboard = {

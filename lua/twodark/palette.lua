@@ -1,7 +1,6 @@
 return {
 	warmer = {
 
-        ipsm = "#FFFFFF",
         test_red = "#FF0000",
         test_orange = "#FF6B00",
         test_yellow = "#FFF400",
@@ -30,7 +29,6 @@ return {
         -- lua and python --
         --------------------
 
-        hold = "#FFFFFF",
 
         ----------------
         -- python ------
@@ -45,7 +43,8 @@ return {
         comment = "#666666",  -- #comment
         conditional = "#FFFFFF",
 
-        complete_menu_background = "#202021",  -- complete menu background
+        -- complete bg
+        complete_menu_background = "#181818",  -- complete menu background
         complete_menu_text = "#4F7E6A",  -- complete menu text
         complete_menu_predict = "#7AB39B",  -- complete menu text predict
         complete_menu_selection_background = "#2E2E2E",  -- tab background
@@ -112,16 +111,21 @@ return {
         variable_parameter = "#DBD7CA",  -- builtin params
 
         ---------
-        light_grey = "#454545",
+        white = "#FFFFFF",
+        light_grey = "#727272",
+        mid_grey = "#202021",
+        dark_grey = "#181818",
 		black = "#000000",
-		bg0 = "#FF0000", -- tildes somewhere
+
+        ---------
+		bg0 = "#FF0000",
 		bg1 = "#8F1FFF",
-		bg2 = "#24FF00", -- find files selection somewhere
+		bg2 = "#24FF00",
 		bg3 = "#FFFFFF",
 		bg_d = "#FFFFFF",
 		bg_blue = "#000000",
 		bg_yellow = "#000000",
-		fg = "#FFFFFF",
+		fg = "#FF0000",
 		purple = "#000000",
 		green = "#000000",
 		orange = "#000000",
