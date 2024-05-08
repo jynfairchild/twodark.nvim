@@ -147,7 +147,7 @@ hl.syntax = {
     StorageClass = {fg = c.boolean},
     Identifier = {fg = c.lorem, fmt = cfg.code_style.variables},
     Constant = {fg = c.text_tertiary}, -- lua "true, false"
-    PreProc = {fg = c.nvim_git_star},  -- git * symbol in nvim tree
+    PreProc = {fg = c.nvimtree_git_star},  -- git * symbol in nvim tree
     PreCondit = {fg = c.test_yellow},
     Include = {fg = c.test_green},
     Keyword = {fg = c.keyword, fmt = cfg.code_style.keywords},
