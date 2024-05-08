@@ -149,7 +149,7 @@ hl.syntax = {
     Constant = {fg = c.text_tertiary}, -- lua "true, false"
     PreProc = {fg = c.nvimtree_git_star},  -- git * symbol in nvim tree
     PreCondit = {fg = c.test_yellow},
-    Include = {fg = c.test_green},
+    Include = {fg = c.test_yellow},
     Keyword = {fg = c.keyword, fmt = cfg.code_style.keywords},
     Define = {fg = c.keyword_func},
     Typedef = {fg = c.type},
@@ -467,7 +467,7 @@ hl.plugins.barbar = {
     BufferInactiveMod = {fg = c.type_builtin, bg = cfg.transparent and c.none or c.grey_1, fmt = "italic"},  -- shows up in lua
     BufferVisible = {fg = c.text_tertiary, bg = cfg.transparent and c.none or c.keyword_import},  -- non selected buffer
     BufferVisibleMod = {fg = c.test_yellow, bg = c.black, fmt = "italic"},
-    BufferVisibleIndex = {fg = c.test_green, bg = c.black},
+    BufferVisibleIndex = {fg = c.test_orange, bg = c.black},
     BufferVisibleSign = {fg = c.line_separator, bg = c.black},
     BufferVisibleTarget = {fg = c.grey_1, bg = c.black},  -- next non selected buffer
 }
