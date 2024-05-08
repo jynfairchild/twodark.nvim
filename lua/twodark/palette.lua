@@ -100,7 +100,12 @@ return {
         text_secondary = "#666666",
         terminal_text = "#CCCCCC",
         terminal_background = "#1E1B1B",  -- this doesnt effect the inline terminal, only the out of vim termminal
+
         toolbar_bg = "#0F0F0F",
+        toolbar_selected_buffer = "#",
+        toolbar_unsaved_changes = "#",
+        toolbar_inactive_buffer = "#",
+
         type = "#5DA994",  -- Path, class names
         type_builtin = "#B8A965", -- KeyError, type(str, bool)
         variable = "#A0ACA0",  -- params

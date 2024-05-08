@@ -111,7 +111,7 @@ hl.common = {
     -- toolbar colors
     StatusLine = {fg = c.test_yellow, bg = cfg.transparent and c.none or c.status_line_background},  -- toolbar background behind TabLine
     StatusLineTerm = {fg = c.test_red, bg = c.test_red},
-    StatusLineNC = {fg = c.test_red, bg = cfg.transparent and c.none or c.status_line_background},
+    StatusLineNC = {fg = c.placeholder, bg = cfg.transparent and c.none or c.status_line_background},
     StatusLineTermNC = {fg = c.test_purple, bg = c.test_yellow},
 
     -- Tab backgrounds, this defaults to StatusLine if set to transparent
@@ -428,10 +428,10 @@ hl.plugins.lsp = {
     DiagnosticVirtualTextHint = { bg = cfg.transparent and c.none or c.warning,
                                   fg = diagnostics_hint_color },
 
-    -- DiagnosticUnderlineError = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.red},
-    -- DiagnosticUnderlineHint = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.purple},
-    -- DiagnosticUnderlineInfo = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.blue},
-    -- DiagnosticUnderlineWarn = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.yellow},
+    DiagnosticUnderlineError = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.red},
+    DiagnosticUnderlineHint = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.purple},
+    DiagnosticUnderlineInfo = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.blue},
+    DiagnosticUnderlineWarn = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.yellow},
 
     LspReferenceText = { bg = c.test_yellow },
     LspReferenceWrite = { bg = c.test_yellow },
@@ -448,7 +448,7 @@ hl.plugins.lsp.LspDiagnosticsDefaultWarning = hl.plugins.lsp.DiagnosticWarn
 hl.plugins.lsp.LspDiagnosticsUnderlineError = hl.plugins.lsp.DiagnosticUnderlineError
 hl.plugins.lsp.LspDiagnosticsUnderlineHint = hl.plugins.lsp.DiagnosticUnderlineHint
 hl.plugins.lsp.LspDiagnosticsUnderlineInformation = hl.plugins.lsp.DiagnosticUnderlineInfo
--- hl.plugins.lsp.LspDiagnosticsUnderlineWarning = hl.plugins.lsp.DiagnosticUnderlineWarn
+hl.plugins.lsp.LspDiagnosticsUnderlineWarning = hl.plugins.lsp.DiagnosticUnderlineWarn
 hl.plugins.lsp.LspDiagnosticsVirtualTextError = hl.plugins.lsp.DiagnosticVirtualTextError
 hl.plugins.lsp.LspDiagnosticsVirtualTextWarning = hl.plugins.lsp.DiagnosticVirtualTextWarn
 hl.plugins.lsp.LspDiagnosticsVirtualTextInformation = hl.plugins.lsp.DiagnosticVirtualTextInfo
@@ -464,7 +464,7 @@ hl.plugins.barbar = {
     BufferCurrent = {fmt = "bold"},
     BufferCurrentMod = {fg = c.keyword_import, fmt = "bold,italic"},
     BufferCurrentSign = {fg = c.text_secondary},
-    BufferInactiveMod = {fg = c.test_red, bg = cfg.transparent and c.none or c.light_grey, fmt = "italic"},
+    BufferInactiveMod = {fg = c.type_builtin, bg = cfg.transparent and c.none or c.light_grey, fmt = "italic"},  -- shows up in lua
     BufferVisible = {fg = c.text_secondary, bg = cfg.transparent and c.none or c.keyword_import},  -- non selected buffer
     BufferVisibleMod = {fg = c.test_yellow, bg = c.black, fmt = "italic"},
     BufferVisibleIndex = {fg = c.test_green, bg = c.black},
