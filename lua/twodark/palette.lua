@@ -77,7 +77,6 @@ return {
         module = "#FFFFFF",  -- unknown
         namespace = "#CCCCCC",
         note = "#CCCCCC",
-        none = "#",
         number = "#E8C262",
         number_float = "#E8C262",
         nvimtree_selected_bg = "#2A4B3D",  -- nvim-tree selected background
@@ -122,6 +121,7 @@ return {
         grey_4 = "#242424", -- dark
         grey_5 = "#171717", -- darker
 		black = "#000000",
+        none = "#",
 
         ---------
 		bg0 = "#000000",
@@ -131,7 +131,7 @@ return {
 		bg_d = "#000000",
 		bg_blue = "#000000",
 		bg_yellow = "#000000",
-		fg = "#FF0000",
+		fg = "#000000",
 		purple = "#000000",
 		green = "#000000",
 		orange = "#000000",
