@@ -89,7 +89,7 @@ return {
         search_background = "#4D9375",
         selected_text_with_cursor = "#FFFFFF",
         status_line_background = "#212121",
-        string = "#515151",  -- ' '
+        string = "#666666",  -- ' '
         string_regex = "#CCCCCC",
         string_escape = "#8EC6FF",  -- """/ 
         string_special_symbol = "#D66262",
@@ -116,7 +116,7 @@ return {
         ---------
         white = "#FFFFFF",
         grey_1 = "#CCCCCC", -- lighter
-        grey_2 = "#666666", -- light
+        grey_2 = "#515151", -- light
         grey_3 = "#323232", -- mid
         grey_4 = "#242424", -- dark
         grey_5 = "#171717", -- darker
