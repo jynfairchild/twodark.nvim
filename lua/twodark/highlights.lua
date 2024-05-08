@@ -26,7 +26,7 @@ local colors = {
     TP = {fg = c.test_purple},
     TW = {fg = c.test_white},
     -- old colors
-    Fg = {fg = c.fg},
+    test_orange = {fg = c.fg},
     LightGrey = {fg = c.grey_1},
     Grey = {fg = c.grey},
     Red = {fg = c.red},
@@ -512,7 +512,7 @@ hl.plugins.hop = {
 hl.plugins.diffview = {
     DiffviewFilePanelTitle = {fg = c.blue, fmt = "bold"},
     DiffviewFilePanelCounter = {fg = c.purple, fmt = "bold"},
-    DiffviewFilePanelFileName = colors.Fg,
+    DiffviewFilePanelFileName = colors.test_orange,
     DiffviewNormal = hl.common.Normal,
     DiffviewCursorLine = hl.common.CursorLine,
     DiffviewVertSplit = hl.common.VertSplit,
@@ -579,7 +579,7 @@ hl.plugins.neotest = {
     NeotestWinSelect = { fg = c.cyan, fmt = "bold" },
     NeotestSkipped = colors.LightGrey,
     NeotestTarget = colors.Purple,
-    NeotestTest = colors.Fg,
+    NeotestTest = colors.test_orange,
     NeotestUnknown = colors.LightGrey,
 }
 
@@ -779,7 +779,7 @@ hl.langs.php = {
     phpMethods = colors.Cyan,
     phpStructure = colors.Purple,
     phpOperator = colors.Purple,
-    phpMemberSelector = colors.Fg,
+    phpMemberSelector = colors.test_orange,
     phpVarSelector = {fg = c.orange, fmt = cfg.code_style.variables},
     phpIdentifier = {fg = c.orange, fmt = cfg.code_style.variables},
     phpBoolean = colors.Cyan,
@@ -792,7 +792,7 @@ hl.langs.php = {
 }
 
 hl.langs.scala = {
-    scalaNameDefinition = colors.Fg,
+    scalaNameDefinition = colors.test_orange,
     scalaInterpolationBoundary = colors.Purple,
     scalaInterpolation = colors.Purple,
     scalaTypeOperator = colors.Red,
