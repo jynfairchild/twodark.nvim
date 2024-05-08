@@ -88,7 +88,7 @@ return {
         search_background = "#4D9375",
         selected_text_with_cursor = "#FFFFFF",
         status_line_background = "#212121",
-        string = "#9C9C9C",  -- ' '
+        string = "#666666",  -- ' '
         string_regex = "#CCCCCC",
         string_escape = "#DE6767",  -- """/ 
         string_special_symbol = "#D66262",
