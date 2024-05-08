@@ -90,7 +90,7 @@ return {
         status_line_background = "#212121",
         string = "#666666",  -- ' '
         string_regex = "#CCCCCC",
-        string_escape = "#8EC6FF",  -- """/ 
+        string_escape = "#DE6767",  -- """/ 
         string_special_symbol = "#D66262",
         tag = "#CCCCCC",
         text_primary = "#CCCCCC",
