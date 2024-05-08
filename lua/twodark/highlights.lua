@@ -69,7 +69,7 @@ hl.common = {
     Conceal = {fg = c.test_red, bg = c.test_red},
     DiffAdd = {fg = c.none, bg = c.test_orange},
     DiffChange = {fg = c.none, bg = c.test_yellow},
-    DiffDelete = {fg = c.none, bg = c.test_green},
+    DiffDelete = {fg = c.none, bg = c.test_orange},
     DiffText = {fg = c.none, bg= c.test_teal},
     DiffAdded = colors.TR,
     DiffRemoved = colors.TO,
@@ -147,8 +147,8 @@ hl.syntax = {
     StorageClass = {fg = c.boolean},
     Identifier = {fg = c.lorem, fmt = cfg.code_style.variables},
     Constant = {fg = c.text_tertiary}, -- lua "true, false"
-    PreProc = {fg = c.test_green},
-    PreCondit = {fg = c.test_green},
+    PreProc = {fg = c.test_red},
+    PreCondit = {fg = c.test_yellow},
     Include = {fg = c.test_green},
     Keyword = {fg = c.keyword, fmt = cfg.code_style.keywords},
     Define = {fg = c.keyword_func},
@@ -549,11 +549,11 @@ hl.plugins.gitsigns = {
 }
 
 hl.plugins.neo_tree = {
-    NeoTreeNormal = { fg = c.fg, bg = cfg.transparent and c.none or c.bg_d },
-    NeoTreeNormalNC = { fg = c.fg, bg = cfg.transparent and c.none or c.bg_d },
+    NeoTreeNormal = { fg = c.fg, bg = cfg.transparent and c.none or c.placeholder },
+    NeoTreeNormalNC = { fg = c.fg, bg = cfg.transparent and c.none or c.placeholder },
     NeoTreeVertSplit = { fg = c.bg1, bg = cfg.transparent and c.none or c.bg1 },
     NeoTreeWinSeparator = { fg = c.bg1, bg = cfg.transparent and c.none or c.bg1 },
-    NeoTreeEndOfBuffer = { fg = cfg.ending_tildes and c.bg2 or c.bg_d, bg = cfg.transparent and c.none or c.bg_d },
+    NeoTreeEndOfBuffer = { fg = cfg.ending_tildes and c.bg2 or c.placeholder, bg = cfg.transparent and c.none or c.placeholder },
     NeoTreeRootName = { fg = c.orange, fmt = "bold" },
     NeoTreeGitAdded = colors.Green,
     NeoTreeGitDeleted = colors.Red,
@@ -584,8 +584,8 @@ hl.plugins.neotest = {
 }
 
 hl.plugins.nvim_tree = {
-    NvimTreeNormal = {fg = c.text_primary, bg = cfg.transparent and c.none or c.bg_d},
-    NvimTreeVertSplit = {fg = c.line_separator, bg = cfg.transparent and c.none or c.bg_d},
+    NvimTreeNormal = {fg = c.text_primary, bg = cfg.transparent and c.none or c.placeholder},
+    NvimTreeVertSplit = {fg = c.line_separator, bg = cfg.transparent and c.none or c.placeholder},
     NvimTreeEndOfBuffer = {fg = cfg.ending_tildes and c.type_builtin or c.none, bg = cfg.transparent and c.none or c.type_builtin},  -- * git changes
     NvimTreeRootFolder = {fg = c.text_secondary},  -- root folder
     NvimTreeGitDirty = {fg = c.text_tertiary},
