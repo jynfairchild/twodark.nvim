@@ -18,7 +18,7 @@ end
 local colors = {
     -- testing
     TR = {fg = c.test_red},
-    TO = {fg = c.test_orange},
+    TO = {fg = c.placeholder},
     TY = {fg = c.test_yellow},
     TG = {fg = c.test_green},
     TT = {fg = c.test_teal},
@@ -26,7 +26,7 @@ local colors = {
     TP = {fg = c.test_purple},
     TW = {fg = c.test_white},
     -- old colors
-    test_orange = {fg = c.fg},
+    placeholder = {fg = c.fg},
     LightGrey = {fg = c.grey_1},
     Grey = {fg = c.grey},
     Red = {fg = c.red},
@@ -67,9 +67,9 @@ hl.common = {
 
     -- Diff
     Conceal = {fg = c.test_red, bg = c.test_red},
-    DiffAdd = {fg = c.none, bg = c.test_orange},
+    DiffAdd = {fg = c.none, bg = c.placeholder},
     DiffChange = {fg = c.none, bg = c.test_yellow},
-    DiffDelete = {fg = c.none, bg = c.test_orange},
+    DiffDelete = {fg = c.none, bg = c.placeholder},
     DiffText = {fg = c.none, bg= c.test_teal},
     DiffAdded = colors.TR,
     DiffRemoved = colors.TO,
@@ -122,7 +122,7 @@ hl.common = {
     -- line separator and cursor background
     WinSeparator = {fg = c.line_separator},  -- line_separator between buffers
     Visual = {fg = c.none, bg = c.grey_3},  -- cursor selected background and foreground text
-    VisualNOS = {fg = c.test_orange, bg = c.test_purple, fmt = "underline"},
+    VisualNOS = {fg = c.placeholder, bg = c.test_purple, fmt = "underline"},
     QuickFixLine = {fg = c.test_teal, fmt = "none"},
 
     -- debug
@@ -132,7 +132,7 @@ hl.common = {
 
     -- toolbar and bg
     ToolbarButton = {fg = c.test_white, bg = c.test_yellow},
-    FloatBorder = {fg = c.test_orange, bg = c.test_purple},
+    FloatBorder = {fg = c.placeholder, bg = c.test_purple},
     NormalFloat = {fg = c.text_primary, bg = c.whichkey_background},  -- <leader> background
 }
 
@@ -512,7 +512,7 @@ hl.plugins.hop = {
 hl.plugins.diffview = {
     DiffviewFilePanelTitle = {fg = c.blue, fmt = "bold"},
     DiffviewFilePanelCounter = {fg = c.purple, fmt = "bold"},
-    DiffviewFilePanelFileName = colors.test_orange,
+    DiffviewFilePanelFileName = colors.placeholder,
     DiffviewNormal = hl.common.Normal,
     DiffviewCursorLine = hl.common.CursorLine,
     DiffviewVertSplit = hl.common.VertSplit,
@@ -579,7 +579,7 @@ hl.plugins.neotest = {
     NeotestWinSelect = { fg = c.cyan, fmt = "bold" },
     NeotestSkipped = colors.LightGrey,
     NeotestTarget = colors.Purple,
-    NeotestTest = colors.test_orange,
+    NeotestTest = colors.placeholder,
     NeotestUnknown = colors.LightGrey,
 }
 
@@ -779,7 +779,7 @@ hl.langs.php = {
     phpMethods = colors.Cyan,
     phpStructure = colors.Purple,
     phpOperator = colors.Purple,
-    phpMemberSelector = colors.test_orange,
+    phpMemberSelector = colors.placeholder,
     phpVarSelector = {fg = c.orange, fmt = cfg.code_style.variables},
     phpIdentifier = {fg = c.orange, fmt = cfg.code_style.variables},
     phpBoolean = colors.Cyan,
@@ -792,7 +792,7 @@ hl.langs.php = {
 }
 
 hl.langs.scala = {
-    scalaNameDefinition = colors.test_orange,
+    scalaNameDefinition = colors.placeholder,
     scalaInterpolationBoundary = colors.Purple,
     scalaInterpolation = colors.Purple,
     scalaTypeOperator = colors.Red,
