@@ -41,7 +41,7 @@ local colors = {
 hl.common = {
 
     -- primary text & backgrounds
-    Normal = {fg = c.text_primary, bg = cfg.transparent and c.none or c.bg0},
+    Normal = {fg = c.text_secondary, bg = cfg.transparent and c.none or c.bg0},
     Terminal = {fg = c.terminal_text, bg = cfg.transparent and c.none or c.terminal_background},
     EndOfBuffer = {fg = cfg.ending_tildes and c.bg2 or c.none, bg = cfg.transparent and c.none or c.bg0},
     FoldColumn = {fg = c.test_red, bg = cfg.transparent and c.none or c.bg1},
