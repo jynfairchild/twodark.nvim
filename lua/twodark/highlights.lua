@@ -78,7 +78,7 @@ hl.common = {
 
     -- Dir + errors
     Directory = {fg = c.keyword},  -- currently open folder in nvimtree
-    ErrorMsg = {fg = c.test_blue, fmt = "bold"},
+    ErrorMsg = {fg = c.text_secondary, fmt = "bold"},
     WarningMsg = {fg = c.test_purple, fmt = "bold"},
     MoreMsg = {fg = c.test_white, fmt = "bold"},
 
@@ -91,7 +91,7 @@ hl.common = {
 
     -- text modify
     NonText = {fg = c.line_separator},  -- line between tabs
-    Whitespace = {fg = c.test_white},  -- cursor highlight color
+    Whitespace = {fg = c.test_white},  -- cursor highlight color in lua
     SpecialKey = {fg = c.test_white},
 
     -- complete menus
