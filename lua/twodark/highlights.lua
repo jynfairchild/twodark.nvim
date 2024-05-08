@@ -80,7 +80,7 @@ hl.common = {
     Directory = {fg = c.keyword},  -- currently open folder in nvimtree
     ErrorMsg = {fg = c.text_secondary, fmt = "none"},
     WarningMsg = {fg = c.text_secondary, fmt = "none"},
-    MoreMsg = {fg = c.text_secondary, fmt = "none"},
+    MoreMsg = {fg = c.text_secondary, bg = c.placeholder, fmt = "none"},
 
     -- search match sub
     CurSearch = {fg = c.placeholder, bg = c.orange},
