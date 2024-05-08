@@ -111,7 +111,7 @@ hl.common = {
     -- toolbar colors
     StatusLine = {fg = c.test_yellow, bg = cfg.transparent and c.none or c.status_line_background},  -- toolbar background behind TabLine
     StatusLineTerm = {fg = c.test_red, bg = c.test_red},
-    StatusLineNC = {fg = c.placeholder, bg = cfg.transparent and c.none or c.status_line_background},
+    StatusLineNC = {fg = c.placeholder, bg = cfg.transparent and c.none or c.status_line_background},  -- unsaved changes (something over writes this)
     StatusLineTermNC = {fg = c.test_purple, bg = c.test_yellow},
 
     -- Tab backgrounds, this defaults to StatusLine if set to transparent
@@ -121,7 +121,7 @@ hl.common = {
 
     -- line separator and cursor background
     WinSeparator = {fg = c.line_separator},  -- line_separator between buffers
-    Visual = {bg = c.cursor_background},  -- cursor selected background
+    Visual = {bg = c.mid_grey},  -- cursor selected background
     VisualNOS = {fg = c.test_orange, bg = c.test_purple, fmt = "underline"},
     QuickFixLine = {fg = c.test_teal, fmt = "none"},
 
