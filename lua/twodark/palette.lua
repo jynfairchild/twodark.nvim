@@ -112,6 +112,10 @@ return {
         variable_parameter = "#DBD7CA",  -- builtin params
         warning = "#363636",
         whichkey_background = "#202021",
+        whichkey_letter = "#568B74",
+        whichkey_arrow = "#B8A965",
+        whichkey_decription = "#CCCCCC",
+        whichkey_prefix = "#80A665",
 
         ---------
         white = "#FFFFFF",

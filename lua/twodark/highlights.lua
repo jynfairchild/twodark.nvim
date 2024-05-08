@@ -489,10 +489,10 @@ hl.plugins.coc = {
 }
 
 hl.plugins.whichkey = {
-    WhichKey = {fg= c.keyword},  -- letter
-    WhichKeySeparator = {fg = c.type_builtin},  -- arrow
-    WhichKeyDesc = {fg = c.text_primary},  -- decription
-    WhichKeyGroup = {fg = c.func},  -- +prefix
+    WhichKey = {fg = c.whichkey_letter},  -- letter
+    WhichKeySeparator = {fg = c.whichkey_arrow},  -- arrow
+    WhichKeyDesc = {fg = c.whichkey_description},  -- decription
+    WhichKeyGroup = {fg = c.whichkey_prefix},  -- +prefix
 }
 
 hl.plugins.gitgutter = {
