@@ -121,7 +121,7 @@ hl.common = {
 
     -- line separator and cursor background
     WinSeparator = {fg = c.line_separator},  -- line_separator between buffers
-    Visual = {fg = c.grey_1, bg = c.grey_3},  -- cursor selected background and foreground text
+    Visual = {fg = c.none, bg = c.grey_3},  -- cursor selected background and foreground text
     VisualNOS = {fg = c.test_orange, bg = c.test_purple, fmt = "underline"},
     QuickFixLine = {fg = c.test_teal, fmt = "none"},
 
