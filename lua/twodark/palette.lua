@@ -53,10 +53,8 @@ return {
 
         constant = "#4D9375",  -- None
         constructor = "#B8A965",  -- __init__, class calls User()
-        cursor_background = "#314F42",
-        cursor_outline = "#9CDDC1",
         cursor_text = "#9CDDC1",
-        cursor_visual_selection = "#314F42",  -- selected highlight often seen in visual mode
+        cursor_visual_selection = "#3B3B3B",  -- selected highlight often seen in visual mode
         danger = "#B12E2E",
         delimiters = "#666666", -- . , ; :
         diff_add = "#000000",
@@ -117,9 +115,11 @@ return {
 
         ---------
         white = "#FFFFFF",
-        light_grey = "#727272",
-        mid_grey = "#202021",
-        dark_grey = "#181818",
+        grey_1 = "#808080", -- lighter
+        grey_2 = "#515151", -- light
+        grey_3 = "#323232", -- mid
+        grey_4 = "#242424", -- dark
+        grey_5 = "#171717", -- darker
 		black = "#000000",
 
         ---------

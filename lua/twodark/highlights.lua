@@ -27,7 +27,7 @@ local colors = {
     TW = {fg = c.test_white},
     -- old colors
     Fg = {fg = c.fg},
-    LightGrey = {fg = c.light_grey},
+    LightGrey = {fg = c.grey_1},
     Grey = {fg = c.grey},
     Red = {fg = c.red},
     Cyan = {fg = c.cyan},
@@ -121,7 +121,7 @@ hl.common = {
 
     -- line separator and cursor background
     WinSeparator = {fg = c.line_separator},  -- line_separator between buffers
-    Visual = {fg = c.white, bg = c.light_grey},  -- cursor selected background
+    Visual = {fg = c.grey_1, bg = c.grey_3},  -- cursor selected background and foreground text
     VisualNOS = {fg = c.test_orange, bg = c.test_purple, fmt = "underline"},
     QuickFixLine = {fg = c.test_teal, fmt = "none"},
 
@@ -464,12 +464,12 @@ hl.plugins.barbar = {
     BufferCurrent = {fmt = "bold"},
     BufferCurrentMod = {fg = c.keyword_import, fmt = "bold,italic"},
     BufferCurrentSign = {fg = c.text_secondary},
-    BufferInactiveMod = {fg = c.type_builtin, bg = cfg.transparent and c.none or c.light_grey, fmt = "italic"},  -- shows up in lua
+    BufferInactiveMod = {fg = c.type_builtin, bg = cfg.transparent and c.none or c.grey_1, fmt = "italic"},  -- shows up in lua
     BufferVisible = {fg = c.text_secondary, bg = cfg.transparent and c.none or c.keyword_import},  -- non selected buffer
     BufferVisibleMod = {fg = c.test_yellow, bg = c.black, fmt = "italic"},
     BufferVisibleIndex = {fg = c.test_green, bg = c.black},
     BufferVisibleSign = {fg = c.line_separator, bg = c.black},
-    BufferVisibleTarget = {fg = c.light_grey, bg = c.black},  -- next non selected buffer
+    BufferVisibleTarget = {fg = c.grey_1, bg = c.black},  -- next non selected buffer
 }
 
 hl.plugins.cmp = {
@@ -598,10 +598,10 @@ hl.plugins.nvim_tree = {
     NvimTreeFolderName = {fg = c.text_secondary},
 }
 hl.plugins.telescope = {
-    TelescopeBorder = {fg = c.light_grey}, -- telescope titles
-    TelescopePromptBorder = {fg = c.light_grey},  -- textbox boarder
-    TelescopeResultsBorder = {fg = c.light_grey},  -- results boarder
-    TelescopePreviewBorder = {fg = c.light_grey},  -- preview boarder
+    TelescopeBorder = {fg = c.grey_1}, -- telescope titles
+    TelescopePromptBorder = {fg = c.grey_1},  -- textbox boarder
+    TelescopeResultsBorder = {fg = c.grey_1},  -- results boarder
+    TelescopePreviewBorder = {fg = c.grey_1},  -- preview boarder
     TelescopeMatching = { fg = c.text_primary, fmt = "bold" },  -- matching text in filename
     TelescopePromptPrefix = {fg = c.text_primary},  -- > carrot
     TelescopeSelection =  {bg =c.complete_menu_selection_background}, -- background of tab selection
@@ -622,7 +622,7 @@ hl.plugins.outline = {
 
 hl.plugins.navic = {
     NavicText = { fg = c.fg },
-    NavicSeparator = { fg = c.light_grey },
+    NavicSeparator = { fg = c.grey_1 },
 }
 
 hl.plugins.ts_rainbow = {
@@ -662,15 +662,15 @@ hl.plugins.indent_blankline = {
     IndentBlanklineIndent4 = colors.LightGrey,
     IndentBlanklineIndent5 = colors.Purple,
     IndentBlanklineIndent6 = colors.Red,
-    IndentBlanklineChar = { fg = c.light_grey, fmt = "nocombine" },
-    IndentBlanklineContextChar = { fg = c.light_grey, fmt = "nocombine" },
-    IndentBlanklineContextStart = { sp = c.light_grey, fmt = "underline" },
+    IndentBlanklineChar = { fg = c.grey_1, fmt = "nocombine" },
+    IndentBlanklineContextChar = { fg = c.grey_1, fmt = "nocombine" },
+    IndentBlanklineContextStart = { sp = c.grey_1, fmt = "underline" },
     IndentBlanklineContextSpaceChar = { fmt = "nocombine" },
 
     -- Ibl v3
-    IblIndent = { fg = c.mid_grey, fmt = "nocombine" },  -- all lines
-    IblWhitespace = { fg = c.mid_grey, fmt = "nocombine" },  -- underline between current area and text
-    IblScope = { fg = c.mid_grey, fmt = "nocombine" },  -- line of current cursor area
+    IblIndent = { fg = c.grey_4, fmt = "nocombine" },  -- all lines
+    IblWhitespace = { fg = c.grey_4, fmt = "nocombine" },  -- underline between current area and text
+    IblScope = { fg = c.grey_4, fmt = "nocombine" },  -- line of current cursor area
 }
 
 hl.plugins.mini = {
@@ -713,10 +713,10 @@ hl.plugins.mini = {
     MiniTablineFill = { fg = c.grey, bg = c.bg1 },
     MiniTablineHidden = { fg = c.fg, bg = c.bg1 },
     MiniTablineModifiedCurrent = { fg = c.orange, fmt = "bold,italic" },
-    MiniTablineModifiedHidden = { fg = c.light_grey, bg = c.bg1, fmt = "italic" },
+    MiniTablineModifiedHidden = { fg = c.grey_1, bg = c.bg1, fmt = "italic" },
     MiniTablineModifiedVisible = { fg = c.yellow, bg = c.bg0, fmt = "italic" },
     MiniTablineTabpagesection = { fg = c.bg0, bg = c.bg_yellow },
-    MiniTablineVisible = { fg = c.light_grey, bg = c.bg0 },
+    MiniTablineVisible = { fg = c.grey_1, bg = c.bg0 },
 
     MiniTestEmphasis = { fmt = "bold" },
     MiniTestFail = { fg = c.red, fmt = "bold" },
@@ -830,7 +830,7 @@ hl.langs.vim = {
     vimMapLhs = colors.Red,
     vimMapRhs = colors.Blue,
     vimVar = {fg = c.fg, fmt = cfg.code_style.variables},
-    vimCommentTitle = {fg = c.light_grey, fmt = cfg.code_style.comments},
+    vimCommentTitle = {fg = c.grey_1, fmt = cfg.code_style.comments},
 }
 
 local lsp_kind_icons_color = {
@@ -864,7 +864,7 @@ local lsp_kind_icons_color = {
     Snippet = c.red,
     String = c.green,
     Struct = c.purple,
-    Text = c.light_grey,
+    Text = c.grey_1,
     TypeParameter = c.red,
     Unit = c.green,
     Value = c.orange,
