@@ -116,7 +116,7 @@ return {
         ---------
         white = "#FFFFFF",
         grey_1 = "#CCCCCC", -- lighter
-        grey_2 = "#515151", -- light
+        grey_2 = "#666666", -- light
         grey_3 = "#323232", -- mid
         grey_4 = "#242424", -- dark
         grey_5 = "#171717", -- darker
