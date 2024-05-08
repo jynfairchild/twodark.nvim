@@ -15,7 +15,6 @@ return {
         ---------
 
         lua_brackets = "#6893BF", -- "{ }"
-        lua_string = "#CCCCCC", -- "string"
         lua_boolean = "#4D9375",
         lua_statement = "#CB7676", -- "return"
         lua_numbers = "#4C9A91", -- "300"
@@ -95,7 +94,8 @@ return {
         string_special_symbol = "#D66262",
         tag = "#CCCCCC",
         text_primary = "#CCCCCC",
-        text_secondary = "#666666",
+        text_secondary = "#9C9C9C",
+        text_tertiary = "#666666",
         terminal_text = "#CCCCCC",
         terminal_background = "#1E1B1B",  -- this doesnt effect the inline terminal, only the out of vim termminal
 

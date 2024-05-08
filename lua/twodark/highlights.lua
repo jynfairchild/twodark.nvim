@@ -96,7 +96,7 @@ hl.common = {
 
     -- complete menus
     Pmenu = {fg = c.none, bg = c.complete_menu_background},  -- bg = complete menu bg
-    PmenuThumb = {fg = c.none, bg = c.text_secondary},  -- compplete menu top scroll bar
+    PmenuThumb = {fg = c.none, bg = c.text_tertiary},  -- compplete menu top scroll bar
     PmenuSbar = {fg = c.none, bg = c.text_primary},  -- complete menu bot scroll bar
     PmenuSel = {fg = c.text_primary, bg = c.complete_menu_selection_background},  -- complete menu tab through options
     WildMenu = {fg = c.test_purple, bg = c.blue},
@@ -115,7 +115,7 @@ hl.common = {
     StatusLineTermNC = {fg = c.test_purple, bg = c.test_yellow},
 
     -- Tab backgrounds, this defaults to StatusLine if set to transparent
-    TabLine = {fg = c.text_secondary, bg = cfg.transparent and c.none or c.toolbar_background},  -- background of non-selected toolbar buffers
+    TabLine = {fg = c.text_tertiary, bg = cfg.transparent and c.none or c.toolbar_background},  -- background of non-selected toolbar buffers
     TabLineFill = {fg = c.none, bg = cfg.transparent and c.none or c.toolbar_background},  -- toolbar_background for empty space
     TabLineSel =  {fg = c.none, bg = c.placeholder},  -- unknown
 
@@ -138,7 +138,7 @@ hl.common = {
 
 hl.syntax = {
     String = {fg = c.string, fmt = cfg.code_style.strings},  -- "string"
-    Character = {fg = c.text_secondary},  -- lua
+    Character = {fg = c.text_tertiary},  -- lua
     Number = {fg = c.number},  -- "nums"
     Float = {fg = c.number_float},
     Boolean = {fg = c.boolean},
@@ -146,7 +146,7 @@ hl.syntax = {
     Structure = {fg = c.brackets},  -- lua "{ }, 300"
     StorageClass = {fg = c.boolean},
     Identifier = {fg = c.lorem, fmt = cfg.code_style.variables},
-    Constant = {fg = c.text_secondary}, -- lua "true, false"
+    Constant = {fg = c.text_tertiary}, -- lua "true, false"
     PreProc = {fg = c.test_green},
     PreCondit = {fg = c.test_green},
     Include = {fg = c.test_green},
@@ -406,7 +406,7 @@ end
 local diagnostics_error_color = cfg.diagnostics.darker and c.error or c.error
 local diagnostics_hint_color = cfg.diagnostics.darker and c.warning or c.warning
 local diagnostics_warn_color = cfg.diagnostics.darker and c.warning or c.warning
-local diagnostics_info_color = cfg.diagnostics.darker and c.text_secondary or c.text_secondary
+local diagnostics_info_color = cfg.diagnostics.darker and c.text_tertiary or c.text_tertiary
 hl.plugins.lsp = {
     LspCxxHlGroupEnumConstant = colors.Orange,
     LspCxxHlGroupMemberVariable = colors.Orange,
@@ -414,10 +414,10 @@ hl.plugins.lsp = {
     LspCxxHlSkippedRegion = colors.Grey,
     LspCxxHlSkippedRegionBeginEnd = colors.Red,
 
-    DiagnosticError = {fg = c.text_secondary},
-    DiagnosticHint = {fg = c.text_secondary},
-    DiagnosticInfo = {fg = c.text_secondary},
-    DiagnosticWarn = {fg = c.text_secondary},
+    DiagnosticError = {fg = c.text_tertiary},
+    DiagnosticHint = {fg = c.text_tertiary},
+    DiagnosticInfo = {fg = c.text_tertiary},
+    DiagnosticWarn = {fg = c.text_tertiary},
 
     DiagnosticVirtualTextError = { bg = cfg.transparent and c.none or c.warning,
                                    fg = diagnostics_error_color },
@@ -463,9 +463,9 @@ hl.plugins.ale = {
 hl.plugins.barbar = {
     BufferCurrent = {fmt = "bold"},
     BufferCurrentMod = {fg = c.keyword_import, fmt = "bold,italic"},
-    BufferCurrentSign = {fg = c.text_secondary},
+    BufferCurrentSign = {fg = c.text_tertiary},
     BufferInactiveMod = {fg = c.type_builtin, bg = cfg.transparent and c.none or c.grey_1, fmt = "italic"},  -- shows up in lua
-    BufferVisible = {fg = c.text_secondary, bg = cfg.transparent and c.none or c.keyword_import},  -- non selected buffer
+    BufferVisible = {fg = c.text_tertiary, bg = cfg.transparent and c.none or c.keyword_import},  -- non selected buffer
     BufferVisibleMod = {fg = c.test_yellow, bg = c.black, fmt = "italic"},
     BufferVisibleIndex = {fg = c.test_green, bg = c.black},
     BufferVisibleSign = {fg = c.line_separator, bg = c.black},
@@ -477,7 +477,7 @@ hl.plugins.cmp = {
     CmpItemAbbrDeprecated = {fg = c.complete_menu_deprecated, fmt = "strikethrough"},  -- 3rd column deprecated
     CmpItemAbbrMatch = {fg = c.complete_menu_predict},  -- 1st col prediction
     CmpItemAbbrMatchFuzzy = {fg = c.complete_menu_match_fuzzy, fmt = "underline"},  -- fuzzy match often underlined
-    CmpItemMenu = {fg = c.text_secondary}, -- [lsp] [buffer]
+    CmpItemMenu = {fg = c.text_tertiary}, -- [lsp] [buffer]
     CmpItemKind = {fg = c.none, bg = c.complete_menu_selection_background, fmt = cfg.cmp_itemkind_reverse and "reverse"},  -- background of tabbed selection
 }
 
@@ -587,15 +587,15 @@ hl.plugins.nvim_tree = {
     NvimTreeNormal = {fg = c.text_primary, bg = cfg.transparent and c.none or c.bg_d},
     NvimTreeVertSplit = {fg = c.line_separator, bg = cfg.transparent and c.none or c.bg_d},
     NvimTreeEndOfBuffer = {fg = cfg.ending_tildes and c.type_builtin or c.none, bg = cfg.transparent and c.none or c.bg_d},  -- * git changes
-    NvimTreeRootFolder = {fg = c.text_secondary},  -- root folder
-    NvimTreeGitDirty = {fg = c.text_secondary},
-    NvimTreeGitNew = {fg = c.text_secondary},
-    NvimTreeGitDeleted = {fg = c.text_secondary},
-    NvimTreeSpecialFile = {fg = c.text_secondary, fmt = "underline"}, -- readme file
-    NvimTreeIndentMarker = {fg = c.text_secondary},
-    NvimTreeImageFile = {fg = c.text_secondary},
-    NvimTreeSymlink = {fg = c.text_secondary},
-    NvimTreeFolderName = {fg = c.text_secondary},
+    NvimTreeRootFolder = {fg = c.text_tertiary},  -- root folder
+    NvimTreeGitDirty = {fg = c.text_tertiary},
+    NvimTreeGitNew = {fg = c.text_tertiary},
+    NvimTreeGitDeleted = {fg = c.text_tertiary},
+    NvimTreeSpecialFile = {fg = c.text_tertiary, fmt = "underline"}, -- readme file
+    NvimTreeIndentMarker = {fg = c.text_tertiary},
+    NvimTreeImageFile = {fg = c.text_tertiary},
+    NvimTreeSymlink = {fg = c.text_tertiary},
+    NvimTreeFolderName = {fg = c.text_tertiary},
 }
 hl.plugins.telescope = {
     TelescopeBorder = {fg = c.grey_1}, -- telescope titles
