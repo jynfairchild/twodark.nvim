@@ -74,7 +74,7 @@ hl.common = {
     DiffAdded = colors.TR,
     DiffRemoved = colors.TO,
     DiffFile = colors.TY,
-    DiffIndexLine = colors.TG,
+    DiffIndexLine = {fg = c.test_yellow},
 
     -- Dir + errors
     Directory = {fg = c.keyword},  -- currently open folder in nvimtree
