@@ -78,9 +78,9 @@ hl.common = {
 
     -- Dir + errors
     Directory = {fg = c.keyword},  -- currently open folder in nvimtree
-    ErrorMsg = {fg = c.text_secondary, fmt = "bold"},
-    WarningMsg = {fg = c.test_purple, fmt = "bold"},
-    MoreMsg = {fg = c.test_white, fmt = "bold"},
+    ErrorMsg = {fg = c.text_secondary, fmt = "none"},
+    WarningMsg = {fg = c.text_secondary, fmt = "none"},
+    MoreMsg = {fg = c.text_secondary, fmt = "none"},
 
     -- search match sub
     CurSearch = {fg = c.placeholder, bg = c.orange},
@@ -586,8 +586,8 @@ hl.plugins.neotest = {
 hl.plugins.nvim_tree = {
     NvimTreeNormal = {fg = c.text_primary, bg = cfg.transparent and c.none or c.bg_d},
     NvimTreeVertSplit = {fg = c.line_separator, bg = cfg.transparent and c.none or c.bg_d},
-    NvimTreeEndOfBuffer = {fg = cfg.ending_tildes and c.type_builtin or c.none, bg = cfg.transparent and c.none or c.bg_d},  -- * git changes
-    NvimTreeRootFolder = {fg = c.text_tertiary},  -- root folder
+    NvimTreeEndOfBuffer = {fg = cfg.ending_tildes and c.type_builtin or c.none, bg = cfg.transparent and c.none or c.type_builtin},  -- * git changes
+    NvimTreeRootFolder = {fg = c.text_secondary},  -- root folder
     NvimTreeGitDirty = {fg = c.text_tertiary},
     NvimTreeGitNew = {fg = c.text_tertiary},
     NvimTreeGitDeleted = {fg = c.text_tertiary},
