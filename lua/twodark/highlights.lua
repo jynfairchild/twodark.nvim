@@ -560,7 +560,7 @@ hl.plugins.neo_tree = {
     NeoTreeGitConflict = { fg = c.red, fmt = "bold,italic" },
     NeoTreeGitUntracked = { fg = c.red, fmt = "italic" },
     NeoTreeIndentMarker = colors.Grey,
-    NeoTreeSymbolicLinkTarget = colors.Purple,
+    NeoTreeSymbolicLinkTarget = {fg = c.placeholder},
 }
 
 hl.plugins.neotest = {
@@ -577,7 +577,7 @@ hl.plugins.neotest = {
     NeotestRunning = colors.Yellow,
     NeotestWinSelect = { fg = c.cyan, fmt = "bold" },
     NeotestSkipped = colors.LightGrey,
-    NeotestTarget = colors.Purple,
+    NeotestTarget = {fg = c.placeholder},
     NeotestTest = colors.placeholder,
     NeotestUnknown = colors.LightGrey,
 }
@@ -812,9 +812,9 @@ hl.langs.tex = {
     texMathZoneX  = colors.Orange,
     texMathZoneXX = colors.Orange,
     texMathDelimZone = colors.LightGrey,
-    texMathDelim = colors.Purple,
+    texMathDelim = {fg = c.placeholder},
     texMathOper = colors.Red,
-    texCmd = colors.Purple,
+    texCmd = {fg = c.placeholder},
     texCmdPart = colors.Blue,
     texCmdPackage = colors.Blue,
     texPgfType = colors.Yellow,
