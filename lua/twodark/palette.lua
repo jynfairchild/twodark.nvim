@@ -35,7 +35,7 @@ return {
 
         annotation = "#FFFFFF",  -- unknown
         attribute = "#80A665",  -- @staticmethod
-        boolean = "#D66262",  -- True False
+        boolean = "#DE6767",  -- True False
         brackets = "#666666",  -- ([{}])
         brackets_in_strings = "#D66262",  -- f'{}'
         character = "#FFFFFF",  -- unknown
@@ -97,6 +97,8 @@ return {
         text_secondary = "#9C9C9C",
         text_tertiary = "#666666",
         terminal_text = "#CCCCCC",
+        terminal_carrot = "#DE6767",
+        terminal_keyword = "#568B74",
         terminal_background = "#1E1B1B",  -- this doesnt effect the inline terminal, only the out of vim termminal
 
         toolbar_bg = "#0F0F0F",
@@ -136,7 +138,6 @@ return {
 		bg_blue = "#000000",
 		bg_yellow = "#000000",
 		fg = "#000000",
-		purple = "#FFFFFF",
 		green = "#000000",
 		orange = "#000000",
 		blue = "#000000",
