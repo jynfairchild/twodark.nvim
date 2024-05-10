@@ -42,7 +42,7 @@ hl.common = {
     Normal = {fg = c.text_secondary, bg = cfg.transparent and c.none or c.none},
     Terminal = {fg = c.terminal_text, bg = cfg.transparent and c.none or c.terminal_background},
     EndOfBuffer = {fg = cfg.ending_tildes and c.bg2 or c.none, bg = cfg.transparent and c.none or c.bg0},
-    FoldColumn = {fg = c.tildes, bg = cfg.transparent and c.none or c.bg1},
+    FoldColumn = {fg = c.placeholder, bg = cfg.transparent and c.none or c.bg1},
     Folded = {fg = c.test_yellow, bg = cfg.transparent and c.none or c.bg1},
     SignColumn = {fg = c.test_white, bg = cfg.transparent and c.none or c.bg0},
     ToolbarLine = {fg = c.line_separator, bg = cfg.transparent and c.none or c.b0},  -- more line separator in the toolbar
@@ -100,7 +100,7 @@ hl.common = {
     WildMenu = {fg = c.test_purple, bg = c.blue},
 
     -- no idea
-    Question = {fg = c.test_red},
+    Question = {fg = c.tildes},
     SpellBad = {fg = c.none, fmt = "undercurl", sp = c.red},
     SpellCap = {fg = c.none, fmt = "undercurl", sp = c.test_orange},
     SpellLocal = {fg = c.none, fmt = "undercurl", sp = c.blue},
