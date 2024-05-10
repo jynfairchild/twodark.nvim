@@ -97,6 +97,7 @@ return {
         text_secondary = "#9C9C9C",
         text_tertiary = "#666666",
 
+        -- terminal
         terminal_cursor = "#9C9C9C",
         terminal_text = "#568B74",
         terminal_carrot = "#186F49",
@@ -105,6 +106,7 @@ return {
         terminal_directory = "#BEBEBE",
         terminal_background = "#1E1B1B",  -- this doesnt effect the inline terminal, only the out of vim termminal
 
+        -- toolbar
         toolbar_bg = "#0F0F0F",
         toolbar_selected_buffer = "#",
         toolbar_unsaved_changes = "#",
@@ -123,7 +125,10 @@ return {
         whichkey_decription = "#CCCCCC",
         whichkey_prefix = "#80A665",
 
-        ---------
+        ---------------------
+        -- zero saturation --
+        ---------------------
+
         white = "#FFFFFF",
         grey_1 = "#CCCCCC", -- lighter
         grey_2 = "#515151", -- light
@@ -145,7 +150,7 @@ return {
 		green = "#FF0000",
 		orange = "#000000",
 		blue = "#000000",
-		yellow = "#24FF00",
+		yellow = "#000000",
 		cyan = "#24FF00",
 		red = "#24FF00",
 		grey = "#000000",
