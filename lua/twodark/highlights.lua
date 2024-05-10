@@ -104,7 +104,7 @@ hl.common = {
     SpellBad = {fg = c.none, fmt = "undercurl", sp = c.red},
     SpellCap = {fg = c.none, fmt = "undercurl", sp = c.yellow},
     SpellLocal = {fg = c.none, fmt = "undercurl", sp = c.blue},
-    SpellRare = {fg = c.none, fmt = "undercurl", sp = c.purple},
+    SpellRare = {fg = c.none, fmt = "undercurl", sp = c.placeholder},
 
     -- toolbar colors
     StatusLine = {fg = c.test_yellow, bg = cfg.transparent and c.none or c.status_line_background},  -- toolbar background behind TabLine
@@ -839,10 +839,10 @@ local lsp_kind_icons_color = {
     Color = c.green,
     Constant = c.orange,
     Constructor = c.blue,
-    Enum = c.purple,
+    Enum = c.placeholder,
     EnumMember = c.yellow,
     Event = c.yellow,
-    Field = c.purple,
+    Field = c.placeholder,
     File = c.blue,
     Folder = c.orange,
     Function = c.blue,
@@ -861,12 +861,12 @@ local lsp_kind_icons_color = {
     Reference = c.orange,
     Snippet = c.red,
     String = c.green,
-    Struct = c.purple,
+    Struct = c.placeholder,
     Text = c.grey_1,
     TypeParameter = c.red,
     Unit = c.green,
     Value = c.orange,
-    Variable = c.purple,
+    Variable = c.placeholder,
 }
 
 function M.setup()
