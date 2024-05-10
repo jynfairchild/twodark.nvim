@@ -732,15 +732,15 @@ hl.langs.c = {
     cTSInclude = colors.Blue,
     cTSConstant = colors.Cyan,
     cTSConstMacro = {fg = c.placeholder},
-    cTSOperator = colors.Purple,
+    cTSOperator = {fg = c.placeholder},
 }
 
 hl.langs.cpp = {
     cppStatement = { fg = c.purple, fmt = "bold" },
     cppTSInclude = colors.Blue,
     cppTSConstant = colors.Cyan,
-    cppTSConstMacro = colors.Purple,
-    cppTSOperator = colors.Purple,
+    cppTSConstMacro = {fg = c.placeholder},
+    cppTSOperator = {fg = c.placeholder},
 }
 
 hl.langs.markdown = {
