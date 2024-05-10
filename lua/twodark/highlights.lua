@@ -23,7 +23,6 @@ local colors = {
     TG = {fg = c.test_green},
     TT = {fg = c.test_teal},
     TB = {fg = c.test_blue},
-    TP = {fg = c.test_purple},
     TW = {fg = c.test_white},
     -- old colors
     placeholder = {fg = c.fg},
@@ -128,7 +127,7 @@ hl.common = {
     -- debug
     Debug = {fg = c.test_white},
     debugPC = {fg = c.complete_menu_predict, bg = c.complete_menu_selection_background},
-    debugBreakpoint = {fg = c.test_red, bg = c.red},
+    debugBreakpoint = {fg = c.placeholder, bg = c.red},
 
     -- toolbar and bg
     ToolbarButton = {fg = c.test_white, bg = c.test_yellow},
@@ -511,7 +510,7 @@ hl.plugins.hop = {
 -- comment
 hl.plugins.diffview = {
     DiffviewFilePanelTitle = {fg = c.blue, fmt = "bold"},
-    DiffviewFilePanelCounter = {fg = c.purple, fmt = "bold"},
+    DiffviewFilePanelCounter = {fg = c.placeholder, fmt = "bold"},
     DiffviewFilePanelFileName = colors.placeholder,
     DiffviewNormal = hl.common.Normal,
     DiffviewCursorLine = hl.common.CursorLine,
@@ -565,7 +564,7 @@ hl.plugins.neo_tree = {
 }
 
 hl.plugins.neotest = {
-    NeotestAdapterName = { fg = c.purple, fmt = "bold" },
+    NeotestAdapterName = { fg = c.placeholder, fmt = "bold" },
     NeotestDir = colors.Cyan,
     NeotestExpandMarker = colors.Grey,
     NeotestFailed = colors.Red,
@@ -768,7 +767,7 @@ hl.langs.markdown = {
     markdownLinkTextDelimiter = colors.Grey,
     markdownListMarker = colors.Red,
     markdownOrderedListMarker = colors.Red,
-    markdownRule = colors.Purple,
+    markdownRule = {fg = c.placeholder},
     markdownUrl = {fg = c.blue, fmt = "underline"},
     markdownUrlDelimiter = colors.Grey,
     markdownUrlTitleDelimiter = colors.Green
@@ -824,7 +823,7 @@ hl.langs.tex = {
 hl.langs.vim = {
     vimOption = colors.Red,
     vimSetEqual = colors.Yellow,
-    vimMap = colors.Purple,
+    vimMap = {fg = c.placeholder},
     vimMapModKey = colors.Orange,
     vimNotation = colors.Red,
     vimMapLhs = colors.Red,
