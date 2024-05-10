@@ -726,12 +726,12 @@ hl.plugins.mini = {
 
 hl.langs.c = {
     cInclude = colors.Blue,
-    cStorageClass = colors.Purple,
-    cTypedef = colors.Purple,
+    cStorageClass = {fg = c.placeholder},
+    cTypedef = {fg = c.placeholder},
     cDefine = colors.Cyan,
     cTSInclude = colors.Blue,
     cTSConstant = colors.Cyan,
-    cTSConstMacro = colors.Purple,
+    cTSConstMacro = {fg = c.placeholder},
     cTSOperator = colors.Purple,
 }
 
