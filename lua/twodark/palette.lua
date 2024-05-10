@@ -96,7 +96,8 @@ return {
         text_primary = "#CCCCCC",
         text_secondary = "#9C9C9C",
         text_tertiary = "#666666",
-        terminal_cursor = "#FFFFFF",
+
+        terminal_cursor = "#9C9C9C",
         terminal_text = "#568B74",
         terminal_carrot = "#186F49",
         terminal_keyword = "#568B74",
