@@ -34,7 +34,6 @@ local colors = {
     Orange = {fg = c.orange},
     Green = {fg = c.green},
     Blue = {fg = c.blue},
-    Purple = {fg = c.purple}
 }
 
 hl.common = {
@@ -428,7 +427,7 @@ hl.plugins.lsp = {
                                   fg = diagnostics_hint_color },
 
     DiagnosticUnderlineError = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.red},
-    DiagnosticUnderlineHint = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.purple},
+    DiagnosticUnderlineHint = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.none},
     DiagnosticUnderlineInfo = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.blue},
     DiagnosticUnderlineWarn = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.yellow},
 
@@ -615,8 +614,8 @@ hl.plugins.dashboard = {
 }
 
 hl.plugins.outline = {
-    FocusedSymbol = { fg = c.purple, bg = c.bg2, fmt = "bold" },
-    AerialLine = { fg = c.purple, bg = c.bg2, fmt = "bold" },
+    FocusedSymbol = { fg = c.placeholder, bg = c.bg2, fmt = "bold" },
+    AerialLine = { fg = c.placeholder, bg = c.bg2, fmt = "bold" },
 }
 
 hl.plugins.navic = {
@@ -681,7 +680,7 @@ hl.plugins.mini = {
     MiniIndentscopeSymbol = { fg = c.grey },
     MiniIndentscopePrefix = { fmt = "nocombine" }, -- Make it invisible
 
-    MiniJump = { fg = c.purple, fmt = "underline", sp = c.purple },
+    MiniJump = { fg = c.placeholder, fmt = "underline", sp = c.placeholder },
 
     MiniJump2dSpot = { fg = c.red, fmt = "bold,nocombine" },
 
@@ -704,7 +703,7 @@ hl.plugins.mini = {
     MiniStatuslineModeNormal = { fg = c.bg0, bg = c.green, fmt = "bold" },
     MiniStatuslineModeOther = { fg = c.bg0, bg = c.cyan, fmt = "bold" },
     MiniStatuslineModeReplace = { fg = c.bg0, bg = c.red, fmt = "bold" },
-    MiniStatuslineModeVisual = { fg = c.bg0, bg = c.purple, fmt = "bold" },
+    MiniStatuslineModeVisual = { fg = c.bg0, bg = c.placeholder, fmt = "bold" },
 
     MiniSurround = { fg = c.bg0, bg = c.orange },
 
@@ -736,7 +735,7 @@ hl.langs.c = {
 }
 
 hl.langs.cpp = {
-    cppStatement = { fg = c.purple, fmt = "bold" },
+    cppStatement = { fg = c.placeholder, fmt = "bold" },
     cppTSInclude = colors.Blue,
     cppTSConstant = colors.Cyan,
     cppTSConstMacro = {fg = c.placeholder},
@@ -751,10 +750,10 @@ hl.langs.markdown = {
     markdownCodeBlock = colors.Green,
     markdownCodeDelimiter = colors.Yellow,
     markdownH1 = {fg = c.red, fmt = "bold"},
-    markdownH2 = {fg = c.purple, fmt = "bold"},
+    markdownH2 = {fg = c.placeholder, fmt = "bold"},
     markdownH3 = {fg = c.orange, fmt = "bold"},
     markdownH4 = {fg = c.red, fmt = "bold"},
-    markdownH5 = {fg = c.purple, fmt = "bold"},
+    markdownH5 = {fg = c.placeholder, fmt = "bold"},
     markdownH6 = {fg = c.orange, fmt = "bold"},
     markdownHeadingDelimiter = colors.Grey,
     markdownHeadingRule = colors.Grey,
@@ -785,8 +784,8 @@ hl.langs.php = {
     phpNumber = colors.Orange,
     phpHereDoc = colors.Green,
     phpNowDoc = colors.Green,
-    phpSCKeyword = {fg = c.purple, fmt = cfg.code_style.keywords},
-    phpFCKeyword = {fg = c.purple, fmt = cfg.code_style.keywords},
+    phpSCKeyword = {fg = c.placeholder, fmt = cfg.code_style.keywords},
+    phpFCKeyword = {fg = c.placeholder, fmt = cfg.code_style.keywords},
     phpRegion = colors.Blue
 }
 
@@ -833,7 +832,7 @@ hl.langs.vim = {
 }
 
 local lsp_kind_icons_color = {
-    Default = c.purple,
+    Default = c.placeholder,
     Array = c.yellow,
     Boolean = c.orange,
     Class = c.yellow,
