@@ -776,8 +776,8 @@ hl.langs.markdown = {
 hl.langs.php = {
     phpFunctions = {fg = c.fg, fmt = cfg.code_style.functions},
     phpMethods = colors.Cyan,
-    phpStructure = colors.Purple,
-    phpOperator = colors.Purple,
+    phpStructure = {fg = c.placeholder},
+    phpOperator = {fg = c.placeholder},
     phpMemberSelector = colors.placeholder,
     phpVarSelector = {fg = c.orange, fmt = cfg.code_style.variables},
     phpIdentifier = {fg = c.orange, fmt = cfg.code_style.variables},
@@ -792,8 +792,8 @@ hl.langs.php = {
 
 hl.langs.scala = {
     scalaNameDefinition = colors.placeholder,
-    scalaInterpolationBoundary = colors.Purple,
-    scalaInterpolation = colors.Purple,
+    scalaInterpolationBoundary = {fg = c.placeholder},
+    scalaInterpolation = {fg = c.placeholder},
     scalaTypeOperator = colors.Red,
     scalaOperator = colors.Red,
     scalaKeywordModifier = {fg = c.red, fmt = cfg.code_style.keywords},
