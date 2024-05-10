@@ -101,7 +101,7 @@ return {
         terminal_carrot = "#186F49",
         terminal_keyword = "#568B74",
         terminal_typing = "#9C9C9C",
-        terminal_directory = "#636363",
+        terminal_directory = "#BEBEBE",
         terminal_background = "#1E1B1B",  -- this doesnt effect the inline terminal, only the out of vim termminal
 
         toolbar_bg = "#0F0F0F",
