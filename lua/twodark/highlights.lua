@@ -629,7 +629,7 @@ hl.plugins.ts_rainbow = {
     rainbowcol2 = colors.Yellow,
     rainbowcol3 = colors.Blue,
     rainbowcol4 = colors.Orange,
-    rainbowcol5 = colors.Purple,
+    rainbowcol5 = {fg = c.placeholder},
     rainbowcol6 = colors.Green,
     rainbowcol7 = colors.Red
 }
@@ -640,7 +640,7 @@ hl.plugins.ts_rainbow2 = {
     TSRainbowBlue = colors.Blue,
     TSRainbowOrange = colors.Orange,
     TSRainbowGreen = colors.Green,
-    TSRainbowViolet = colors.Purple,
+    TSRainbowViolet = {fg = c.placeholder},
     TSRainbowCyan = colors.Cyan,
 }
 
@@ -650,7 +650,7 @@ hl.plugins.rainbow_delimiters = {
     RainbowDelimiterBlue = colors.Blue,
     RainbowDelimiterOrange = colors.Orange,
     RainbowDelimiterGreen = colors.Green,
-    RainbowDelimiterViolet = colors.Purple,
+    RainbowDelimiterViolet = {fg = c.placeholder},
     RainbowDelimiterCyan = colors.Cyan,
 }
 
@@ -659,7 +659,7 @@ hl.plugins.indent_blankline = {
     IndentBlanklineIndent2 = colors.Green,
     IndentBlanklineIndent3 = colors.Cyan,
     IndentBlanklineIndent4 = colors.LightGrey,
-    IndentBlanklineIndent5 = colors.Purple,
+    IndentBlanklineIndent5 = {fg = c.placeholder},
     IndentBlanklineIndent6 = colors.Red,
     IndentBlanklineChar = { fg = c.grey_1, fmt = "nocombine" },
     IndentBlanklineContextChar = { fg = c.grey_1, fmt = "nocombine" },
