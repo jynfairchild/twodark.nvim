@@ -136,7 +136,7 @@ return {
 		bg_blue = "#000000",
 		bg_yellow = "#000000",
 		fg = "#000000",
-		purple = "#FF0000",
+		purple = "#FFFFFF",
 		green = "#000000",
 		orange = "#000000",
 		blue = "#000000",
