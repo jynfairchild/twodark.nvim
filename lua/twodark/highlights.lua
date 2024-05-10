@@ -100,9 +100,9 @@ hl.common = {
     WildMenu = {fg = c.test_purple, bg = c.blue},
 
     -- no idea
-    Question = {fg = c.yellow},
+    Question = {fg = c.test_red},
     SpellBad = {fg = c.none, fmt = "undercurl", sp = c.red},
-    SpellCap = {fg = c.none, fmt = "undercurl", sp = c.yellow},
+    SpellCap = {fg = c.none, fmt = "undercurl", sp = c.test_orange},
     SpellLocal = {fg = c.none, fmt = "undercurl", sp = c.blue},
     SpellRare = {fg = c.none, fmt = "undercurl", sp = c.placeholder},
 
@@ -429,7 +429,7 @@ hl.plugins.lsp = {
     DiagnosticUnderlineError = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.red},
     DiagnosticUnderlineHint = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.none},
     DiagnosticUnderlineInfo = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.blue},
-    DiagnosticUnderlineWarn = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.yellow},
+    DiagnosticUnderlineWarn = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.none},
 
     LspReferenceText = { bg = c.test_yellow },
     LspReferenceWrite = { bg = c.test_yellow },
@@ -748,7 +748,7 @@ hl.langs.markdown = {
     markdownBoldDelimiter = colors.Grey,
     markdownCode = colors.Green,
     markdownCodeBlock = colors.Green,
-    markdownCodeDelimiter = colors.Yellow,
+    markdownCodeDelimiter = {fg = c.test_blue},
     markdownH1 = {fg = c.red, fmt = "bold"},
     markdownH2 = {fg = c.placeholder, fmt = "bold"},
     markdownH3 = {fg = c.orange, fmt = "bold"},
