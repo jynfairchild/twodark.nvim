@@ -93,6 +93,7 @@ return {
         string_escape = "#DE6767",  -- """/ 
         string_special_symbol = "#D66262",
         tag = "#CCCCCC",
+        tildes = "#DE6767",
         text_primary = "#CCCCCC",
         text_secondary = "#9C9C9C",
         text_tertiary = "#666666",

@@ -42,7 +42,7 @@ hl.common = {
     Normal = {fg = c.text_secondary, bg = cfg.transparent and c.none or c.none},
     Terminal = {fg = c.terminal_text, bg = cfg.transparent and c.none or c.terminal_background},
     EndOfBuffer = {fg = cfg.ending_tildes and c.bg2 or c.none, bg = cfg.transparent and c.none or c.bg0},
-    FoldColumn = {fg = c.test_red, bg = cfg.transparent and c.none or c.bg1},
+    FoldColumn = {fg = c.tildes, bg = cfg.transparent and c.none or c.bg1},
     Folded = {fg = c.test_yellow, bg = cfg.transparent and c.none or c.bg1},
     SignColumn = {fg = c.test_white, bg = cfg.transparent and c.none or c.bg0},
     ToolbarLine = {fg = c.line_separator, bg = cfg.transparent and c.none or c.b0},  -- more line separator in the toolbar
@@ -748,7 +748,7 @@ hl.langs.markdown = {
     markdownBoldDelimiter = colors.Grey,
     markdownCode = colors.Green,
     markdownCodeBlock = colors.Green,
-    markdownCodeDelimiter = {fg = c.test_blue},
+    markdownCodeDelimiter = {fg = c.placeholder},
     markdownH1 = {fg = c.red, fmt = "bold"},
     markdownH2 = {fg = c.placeholder, fmt = "bold"},
     markdownH3 = {fg = c.orange, fmt = "bold"},
