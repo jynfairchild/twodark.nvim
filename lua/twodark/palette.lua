@@ -153,7 +153,7 @@ return {
 		blue = "#000000",
 		yellow = "#000000",
 		cyan = "#FF0000",
-		red = "#24FF00",
+		red = "#FF0000",
 		grey = "#000000",
 		dark_cyan = "#000000",
 		dark_red = "#000000",
