@@ -101,7 +101,7 @@ hl.common = {
 
     -- no idea
     Question = {fg = c.tildes},  -- Checkmarks on PackerSync
-    SpellBad = {fg = c.none, fmt = "undercurl", sp = c.red},
+    SpellBad = {fg = c.none, fmt = "undercurl", sp = c.danger},
     SpellCap = {fg = c.none, fmt = "undercurl", sp = c.test_orange},
     SpellLocal = {fg = c.none, fmt = "undercurl", sp = c.blue},
     SpellRare = {fg = c.none, fmt = "undercurl", sp = c.placeholder},
@@ -126,7 +126,7 @@ hl.common = {
     -- debug
     Debug = {fg = c.test_white},
     debugPC = {fg = c.complete_menu_predict, bg = c.complete_menu_selection_background},
-    debugBreakpoint = {fg = c.placeholder, bg = c.red},
+    debugBreakpoint = {fg = c.placeholder, bg = c.danger},
 
     -- toolbar and bg
     ToolbarButton = {fg = c.test_white, bg = c.test_yellow},
@@ -426,9 +426,9 @@ hl.plugins.lsp = {
     DiagnosticVirtualTextHint = { bg = cfg.transparent and c.none or c.warning,
                                   fg = diagnostics_hint_color },
 
-    DiagnosticUnderlineError = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.red},
+    DiagnosticUnderlineError = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.danger},
     DiagnosticUnderlineHint = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.none},
-    DiagnosticUnderlineInfo = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.blue},
+    DiagnosticUnderlineInfo = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.danger},
     DiagnosticUnderlineWarn = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.none},
 
     LspReferenceText = { bg = c.test_yellow },
