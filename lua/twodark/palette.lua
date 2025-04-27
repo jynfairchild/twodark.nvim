@@ -152,7 +152,7 @@ return {
 		orange = "#000000",
 		blue = "#000000",
 		yellow = "#000000",
-		cyan = "#24FF00",
+		cyan = "#FF0000",
 		red = "#24FF00",
 		grey = "#000000",
 		dark_cyan = "#000000",
