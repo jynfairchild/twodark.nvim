@@ -100,7 +100,7 @@ hl.common = {
     WildMenu = {fg = c.test_purple, bg = c.blue},
 
     -- no idea
-    Question = {fg = c.tildes},
+    Question = {fg = c.tildes},  -- Checkmarks on PackerSync
     SpellBad = {fg = c.none, fmt = "undercurl", sp = c.red},
     SpellCap = {fg = c.none, fmt = "undercurl", sp = c.test_orange},
     SpellLocal = {fg = c.none, fmt = "undercurl", sp = c.blue},
