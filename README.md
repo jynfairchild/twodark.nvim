@@ -230,6 +230,18 @@ require('lualine').setup {
 
 Pull requests are welcome 🎉👍.
 
+## Finding a color in nvim
+When your cursor is on the visual element you're curious about, you can press:
+```:echo synIDattr(synID(line("."), col("."), 1), "name")```
+```:verbose highlight <HighlightGroupName>```
+Replace <HighlightGroupName> with the name you found from the first command. This will show you not only the current settings but also where they were last defined.
+
+If you're working with LSP diagnostics specifically (which seems to be the case based on your DiagnosticUnderlineError example), you can run:
+```:highlight DiagnosticUnderlineError```
+```:Telescope highlights```
+
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
