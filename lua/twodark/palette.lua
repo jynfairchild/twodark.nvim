@@ -1,7 +1,7 @@
 return {
 	warmer = {
 
-        test_red = "#FF0000",
+        test_red = "#FFFFFF",
         test_orange = "#FF6B00",
         test_yellow = "#FFF400",
         test_green = "#24FF00",
