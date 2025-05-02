@@ -464,10 +464,10 @@ hl.plugins.barbar = {
     BufferCurrentSign = {fg = c.text_tertiary},
     BufferInactiveMod = {fg = c.type_builtin, bg = cfg.transparent and c.none or c.grey_1, fmt = "italic"},  -- shows up in lua
     BufferVisible = {fg = c.text_tertiary, bg = cfg.transparent and c.none or c.keyword_import},  -- non selected buffer
-    BufferVisibleMod = {fg = c.test_yellow, bg = c.black, fmt = "italic"},
-    BufferVisibleIndex = {fg = c.test_orange, bg = c.black},
-    BufferVisibleSign = {fg = c.line_separator, bg = c.black},
-    BufferVisibleTarget = {fg = c.grey_1, bg = c.black},  -- next non selected buffer
+    BufferVisibleMod = {fg = c.test_yellow, bg = c.grey_2, fmt = "italic"},
+    BufferVisibleIndex = {fg = c.test_orange, bg = c.grey_2},
+    BufferVisibleSign = {fg = c.line_separator, bg = c.grey_2},
+    BufferVisibleTarget = {fg = c.grey_1, bg = c.grey_2},  -- next non selected buffer
 }
 
 hl.plugins.cmp = {
@@ -494,9 +494,9 @@ hl.plugins.whichkey = {
 }
 
 hl.plugins.gitgutter = {
-    GitGutterAdd = {fg = c.green},
+    GitGutterAdd = {fg = c.grey_3},
     GitGutterChange = {fg = c.blue},
-    GitGutterDelete = {fg = c.red},
+    GitGutterDelete = {fg = c.warning},
 }
 
 hl.plugins.hop = {
