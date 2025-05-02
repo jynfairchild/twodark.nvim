@@ -486,7 +486,7 @@ hl.plugins.whichkey = {
 }
 
 hl.plugins.gitgutter = {
-    GitGutterAdd = {fg = c.grey_3},
+    GitGutterAdd = {fg = c.grey_5},
     GitGutterChange = {fg = c.blue},
     GitGutterDelete = {fg = c.warning},
 }
@@ -647,8 +647,7 @@ hl.plugins.rainbow_delimiters = {
 
 hl.plugins.indent_blankline = {
     IndentBlanklineIndent1 = colors.Blue,
-    IndentBlanklineIndent2 = colors.grey_5, -- git adds
-    IndentBlanklineIndent3 = colors.Cyan,
+    IndentBlanklineIndent3 = colors.Green,
     IndentBlanklineIndent4 = colors.LightGrey,
     IndentBlanklineIndent5 = {fg = c.placeholder},
     IndentBlanklineIndent6 = colors.Red,
