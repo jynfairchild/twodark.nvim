@@ -16,14 +16,6 @@ local function vim_highlights(highlights)
 end
 
 local colors = {
-    -- testing
-    TR = {fg = c.test_red},
-    TO = {fg = c.placeholder},
-    TY = {fg = c.test_yellow},
-    TG = {fg = c.test_green},
-    TT = {fg = c.test_teal},
-    TB = {fg = c.test_blue},
-    TW = {fg = c.test_white},
     -- old colors
     placeholder = {fg = c.fg},
     LightGrey = {fg = c.grey_1},
@@ -500,7 +492,7 @@ hl.plugins.gitgutter = {
 }
 
 hl.plugins.hop = {
-    HopNextKey = {fg = c.red, fmt = "bold"},
+    HopNextKey = {fg = c.grey_2, fmt = "bold"},
     HopNextKey1 = {fg = c.cyan, fmt = "bold"},
     HopNextKey2 = {fg = util.darken(c.blue, 0.7)},
     HopUnmatched = colors.Grey,
@@ -556,8 +548,8 @@ hl.plugins.neo_tree = {
     NeoTreeGitAdded = colors.Green,
     NeoTreeGitDeleted = colors.Red,
     NeoTreeGitModified = colors.Yellow,
-    NeoTreeGitConflict = { fg = c.red, fmt = "bold,italic" },
-    NeoTreeGitUntracked = { fg = c.red, fmt = "italic" },
+    NeoTreeGitConflict = { fg = c.grey_2, fmt = "bold,italic" },
+    NeoTreeGitUntracked = { fg = c.grey_2, fmt = "italic" },
     NeoTreeIndentMarker = colors.Grey,
     NeoTreeSymbolicLinkTarget = {fg = c.placeholder},
 }
@@ -682,7 +674,7 @@ hl.plugins.mini = {
 
     MiniJump = { fg = c.placeholder, fmt = "underline", sp = c.placeholder },
 
-    MiniJump2dSpot = { fg = c.red, fmt = "bold,nocombine" },
+    MiniJump2dSpot = { fg = c.grey_2, fmt = "bold,nocombine" },
 
     MiniStarterCurrent = { fmt = "nocombine" },
     MiniStarterFooter = { fg = c.dark_red, fmt = "italic" },
@@ -700,9 +692,9 @@ hl.plugins.mini = {
     MiniStatuslineInactive = { fg = c.grey, bg = c.bg0 },
     MiniStatuslineModeCommand = { fg = c.bg0, bg = c.yellow, fmt = "bold" },
     MiniStatuslineModeInsert = { fg = c.bg0, bg = c.blue, fmt = "bold" },
-    MiniStatuslineModeNormal = { fg = c.bg0, bg = c.green, fmt = "bold" },
+    MiniStatuslineModeNormal = { fg = c.bg0, bg = c.grey_2, fmt = "bold" },
     MiniStatuslineModeOther = { fg = c.bg0, bg = c.cyan, fmt = "bold" },
-    MiniStatuslineModeReplace = { fg = c.bg0, bg = c.red, fmt = "bold" },
+    MiniStatuslineModeReplace = { fg = c.bg0, bg = c.grey_2, fmt = "bold" },
     MiniStatuslineModeVisual = { fg = c.bg0, bg = c.placeholder, fmt = "bold" },
 
     MiniSurround = { fg = c.bg0, bg = c.orange },
@@ -717,10 +709,10 @@ hl.plugins.mini = {
     MiniTablineVisible = { fg = c.grey_1, bg = c.bg0 },
 
     MiniTestEmphasis = { fmt = "bold" },
-    MiniTestFail = { fg = c.red, fmt = "bold" },
-    MiniTestPass = { fg = c.green, fmt = "bold" },
+    MiniTestFail = { fg = c.grey_2, fmt = "bold" },
+    MiniTestPass = { fg = c.grey_2, fmt = "bold" },
 
-    MiniTrailspace = { bg = c.red },
+    MiniTrailspace = { bg = c.grey_2 },
 }
 
 hl.langs.c = {
@@ -795,7 +787,7 @@ hl.langs.scala = {
     scalaInterpolation = {fg = c.placeholder},
     scalaTypeOperator = colors.Red,
     scalaOperator = colors.Red,
-    scalaKeywordModifier = {fg = c.red, fmt = cfg.code_style.keywords},
+    scalaKeywordModifier = {fg = c.grey_2, fmt = cfg.code_style.keywords},
 }
 
 hl.langs.tex = {
@@ -836,7 +828,7 @@ local lsp_kind_icons_color = {
     Array = c.yellow,
     Boolean = c.orange,
     Class = c.yellow,
-    Color = c.green,
+    Color = c.grey_2,
     Constant = c.orange,
     Constructor = c.blue,
     Enum = c.placeholder,
@@ -846,7 +838,7 @@ local lsp_kind_icons_color = {
     File = c.blue,
     Folder = c.orange,
     Function = c.blue,
-    Interface = c.green,
+    Interface = c.grey_2,
     Key = c.cyan,
     Keyword = c.cyan,
     Method = c.blue,
@@ -860,11 +852,11 @@ local lsp_kind_icons_color = {
     Property = c.cyan,
     Reference = c.orange,
     Snippet = c.red,
-    String = c.green,
+    String = c.grey_2,
     Struct = c.placeholder,
     Text = c.grey_1,
     TypeParameter = c.red,
-    Unit = c.green,
+    Unit = c.grey_2,
     Value = c.orange,
     Variable = c.placeholder,
 }
