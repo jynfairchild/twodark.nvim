@@ -64,7 +64,7 @@ hl.common = {
     LineNr = {fg = c.line_numbers},  -- nvim line numbers 
 
     -- Diff
-    Conceal = {fg = c.test_red, bg = c.test_red},
+    Conceal = {fg = c.grey_3, bg = c.grey_3},
     DiffAdd = {fg = c.none, bg = c.placeholder},
     DiffChange = {fg = c.none, bg = c.test_yellow},
     DiffDelete = {fg = c.none, bg = c.placeholder},
@@ -108,7 +108,7 @@ hl.common = {
 
     -- toolbar colors
     StatusLine = {fg = c.test_yellow, bg = cfg.transparent and c.none or c.status_line_background},  -- toolbar background behind TabLine
-    StatusLineTerm = {fg = c.test_red, bg = c.test_red},
+    StatusLineTerm = {fg = c.grey_3, bg = c.grey_3},
     StatusLineNC = {fg = c.placeholder, bg = cfg.transparent and c.none or c.status_line_background},  -- unsaved changes (something over writes this)
     StatusLineTermNC = {fg = c.test_purple, bg = c.test_yellow},
 
