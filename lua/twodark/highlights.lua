@@ -514,7 +514,7 @@ hl.plugins.diffview = {
     DiffviewFilePanelPath = colors.Grey,
     DiffviewFilePanelInsertions = colors.grey_4,
     DiffviewFilePanelDeletions = colors.Red,
-    DiffviewStatusAdded = colors.Green,
+    DiffviewStatusAdded = colors.grey_4,
     DiffviewStatusUntracked = colors.Blue,
     DiffviewStatusModified = colors.Blue,
     DiffviewStatusRenamed = colors.Blue,
@@ -527,9 +527,9 @@ hl.plugins.diffview = {
 }
 
 hl.plugins.gitsigns = {
-    GitSignsAdd = colors.Green,
-    GitSignsAddLn = colors.Green,
-    GitSignsAddNr = colors.Green,
+    GitSignsAdd = colors.grey_4,
+    GitSignsAddLn = colors.grey_4,
+    GitSignsAddNr = colors.grey_4,
     GitSignsChange = colors.Blue,
     GitSignsChangeLn = colors.Blue,
     GitSignsChangeNr = colors.Blue,
@@ -545,7 +545,7 @@ hl.plugins.neo_tree = {
     NeoTreeWinSeparator = { fg = c.bg1, bg = cfg.transparent and c.none or c.bg1 },
     NeoTreeEndOfBuffer = { fg = cfg.ending_tildes and c.bg2 or c.placeholder, bg = cfg.transparent and c.none or c.placeholder },
     NeoTreeRootName = { fg = c.orange, fmt = "bold" },
-    NeoTreeGitAdded = colors.Green,
+    NeoTreeGitAdded = colors.grey_4,
     NeoTreeGitDeleted = colors.Red,
     NeoTreeGitModified = colors.Yellow,
     NeoTreeGitConflict = { fg = c.grey_2, fmt = "bold,italic" },
@@ -647,7 +647,7 @@ hl.plugins.rainbow_delimiters = {
 
 hl.plugins.indent_blankline = {
     IndentBlanklineIndent1 = colors.Blue,
-    IndentBlanklineIndent2 = colors.Green,
+    IndentBlanklineIndent2 = colors.grey_4,
     IndentBlanklineIndent3 = colors.Cyan,
     IndentBlanklineIndent4 = colors.LightGrey,
     IndentBlanklineIndent5 = {fg = c.placeholder},
