@@ -647,7 +647,7 @@ hl.plugins.rainbow_delimiters = {
 
 hl.plugins.indent_blankline = {
     IndentBlanklineIndent1 = colors.Blue,
-    IndentBlanklineIndent2 = colors.grey_4,
+    IndentBlanklineIndent2 = colors.grey_5, -- git adds
     IndentBlanklineIndent3 = colors.Cyan,
     IndentBlanklineIndent4 = colors.LightGrey,
     IndentBlanklineIndent5 = {fg = c.placeholder},
