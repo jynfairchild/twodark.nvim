@@ -1,7 +1,7 @@
 return {
 	warmer = {
 
-        test_red = "#FFFFFF",
+        test_red = "#FF0000",
         test_orange = "#FF6B00",
         test_yellow = "#FFF400",
         test_green = "#24FF00",
@@ -148,12 +148,12 @@ return {
 		bg_blue = "#000000",
 		bg_yellow = "#000000",
 		fg = "#000000",
-		green = "#FFFFFF",
+		green = "#515151",
 		orange = "#000000",
 		blue = "#000000",
 		yellow = "#000000",
-		cyan = "#FFFFFF",
-		red = "#FFFFFF",
+		cyan = "#515151",
+		red = "#515151",
 		grey = "#000000",
 		dark_cyan = "#000000",
 		dark_red = "#000000",
