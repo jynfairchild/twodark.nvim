@@ -486,7 +486,7 @@ hl.plugins.whichkey = {
 }
 
 hl.plugins.gitgutter = {
-    GitGutterAdd = {fg = c.attribute}, -- git add lines to the left of numbers
+    GitGutterAdd = {fg = c.grey_3}, -- git add lines to the left of numbers
     GitGutterChange = {fg = c.grey_2},
     GitGutterDelete = {fg = c.grey_2},
 }
