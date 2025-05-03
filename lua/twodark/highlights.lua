@@ -186,7 +186,7 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
 
         -- Constructor
         ["@constructor"] = {fg = c.constructor, fmt = "bold"},  -- __init__, class calls User()
-        ["@diff.add"] = {fg = c.diff_add},
+        ["@diff.add"] = {fg = c.grey_4},
         ["@diff.delete"] = {fg = c.diff_delete},
         ["@error"] = {fg = c.error},
 
@@ -486,9 +486,9 @@ hl.plugins.whichkey = {
 }
 
 hl.plugins.gitgutter = {
-    GitGutterAdd = {fg = c.grey_5},
-    GitGutterChange = {fg = c.blue},
-    GitGutterDelete = {fg = c.warning},
+    GitGutterAdd = {fg = c.grey_5}, -- git add lines to the left of numbers
+    GitGutterChange = {fg = c.grey_2},
+    GitGutterDelete = {fg = c.grey_2},
 }
 
 hl.plugins.hop = {
@@ -515,9 +515,9 @@ hl.plugins.diffview = {
     DiffviewFilePanelInsertions = colors.grey_4,
     DiffviewFilePanelDeletions = colors.Red,
     DiffviewStatusAdded = colors.grey_4,
-    DiffviewStatusUntracked = colors.Blue,
-    DiffviewStatusModified = colors.Blue,
-    DiffviewStatusRenamed = colors.Blue,
+    DiffviewStatusUntracked = colors.grey_4,
+    DiffviewStatusModified = colors.grey_4,
+    DiffviewStatusRenamed = colors.grey_4,
     DiffviewStatusCopied = colors.Blue,
     DiffviewStatusTypeChange = colors.Blue,
     DiffviewStatusUnmerged = colors.Blue,
@@ -530,12 +530,12 @@ hl.plugins.gitsigns = {
     GitSignsAdd = colors.grey_4,
     GitSignsAddLn = colors.grey_4,
     GitSignsAddNr = colors.grey_4,
-    GitSignsChange = colors.Blue,
-    GitSignsChangeLn = colors.Blue,
-    GitSignsChangeNr = colors.Blue,
-    GitSignsDelete = colors.Red,
-    GitSignsDeleteLn = colors.Red,
-    GitSignsDeleteNr = colors.Red
+    GitSignsChange = colors.grey_4,
+    GitSignsChangeLn = colors.grey_4,
+    GitSignsChangeNr = colors.grey_4,
+    GitSignsDelete = colors.grey_4,
+    GitSignsDeleteLn = colors.grey_4,
+    GitSignsDeleteNr = colors.grey_4
 }
 
 hl.plugins.neo_tree = {
