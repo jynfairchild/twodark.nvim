@@ -1,14 +1,14 @@
 return {
 	warmer = {
 
-        test_red = "#FF0000",
-        test_orange = "#FF6B00",
-        test_yellow = "#FFF400",
-        test_green = "#24FF00",
-        test_teal = "#11FFC6",
-        test_blue = "#111AFF",
-        test_purple = "#EC11FF",
-        test_white = "#FFFFFF",
+        test_red = "#242424",
+        test_orange = "#242424",
+        test_yellow = "#242424",
+        test_green = "#242424",
+        test_teal = "#242424",
+        test_blue = "#242424",
+        test_purple = "#242424",
+        test_white = "#242424",
 
         ---------
         -- lua --
@@ -127,7 +127,7 @@ return {
         whichkey_prefix = "#80A665",
 
         ---------------------
-        -- zero saturation --
+        -- zero saturation --5EFBF9
         ---------------------
 
         white = "#FFFFFF",
