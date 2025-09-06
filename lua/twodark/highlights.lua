@@ -59,7 +59,7 @@ hl.common = {
     DiffAdd = { fg = c.none, bg = c.placeholder },
     DiffChange = { fg = c.none, bg = c.test_yellow },
     DiffDelete = { fg = c.none, bg = c.placeholder },
-    DiffText = { fg = c.none, bg = c.test_teal },
+    DiffText = { fg = c.none, bg = c.keyword },
     DiffAdded = colors.Green,
     DiffChanged = colors.Blue,
     DiffRemoved = colors.Red,
@@ -67,54 +67,54 @@ hl.common = {
     DiffFile = colors.Cyan,
     DiffIndexLine = colors.Grey,
     -- Dir + errors
-    Directory = {fg = c.blue},
-    ErrorMsg = {fg = c.red, fmt = "bold"},
-    WarningMsg = {fg = c.yellow, fmt = "bold"},
-    MoreMsg = {fg = c.blue, fmt = "bold"},
+    Directory = { fg = c.keyword },
+    ErrorMsg = { fg = c.text_secondary, fmt = "none" },
+    WarningMsg = { fg = c.text_secondary, fmt = "none" },
+    MoreMsg = { fg = c.text_secondary, bg = c.placeholder, fmt = "none" },
     -- search match sub
-    CurSearch = {fg = c.bg0, bg = c.orange},
-    IncSearch = {fg = c.bg0, bg = c.orange},
-    Search = {fg = c.bg0, bg = c.bg_yellow},
-    Substitute = {fg = c.bg0, bg = c.green},
-    MatchParen = {fg = c.none, bg = c.grey},
+    CurSearch = { fg = c.placeholder, bg = c.orange },
+    IncSearch = { fg = c.placeholder, bg = c.orange },
+    Search = { fg = c.search_text, bg = c.search_background },
+    Substitute = { fg = c.complete_menu_predict, bg = c.complete_menu_selection_background },
+    MatchParen = { fg = c.character, bg = c.func },
     -- text modify
-    NonText = {fg = c.grey},
-    Whitespace = {fg = c.grey},
-    SpecialKey = {fg = c.grey},
+    NonText = { fg = c.line_separator },
+    Whitespace = { fg = c.test_white },
+    SpecialKey = { fg = c.test_white },
     -- complete menus
     Pmenu = { fg = c.none, bg = c.complete_menu_background },
     PmenuThumb = { fg = c.none, bg = c.text_tertiary },
     PmenuSbar = { fg = c.none, bg = c.text_primary },
     PmenuSel = { fg = c.text_primary, bg = c.complete_menu_selection_background },
-    WildMenu = { fg = c.purple, bg = c.blue },
+    WildMenu = { fg = c.test_purple, bg = c.blue },
     -- no idea
-    Question = {fg = c.yellow},
-    SpellBad = {fg = c.none, fmt = "undercurl", sp = c.red},
-    SpellCap = {fg = c.none, fmt = "undercurl", sp = c.yellow},
-    SpellLocal = {fg = c.none, fmt = "undercurl", sp = c.blue},
-    SpellRare = {fg = c.none, fmt = "undercurl", sp = c.purple},
+    Question = { fg = c.tildes },
+    SpellBad = { fg = c.none, fmt = "undercurl", sp = c.danger },
+    SpellCap = { fg = c.none, fmt = "undercurl", sp = c.test_orange },
+    SpellLocal = { fg = c.none, fmt = "undercurl", sp = c.blue },
+    SpellRare = { fg = c.none, fmt = "undercurl", sp = c.placeholder },
     -- toolbar colors
-    StatusLine = {fg = c.fg, bg = c.bg2},
-    StatusLineTerm = {fg = c.fg, bg = c.bg2},
-    StatusLineNC = {fg = c.grey, bg = c.bg1},
-    StatusLineTermNC = {fg = c.grey, bg = c.bg1},
+    StatusLine = { fg = c.test_yellow, bg = cfg.transparent and c.none or c.status_line_background },
+    StatusLineTerm = { fg = c.grey_3, bg = c.grey_3 },
+    StatusLineNC = { fg = c.placeholder, bg = cfg.transparent and c.none or c.status_line_background },
+    StatusLineTermNC = { fg = c.test_purple, bg = c.test_yellow },
     -- Tab backgrounds, this defaults to StatusLine if set to transparent
     TabLine = {fg = c.text_tertiary, bg = cfg.transparent and c.none or c.toolbar_background},
     TabLineFill = {fg = c.none, bg = cfg.transparent and c.none or c.toolbar_background},
     TabLineSel =  {fg = c.none, bg = c.placeholder},
     -- line separator and cursor background
-    WinSeparator = {fg = c.bg3},
-    Visual = {bg = c.bg3},
-    VisualNOS = {fg = c.none, bg = c.bg2, fmt = "underline"},
-    QuickFixLine = {fg = c.blue, fmt = "underline"},
+    WinSeparator = { fg = c.line_separator },
+    Visual = { fg = c.none, bg = c.grey_3 },
+    VisualNOS = { fg = c.placeholder, bg = c.test_purple, fmt = "underline" },
+    QuickFixLine = { fg = c.keyword, fmt = "none" },
     -- debug
-    Debug = {fg = c.yellow},
-    debugPC = {fg = c.bg0, bg = c.green},
-    debugBreakpoint = {fg = c.bg0, bg = c.red},
+    Debug = { fg = c.test_white },
+    debugPC = { fg = c.complete_menu_predict, bg = c.complete_menu_selection_background },
+    debugBreakpoint = { fg = c.placeholder, bg = c.danger },
     -- toolbar and bg
-    ToolbarButton = {fg = c.bg0, bg = c.bg_blue},
-    FloatBorder = {fg = c.placeholder, bg = c.none},
-    NormalFloat = {fg = c.text_primary, bg = c.whichkey_background},
+    ToolbarButton = { fg = c.test_white, bg = c.none },
+    FloatBorder = { fg = c.placeholder, bg = c.none },
+    NormalFloat = { fg = c.text_primary, bg = c.whichkey_background },
 }
 
 hl.syntax = {
@@ -135,13 +135,13 @@ hl.syntax = {
     Define = {fg = c.keyword},
     Typedef = {fg = c.type},
     Exception = {fg = c.exception},
-    Conditional = {fg = c.keyword, fmt = cfg.code_style.keywords},
-    Repeat = {fg = c.keyword, fmt = cfg.code_style.keywords},
-    Statement = {fg = c.keyword},
-    Macro = colors.Red,
+    Conditional = { fg = c.lua_conditional, fmt = cfg.code_style.keywords },
+    Repeat = { fg = c.lua_repeat, fmt = cfg.code_style.keywords },
+    Statement = { fg = c.lua_statement },
+    Macro = { fg = c.text_tertiary },
     Error = {fg = c.error},
     Label = {fg = c.label},
-    Special = colors.Red,
+    Special = { fg = c.text_tertiary },
     SpecialChar = {fg = c.string_special_symbol},
     Function = {fg = c.func, fmt = cfg.code_style.functions},
     Operator = {fg = c.operator},
@@ -206,7 +206,7 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
         ["@number.float"] = {fg = c.number_float},
         ["@operator"] = {fg = c.operator},
         ["@parameter.reference"] = {fg = c.variable},
-        ["@property"] = {fg = c.property},
+        ["@property"] = { fg = c.lua_property },
         ["@punctuation.delimiter"] = {fg = c.delimiters},
         ["@punctuation.bracket"] = {fg = c.brackets},
         ["@string"] = {fg = c.string, fmt = cfg.code_style.strings},
@@ -359,9 +359,9 @@ else
     }
 end
 
-local diagnostics_error_color = cfg.diagnostics.darker and c.dark_red or c.red
+local diagnostics_error_color = c.text_tertiary
 local diagnostics_hint_color = cfg.diagnostics.darker and c.dark_purple or c.purple
-local diagnostics_warn_color = cfg.diagnostics.darker and c.dark_yellow or c.yellow
+local diagnostics_warn_color = c.text_tertiary
 local diagnostics_info_color = cfg.diagnostics.darker and c.dark_cyan or c.cyan
 hl.plugins.lsp = {
     LspCxxHlGroupEnumConstant = colors.Orange,
@@ -370,10 +370,10 @@ hl.plugins.lsp = {
     LspCxxHlSkippedRegion = colors.Grey,
     LspCxxHlSkippedRegionBeginEnd = colors.Red,
 
-    DiagnosticError = {fg = c.red},
+    DiagnosticError = { fg = c.text_tertiary },
     DiagnosticHint = {fg = c.purple},
     DiagnosticInfo = {fg = c.cyan},
-    DiagnosticWarn = {fg = c.yellow},
+    DiagnosticWarn = { fg = c.text_tertiary },
 
     DiagnosticVirtualTextError = { bg = cfg.diagnostics.background and util.darken(diagnostics_error_color, 0.1, c.bg0) or c.none,
                                    fg = diagnostics_error_color },
@@ -812,6 +812,29 @@ hl.langs.cpp = {
     cppTSConstant = colors.Cyan,
     cppTSConstMacro = colors.Purple,
     cppTSOperator = colors.Purple,
+}
+
+-- HTML/CSS/Sass/Less: class name selectors
+hl.langs.html = {
+    htmlClass = { fg = c.class_name },
+    htmlClassName = { fg = c.class_name },
+}
+
+hl.langs.css = {
+    cssClassName = { fg = c.class_name },
+    cssClassNameDot = { fg = c.class_name },
+}
+
+hl.langs.scss = {
+    scssClassName = { fg = c.class_name },
+}
+
+hl.langs.sass = {
+    sassClass = { fg = c.class_name },
+}
+
+hl.langs.less = {
+    lessClass = { fg = c.class_name },
 }
 
 hl.langs.markdown = {

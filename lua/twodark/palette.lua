@@ -1,5 +1,6 @@
 return {
 	darker = {
+		black = "#0F0F0F",
 		bg0 = "#1f2329",
 		bg1 = "#282c34",
 		bg2 = "#30363f",
@@ -13,7 +14,8 @@ return {
 		orange = "#cc9057",
 		blue = "#4fa6ed",
 		yellow = "#e2b86b",
-		cyan = "#48b0bd",
+		-- Align teal/cyan accents to keyword green
+		cyan = "#568B74",
 		red = "#e55561",
 		grey = "#535965",
 		light_grey = "#7a818e",
@@ -40,7 +42,7 @@ return {
 		number = "#E8C262",                  -- golden yellow
 		number_float = "#E8C262",            -- golden yellow
 		boolean = "#DE6767",                 -- salmon red
-		type = "#5DA994",                    -- teal
+		type = "#568B74",                    -- teal
 		type_builtin = "#B8A965",            -- olive gold
 		constant = "#4D9375",                -- sea green
 		constructor = "#B8A965",             -- olive gold
@@ -51,6 +53,16 @@ return {
 		brackets_in_strings = "#D66262",     -- coral red
 		tag = "#CCCCCC",                     -- light grey
 		title = "#CCCCCC",                   -- light grey
+
+		-- Lua-specific syntax accents
+		-- lua_brackets = "#6893BF",            -- { } (unused)
+		-- lua_boolean = "#4D9375",             -- (unused)
+		lua_statement = "#CB7676",           -- return
+		-- lua_numbers = "#4C9A91",            -- 300 (unused)
+		-- lua_operators = "#B8A965",          -- = (unused)
+		lua_property = "#698A75",           -- treesitter prop (requires)
+		lua_conditional = "#4D9375",        -- if else then
+		lua_repeat = "#4D9375",             -- for in
 
 		-- Variables
 		variable = "#A0ACA0",                -- sage grey
@@ -71,6 +83,7 @@ return {
 		module = "#FFFFFF",                  -- white
 		namespace = "#CCCCCC",               -- light grey
 		note = "#CCCCCC",                    -- light grey
+		warning = "#363636",                -- mid grey for warnings
 		property = "#B8A965",                -- olive gold
 
 		-- Text hierarchy
@@ -78,6 +91,9 @@ return {
 		text_secondary = "#9C9C9C",          -- cool grey
 		text_tertiary = "#666666",           -- medium grey
 		markup = "#CCCCCC",                  -- light grey
+
+		-- Human-readable accents
+		class_name = "#6893BF",             -- unsaturated light blue for class names
 
 		-- UI helpers
 		line_numbers = "#444444",            -- charcoal grey
@@ -108,17 +124,30 @@ return {
 		whichkey_prefix = "#80A665",          -- sage green
 		complete_menu_background = "#181818",  -- jet black
 		complete_menu_text = "#4F7E6A",       -- dusty teal
-		complete_menu_predict = "#7AB39B",    -- soft teal
+		complete_menu_predict = "#568B74",    -- align to keyword green
 		complete_menu_selection_background = "#2E2E2E", -- dark slate grey
-		complete_menu_match_fuzzy = "#7AB39B", -- soft teal
+		complete_menu_match_fuzzy = "#568B74", -- align to keyword green
 		complete_menu_deprecated = "#666666", -- medium grey
 
 		-- High-visibility test colors for quick visual diffing
 		test_red = "#FF0000",
 		test_yellow = "#FFD500",
 		test_orange = "#FF8C00",
-		test_teal = "#242424",
 		test_white = "#242424",
+		test_purple = "#242424",
+
+		-- Terminal accents (aliases to key palette hues)
+		term = {
+			green = "#568B74",      -- keyword
+			red = "#DE6767",        -- keyword_func
+			yellow = "#E8C262",     -- number
+			grey_mid = "#666666",   -- text_tertiary
+			grey_dark = "#242424",  -- grey_4
+			grey_light = "#CCCCCC", -- grey_1
+		},
+
+		-- Accents
+		danger = "#B12E2E",
 
 	},
 }
